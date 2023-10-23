@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Brand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Brand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Actuators"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Applience"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Sensors"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Smart_Furniture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Date_of_Birth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Date_of_Birth">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Persons"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Functionality_Id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Functionality_Id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Functionality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Persons"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Actuators"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Sensors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#User_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#User_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Persons"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#hasBatteryCapacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#hasBatteryCapacity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Battery"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#hasLightingIntensityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#hasLightingIntensityValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Lighting_Intensity"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#hasSecurityStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#hasSecurityStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Security_Camera_Feed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#hasTemperatureReading -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#hasTemperatureReading">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Temperature_Monitoring"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Actuators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Actuators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Controllable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Adult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Adult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Alternative_Current -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Alternative_Current">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Gride_Energy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Direct_Current"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Appliance_Malfunction_Alert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Appliance_Malfunction_Alert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Notification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Applience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Applience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Controllable"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Sensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Architectural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Architectural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Uncontrollable"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Battery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Battery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Power_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Battery_Capacity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Battery_Capacity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Battery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Bluetooth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Bluetooth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wireless"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Bluetooth_Standard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Bluetooth_Standard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Bluetooth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Brown_Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Brown_Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Applience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Building_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Building_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Cables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Cables"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Camera_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Camera_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Security_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Celing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Celing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Architectural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Central_Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Central_Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Control_System"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Local_Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Child -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Child">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Controll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Controll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Control_Function"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Controll"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Notification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Notification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Notification_Function"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Notification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Control_Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Control_Function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Control_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Control_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Controllable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Controllable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Controllable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Building_System"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Uncontrollable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Direct_Current -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Direct_Current">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Gride_Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Controll -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Controll">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Control_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Notification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Notification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Notification_Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Doors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Doors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Architectural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Electric_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Electric_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#House_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Environmental_Sensors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Environmental_Sensors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Notification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Ethernet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Ethernet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wired"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Fire_Alarm_Activation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Fire_Alarm_Activation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Notification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Fire_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Fire_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Security_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Floor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Floor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Architectural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Functionality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Functionality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Uncontrollable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Gate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Gate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Architectural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Grey_Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Grey_Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Applience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Gride_Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Gride_Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Power_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Guest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Guest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Persons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#House_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#House_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Intrusion_Detection_Alarm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Intrusion_Detection_Alarm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Notification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Lighting_Intensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Lighting_Intensity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Controll"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Local_Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Local_Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Control_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Network"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Notification_Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Notification_Function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Persons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Persons"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Power_Source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Power_Source"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Query_Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Query_Function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Functionality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Renewable_Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Renewable_Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Power_Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Rooms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Rooms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Architectural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Security_Camera_Feed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Security_Camera_Feed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Notification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Security_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Security_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#House_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Sensors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Sensors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Controllable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Smart_Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Smart_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Controllable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Smart_lock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Smart_lock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Controll"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Smart_plug"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Smart_plug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Smart_plug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Discreate_Controll"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Solar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Solar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Renewable_Energy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Temperature_Monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Temperature_Monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Notification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Temperature_Regulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Temperature_Regulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Controll"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Time_Regulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Terrace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Terrace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Architectural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Time_Regulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Time_Regulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Controll"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Uncontrollable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Uncontrollable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Building_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Volume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Volume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Continuous_Controll"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#White_Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#White_Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Applience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wifi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wifi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wireless"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Renewable_Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Windows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Windows">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Architectural"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wired -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wired">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Network"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wireless"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wireless -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wireless">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Network"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#wifi_standard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#wifi_standard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Wifi"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Adult"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Child"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Guest"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Appliance_Malfunction_Alert"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Fire_Alarm_Activation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Intrusion_Detection_Alarm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Battery"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Gride_Energy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Renewable_Energy"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Brown_Good"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Grey_Good"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#White_Good"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Camera_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Electric_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Fire_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#House_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Security_System"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Celing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Doors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Floor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Gate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Rooms"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Terrace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Windows"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Control_Function"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Notification_Function"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Query_Function"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Environmental_Sensors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Security_Camera_Feed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Temperature_Monitoring"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Lighting_Intensity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Temperature_Regulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Time_Regulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ontologies/2023/9/untitled-ontology-3#Volume"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
