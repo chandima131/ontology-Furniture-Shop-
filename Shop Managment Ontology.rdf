@@ -534,10 +534,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Bar_Stools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bar_Stools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Beds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Beds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
     </owl:Class>
     
 
@@ -599,10 +623,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Tables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Tables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
     </owl:Class>
     
 
@@ -622,6 +662,22 @@
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Direct_supplyer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Suppliers"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Sub_supplyer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Display_Cabinets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Display_Cabinets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dressers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dressers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom"/>
     </owl:Class>
     
 
@@ -806,6 +862,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Wardrobs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Wardrobs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -814,6 +878,258 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#BarS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#BarS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bar_Stools"/>
+        <ShopManagementSystem:Availability>Out of stocks</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Black</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A modern bar stool with adjustable height and 360-degree swivel, featuring a comfortable padded seat and sleek metal base.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>14&quot; x 14&quot; x 30&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Metal, Faux Leather</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ModernBars</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Rustic Wooden Bar Stool</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#BarS2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#BarS2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bar_Stools"/>
+        <ShopManagementSystem:Availability>in Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Black</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A sturdy bar stool with a solid wood construction and a comfortable, contoured seat, perfect for rustic bar areas.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>16&quot; x 18&quot; x 35&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>RusticBars</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Adjustable Swivel Bar Stool</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Bed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bed1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Beds"/>
+        <ShopManagementSystem:Availability>In Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Beige, Grey</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A sophisticated upholstered platform bed with a tufted headboard and sturdy wooden slats.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>Queen Size</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Fabric, Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>Dream Haven</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Elegant Upholstered Platform Bed</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Bed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bed2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Beds"/>
+        <ShopManagementSystem:Availability>in Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Oak</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A charming wooden canopy bed with intricate carvings and a durable frame.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>King Size</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1299.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>TimberNest</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Rustic Wooden Canopy Bed</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Buffets1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Buffets2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#DiningCh1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DiningCh1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#DiningCh2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DiningCh2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#DiningTB1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DiningTB1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Tables"/>
+        <ShopManagementSystem:Availability>In Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Clear</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A contemporary dining table with a tempered glass top and metal legs, perfect for modern interiors.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>72&quot; x 36&quot; x 30&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Glass, Metal</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">799.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>RusticHome</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Modern Glass Top Dining Table</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#DiningTB2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DiningTB2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Tables"/>
+        <ShopManagementSystem:Availability>In Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Brown</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A sturdy, farmhouse-style wooden dining table with a distressed finish, ideal for rustic-themed dining rooms.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>84&quot; x 40&quot; x 30&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ComfortDine</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Rustic Wooden Dining Table</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#DisplayCabin1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DisplayCabin1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Display_Cabinets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#DisplayCabin2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DisplayCabin2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Display_Cabinets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dress1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dress1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dressers"/>
+        <ShopManagementSystem:Availability>out of Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Black, White</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A sleek and spacious 6-drawer dresser with a glossy finish and metal handles.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>60&quot; x 20&quot; x 32&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood, Metal</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">699.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>Urbane Living</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Contemporary 6-Drawer Dresser</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dress2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dress2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dressers"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Walnut</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A vintage-style dresser with eight spacious drawers and an elegant matching mirror.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>58&quot; x 18&quot; x 40&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">522</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>Nostalgia Home</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Vintage 8-Drawer Dresser with Mirror</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#TV_St1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#TV_St1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#TV_Stands"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Brown</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A sturdy, barn-door style TV console with ample storage space for media devices</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>65&quot; x 18&quot; x 30&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">799.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>RusticHome Furnishings</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Rustic TV Console</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#TV_St2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#TV_St2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#TV_Stands"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>black</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A sleek, wall-mounted TV stand with storage compartments and LED lighting</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>60&quot; x 15&quot; x 12&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Steel</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">499.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>PQR Designs</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Modern Floating TV Stand</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#WD1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#WD1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Wardrobs"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>White, Oak</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A modern wardrobe with sliding doors, multiple shelves, and a hanging rod for clothes</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>72&quot; x 24&quot; x 80&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood, Glass</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">999.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">250</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>MaxStorage Solutions</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Spacious Sliding Door Wardrobe</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#WD2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#WD2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Wardrobs"/>
+        <ShopManagementSystem:Availability>in Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Cherry</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A classic four-door wardrobe with intricate detailing, drawers, and ample storage space.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>80&quot; x 28&quot; x 84&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1499.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>Classic Furnishings</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Traditional Four-Door Wardrobe</ShopManagementSystem:name>
+    </owl:NamedIndividual>
     
 
 
@@ -837,6 +1153,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#arm_ch2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Armchairs"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Grey</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A comfortable, swiveling armchair with a sleek design and plush cushioning.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>28&quot; x 30&quot; x 34&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Fabric, Metal</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">399.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>Chic Interiors</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Modern Swivel Armchair</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
 
@@ -852,6 +1177,7 @@
         <ShopManagementSystem:Material>Glass, Metal</ShopManagementSystem:Material>
         <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">299.99</ShopManagementSystem:Price>
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>Modern Living Accents</ShopManagementSystem:brand>
         <ShopManagementSystem:name>Glass Top Coffee Table</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
@@ -885,6 +1211,7 @@
         <ShopManagementSystem:Material>Fabric, Wood</ShopManagementSystem:Material>
         <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">599.99</ShopManagementSystem:Price>
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>Modern Living Accents</ShopManagementSystem:brand>
         <ShopManagementSystem:name>Elegant Sofa</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
@@ -901,6 +1228,7 @@
         <ShopManagementSystem:Material>Leather, Wood</ShopManagementSystem:Material>
         <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1499.99</ShopManagementSystem:Price>
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>RusticHome Furnishings</ShopManagementSystem:brand>
         <ShopManagementSystem:name>Classic Chesterfield Sofa</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
@@ -917,6 +1245,7 @@
         <ShopManagementSystem:Material>Microfiber, Wood</ShopManagementSystem:Material>
         <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1199.99</ShopManagementSystem:Price>
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>PQR Designs</ShopManagementSystem:brand>
         <ShopManagementSystem:name>Contemporary Sectional Sofa</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
@@ -946,6 +1275,16 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Coffee_Tables"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Sofas"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#TV_Stands"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bar_Stools"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Tables"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Display_Cabinets"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
