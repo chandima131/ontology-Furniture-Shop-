@@ -666,18 +666,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Display_Cabinets -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Display_Cabinets">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dressers -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dressers">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Garden_Benches -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Garden_Benches">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor"/>
     </owl:Class>
     
 
@@ -690,16 +690,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Hammocks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Hammocks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Invoice -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Kitchen -->
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Lamps -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Kitchen">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Lamps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
     </owl:Class>
     
 
@@ -720,19 +728,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Mirrors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Mirrors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#New_customer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#New_customer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Regular_customer"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Office_Room -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Office_Room">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
     </owl:Class>
     
 
@@ -756,6 +764,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Chairs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Chairs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Tables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Tables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor"/>
     </owl:Class>
     
 
@@ -784,6 +808,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Regular_customer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Rugs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Rugs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
     </owl:Class>
     
 
@@ -858,6 +890,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Telephone_call">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Vases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Vases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Wall_Art -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Wall_Art">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
     </owl:Class>
     
 
@@ -953,6 +1001,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Black</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A sleek buffet with multiple storage compartments and dedicated wine racks, perfect for modern dining spaces.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>60&quot; x 18&quot; x 36&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood, Metal</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">999.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ModernBuffets</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Contemporary Buffet with Wine Storage</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
 
@@ -961,6 +1018,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Oak</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A spacious sideboard with multiple drawers and shelves, featuring a distressed finish, ideal for rustic dining rooms.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>70&quot; x 20&quot; x 40&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Discounts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</ShopManagementSystem:Discounts>
+        <ShopManagementSystem:Material>Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1299.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>RusticBuffets</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Rustic Sideboard with Drawers</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
 
@@ -969,6 +1036,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DiningCh1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs"/>
+        <ShopManagementSystem:Availability>in Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Grey</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A comfortable dining chair with soft fabric upholstery and a sturdy wooden frame, suitable for modern dining spaces.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>22&quot; x 20&quot; x 35&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Fabric, Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ComfortDine</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Upholstered Fabric Dining Chair</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
 
@@ -977,6 +1053,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DiningCh2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Brown</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>An elegant dining chair with luxurious leather upholstery and decorative nailhead trim, perfect for formal dining rooms.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>24&quot; x 22&quot; x 38&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Leather, Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">199.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ClassicDine</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Classic Leather Dining Chair</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
 
@@ -1017,17 +1102,13 @@
 
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#DisplayCabin1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DisplayCabin1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Display_Cabinets"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DisplayCabin1"/>
     
 
 
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#DisplayCabin2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DisplayCabin2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Display_Cabinets"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DisplayCabin2"/>
     
 
 
@@ -1061,6 +1142,40 @@
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">522</ShopManagementSystem:Weight>
         <ShopManagementSystem:brand>Nostalgia Home</ShopManagementSystem:brand>
         <ShopManagementSystem:name>Vintage 8-Drawer Dresser with Mirror</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Rug1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Rug1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Rugs"/>
+        <ShopManagementSystem:Availability>In Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Grey, Blue</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A contemporary area rug with a geometric design and a soft, durable texture, suitable for modern living spaces.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>8&apos; x 10&apos;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Synthetic Fiber</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">299.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ModernRugs</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Geometric Pattern Area Rug</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Rug2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Rug2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Rugs"/>
+        <ShopManagementSystem:Availability>Out of Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Red, Gold</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A luxurious oriental rug with intricate patterns and rich colors, perfect for adding a touch of elegance to classic interiors.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>9&apos; x 12&apos;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wool</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">499.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ClassicRugs</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Traditional Oriental Rug</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
 
@@ -1200,6 +1315,110 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#lamp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#lamp1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Lamps"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Silver</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A versatile floor lamp with an adjustable reading light and a contemporary design, perfect for providing task lighting in modern living rooms.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>60&quot; height</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Discounts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</ShopManagementSystem:Discounts>
+        <ShopManagementSystem:Material>Metal</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ModernLighting</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Adjustable Floor Lamp with Reading Light</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#lamp2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#lamp2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Lamps"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Multicolor</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>An elegant table lamp with a stained glass shade and a decorative base, ideal for adding a touch of traditional charm to any room</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>24&quot; height</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Glass, Metal</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">199.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>TiffanyLamps</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Tiffany-Style Table Lamp</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#mirror1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#mirror1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Mirrors"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Black</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A sleek, minimalist round wall mirror with a black metal frame, perfect for contemporary interiors.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>36&quot; diameter</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Metal, Glass</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ModernHome Accents</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Modern Round Wall Mirror</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#mirror2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#mirror2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Mirrors"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Antique White</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>An elegant oval-shaped vanity mirror with intricate detailing and a distressed finish, perfect for traditional dressing areas.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>24&quot; x 36&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">199.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>VintageReflections</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Vintage Oval Vanity Mirror</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#outTable1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#outTable1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Tables"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Black</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A sturdy round patio dining table with a weather-resistant finish, perfect for outdoor gatherings and meals with family and friends.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>48&quot; diameter x 30&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Discounts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</ShopManagementSystem:Discounts>
+        <ShopManagementSystem:Material>Metal, Glass</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">399.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>OutdoorDining</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Round Patio Dining Table</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#outTable2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#outTable2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Tables"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Black</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A convenient foldable picnic table set with attached benches, perfect for enjoying meals and activities in your backyard or while camping</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>72&quot; x 28&quot; x 30&quot; (Table), 72&quot; x 10&quot; x 18&quot; (Bench)</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Wood, Metal</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">249.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>OutdoorEssentials</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Foldable Picnic Table with Benches</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#sofa1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#sofa1">
@@ -1251,6 +1470,74 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#vass1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#vass1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Vases"/>
+        <ShopManagementSystem:Availability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>White, Black, Grey</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A set of three sleek, modern ceramic vases in different sizes and complementary colors, perfect for contemporary home decor.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>Various sizes</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Ceramic</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ModernVases</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Modern Ceramic Vase Set</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#vass2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#vass2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Vases"/>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Bronze</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A charming metal flower vase with a distressed finish and intricate detailing, perfect for rustic and farmhouse-style settings.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>12&quot; height</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Metal</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">49.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>RusticVibes</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Rustic Metal Flower Vase</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#wallA1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#wallA1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Wall_Art"/>
+        <ShopManagementSystem:Availability>out of stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Multicolor</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A set of three contemporary abstract canvas paintings with bold colors and striking designs, perfect for adding a modern focal point to any room.</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>Various sizes (24&quot; x 36&quot;, 20&quot; x 30&quot;, 16&quot; x 24&quot;)</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Canvas</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">299.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>ArtisticExpressions</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Abstract Canvas Wall Art Set</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#wallA2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#wallA2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Wall_Art"/>
+        <ShopManagementSystem:Availability>out of stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Available_Colors>Earth Tones</ShopManagementSystem:Available_Colors>
+        <ShopManagementSystem:Description>A breathtaking metal wall art piece depicting a scenic landscape with intricate details, perfect for adding a touch of nature to your home decor</ShopManagementSystem:Description>
+        <ShopManagementSystem:Dimensions>48&quot; x 24&quot;</ShopManagementSystem:Dimensions>
+        <ShopManagementSystem:Material>Metal</ShopManagementSystem:Material>
+        <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">399.99</ShopManagementSystem:Price>
+        <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</ShopManagementSystem:Weight>
+        <ShopManagementSystem:brand>NatureArt</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>Scenic Landscape Metal Wall Art</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1280,28 +1567,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bar_Stools"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Tables"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Display_Cabinets"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Kitchen"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Office_Room"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_representative"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#General_labourer"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Marketing_team"/>
@@ -1314,6 +1579,25 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Direct"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Online"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Telephone_call"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Garden_Benches"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Hammocks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Chairs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Tables"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Lamps"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Mirrors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Rugs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Vases"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Wall_Art"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
