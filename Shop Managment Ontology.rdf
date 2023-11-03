@@ -97,7 +97,10 @@
 
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Available_Colors -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Available_Colors"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Available_Colors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -184,6 +187,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#DateOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DateOfBirth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Description -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Description">
@@ -225,9 +237,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#First_name -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#First_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Gender">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#People"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -250,6 +280,16 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Joined_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Joined_Date">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#date"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
@@ -518,14 +558,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Admin -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Admin">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#People"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Armchairs -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Armchairs">
@@ -736,15 +768,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#New_customer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#New_customer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Regular_customer"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Online -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Online">
@@ -801,14 +824,6 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Product -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Regular_customer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Regular_customer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-    </owl:Class>
     
 
 
@@ -1028,6 +1043,113 @@
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</ShopManagementSystem:Weight>
         <ShopManagementSystem:brand>RusticBuffets</ShopManagementSystem:brand>
         <ShopManagementSystem:name>Rustic Sideboard with Drawers</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#CR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#CR1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_representative"/>
+        <ShopManagementSystem:Address>Halifax,uk</ShopManagementSystem:Address>
+        <ShopManagementSystem:Email>sama@gmail.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>sama</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Joined_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-02T14:30:00</ShopManagementSystem:Joined_Date>
+        <ShopManagementSystem:Last_Name>Rajapaksha</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">001</ShopManagementSystem:Staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#CR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#CR2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_representative"/>
+        <ShopManagementSystem:Joined_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-12T14:30:00</ShopManagementSystem:Joined_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#CR3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#CR3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_representative"/>
+        <ShopManagementSystem:Joined_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-02T14:30:00</ShopManagementSystem:Joined_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>122,Queenswalk,Peterborough</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">07174797893</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">001</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:Email>lucky@gmail.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Lucky</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Meththasena</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>122,Queenswalk,Peterborough</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Address>Ely rd, Cambridge</ShopManagementSystem:Address>
+        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0724318118</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">002</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:Email>chandi@gmail.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Chandi</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Gender>Female</ShopManagementSystem:Gender>
+        <ShopManagementSystem:Last_Name>Samarakoon</ShopManagementSystem:Last_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>Manchester,Leeds</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0727978983</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">003</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:Email>riya@gmail.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Riya</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Gender>Female</ShopManagementSystem:Gender>
+        <ShopManagementSystem:Last_Name>Ballah</ShopManagementSystem:Last_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Address>London rd, Peterborough</ShopManagementSystem:Address>
+        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0766117682</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">004</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:Email>ruban@gmail.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Ruban</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Gender>Male</ShopManagementSystem:Gender>
+        <ShopManagementSystem:Last_Name>Silva</ShopManagementSystem:Last_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Address>Polpithigama, Sri Lanka</ShopManagementSystem:Address>
+        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0724353200</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">005</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:Email>mahinda@gmail.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>mahinda</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Gender>Male</ShopManagementSystem:Gender>
+        <ShopManagementSystem:Last_Name>Bandara</ShopManagementSystem:Last_Name>
     </owl:NamedIndividual>
     
 
@@ -1546,15 +1668,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Admin"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Staff"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Suppliers"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
