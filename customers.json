@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Sheet1","startColumn":"A","endColumn":"A","startRow":"2","endRow":"+","comment":"","rule":"Individual: @A*\nTypes: Customers\nFacts:\n Customer_ID @A*,\n Last_Name @C*,\n First_name @B*,\n DateOfBirth @G*,\n Contact_number @F*,\n Billing_Address @D*,\n Shipping_Address @D*,\n Email @H*","active":true}]}
