@@ -6,6 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Product="http://www.semanticweb.org/chand/ShopManagementSystem#Product/"
      xmlns:ShopManagementSystem="http://www.semanticweb.org/chand/ShopManagementSystem#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem"/>
     
@@ -32,29 +33,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Billed_To -->
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#billedTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Billed_To">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Paid_by -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Paid_by">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Card"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Cash"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Shipped_To -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Shipped_To">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#billedTo">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
     </owl:ObjectProperty>
@@ -75,8 +56,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#contains">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Payment_Method"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
     </owl:ObjectProperty>
@@ -88,6 +69,15 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#hasContactWith">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Managers"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Suppliers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#hasCustomer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#hasCustomer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
     </owl:ObjectProperty>
     
 
@@ -110,11 +100,30 @@
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#interact_with -->
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#interactWith -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#interact_with">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#interactWith">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_representative"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#issue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#issue">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#issuedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#issuedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#issuedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_representative"/>
     </owl:ObjectProperty>
     
 
@@ -139,11 +148,38 @@
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#placed -->
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#paidBy -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#placed">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#paidBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Card"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#placedOrders -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#placedOrders">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#prepareOrder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#prepareOrder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#shippedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#shippedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
     </owl:ObjectProperty>
     
 
@@ -191,7 +227,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Availability">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -210,7 +246,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Barcode">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -230,8 +266,18 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Category_ID -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Category_ID">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Contact_Number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Contact_Number">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Contact_number"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -241,7 +287,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Contact_number">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#People"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -250,7 +296,6 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Creation_Date">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#date"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
@@ -271,7 +316,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_ID">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -300,7 +345,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Description">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -332,7 +377,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Discounts">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -340,6 +385,16 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Email -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#First_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#First_Name">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#First_name"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#People"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -388,7 +443,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice_Number">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -416,7 +471,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Last_Modified_Date">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#date"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -444,7 +499,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Number_of_products -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Number_of_products">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -464,7 +519,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Order_ID">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -503,7 +558,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Price">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -512,7 +567,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Product_ID">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -551,7 +606,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Staff_ID">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Staff"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -560,7 +615,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Sub_Total">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -569,7 +624,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Supplyer_ID">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Suppliers"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -579,7 +634,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Tax_Information">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -601,7 +656,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -610,7 +665,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Total_Cost">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -630,7 +685,7 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Weight">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
@@ -647,7 +702,9 @@
 
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#date -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#date"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#date">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -685,7 +742,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Armchairs -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Armchairs">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room_Furniture"/>
     </owl:Class>
     
 
@@ -693,15 +750,15 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Bar_Stools -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bar_Stools">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room_Furniture"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom -->
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom_Furniture -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture"/>
     </owl:Class>
     
 
@@ -709,7 +766,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Beds -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Beds">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom_Furniture"/>
     </owl:Class>
     
 
@@ -717,7 +774,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room_Furniture"/>
     </owl:Class>
     
 
@@ -726,23 +783,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Card">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Payment_Method"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Cash"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cash -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cash">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Payment_Method"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Category -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Category">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
     </owl:Class>
     
 
@@ -750,7 +790,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Coffee_Tables -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Coffee_Tables">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room_Furniture"/>
     </owl:Class>
     
 
@@ -771,10 +811,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Decor -->
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Decor_Furniture -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Decor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Decor_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture"/>
     </owl:Class>
     
 
@@ -782,15 +822,15 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room_Furniture"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room -->
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room_Furniture -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture"/>
     </owl:Class>
     
 
@@ -798,16 +838,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Tables -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Tables">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Direct -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Direct">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Online"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Room_Furniture"/>
     </owl:Class>
     
 
@@ -824,7 +855,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Dressers -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dressers">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom_Furniture"/>
     </owl:Class>
     
 
@@ -832,7 +863,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Garden_Benches -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Garden_Benches">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Furniture"/>
     </owl:Class>
     
 
@@ -848,7 +879,15 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Hammocks -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Hammocks">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
     </owl:Class>
     
 
@@ -862,15 +901,15 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Lamps -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Lamps">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor_Furniture"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room -->
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room_Furniture -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Indoor_Furniture"/>
     </owl:Class>
     
 
@@ -886,15 +925,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Mirrors -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Mirrors">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Online -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Online">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor_Furniture"/>
     </owl:Class>
     
 
@@ -905,18 +936,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor -->
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Chairs -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Category"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Chairs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Furniture"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Chairs -->
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Furniture -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Chairs">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Product"/>
     </owl:Class>
     
 
@@ -924,7 +955,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Tables -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Tables">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Outdoor_Furniture"/>
     </owl:Class>
     
 
@@ -950,7 +981,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Rugs -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Rugs">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor_Furniture"/>
     </owl:Class>
     
 
@@ -958,7 +989,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Sofas -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Sofas">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room_Furniture"/>
     </owl:Class>
     
 
@@ -990,15 +1021,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#TV_Stands -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#TV_Stands">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Telephone_call -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Telephone_call">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Living_Room_Furniture"/>
     </owl:Class>
     
 
@@ -1006,7 +1029,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Vases -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Vases">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor_Furniture"/>
     </owl:Class>
     
 
@@ -1014,7 +1037,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Wall_Art -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Wall_Art">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Decor_Furniture"/>
     </owl:Class>
     
 
@@ -1022,7 +1045,7 @@
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Wardrobs -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Wardrobs">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bedroom_Furniture"/>
     </owl:Class>
     
 
@@ -1059,7 +1082,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#BarS2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Bar_Stools"/>
-        <ShopManagementSystem:Availability>in Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In Stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Black</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>A sturdy bar stool with a solid wood construction and a comfortable, contoured seat, perfect for rustic bar areas.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>16&quot; x 18&quot; x 35&quot;</ShopManagementSystem:Dimensions>
@@ -1093,7 +1116,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Bed2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Beds"/>
-        <ShopManagementSystem:Availability>in Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In Stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Oak</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>A charming wooden canopy bed with intricate carvings and a durable frame.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>King Size</ShopManagementSystem:Dimensions>
@@ -1110,7 +1133,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards"/>
-        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Black</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>A sleek buffet with multiple storage compartments and dedicated wine racks, perfect for modern dining spaces.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>60&quot; x 18&quot; x 36&quot;</ShopManagementSystem:Dimensions>
@@ -1127,11 +1150,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Buffets_and_Sideboards"/>
-        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Oak</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>A spacious sideboard with multiple drawers and shelves, featuring a distressed finish, ideal for rustic dining rooms.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>70&quot; x 20&quot; x 40&quot;</ShopManagementSystem:Dimensions>
-        <ShopManagementSystem:Discounts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</ShopManagementSystem:Discounts>
         <ShopManagementSystem:Material>Wood</ShopManagementSystem:Material>
         <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1299.99</ShopManagementSystem:Price>
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</ShopManagementSystem:Weight>
@@ -1145,8 +1167,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#CR1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_representative"/>
+        <ShopManagementSystem:prepareOrder rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#order1"/>
         <ShopManagementSystem:Address>Halifax,uk</ShopManagementSystem:Address>
-        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0124687968</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Contact_number>0124687968</ShopManagementSystem:Contact_number>
         <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1988-02-27T14:30:00</ShopManagementSystem:DateOfBirth>
         <ShopManagementSystem:Email>sama@gmail.com</ShopManagementSystem:Email>
         <ShopManagementSystem:First_name>sama</ShopManagementSystem:First_name>
@@ -1163,7 +1186,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#CR2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customer_representative"/>
         <ShopManagementSystem:Address>Cardiff,London</ShopManagementSystem:Address>
-        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0789658246</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Contact_number>0789658246</ShopManagementSystem:Contact_number>
         <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-07-22T14:30:00</ShopManagementSystem:DateOfBirth>
         <ShopManagementSystem:Email>tharani@gmail.com</ShopManagementSystem:Email>
         <ShopManagementSystem:First_name>Tharani</ShopManagementSystem:First_name>
@@ -1179,8 +1202,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:hasInvoice rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1001"/>
+        <ShopManagementSystem:hasInvoice rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1011"/>
+        <ShopManagementSystem:interactWith rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#CR1"/>
+        <ShopManagementSystem:placedOrders rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#order1"/>
         <ShopManagementSystem:Billing_Address>122,Queenswalk,Peterborough</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">07174797893</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Contact_number>07174797893</ShopManagementSystem:Contact_number>
         <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">001</ShopManagementSystem:Customer_ID>
         <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1978-07-22T14:30:00</ShopManagementSystem:DateOfBirth>
         <ShopManagementSystem:Email>lucky@gmail.com</ShopManagementSystem:Email>
@@ -1191,12 +1218,173 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>30 Regent Street, Manchester, M4 4FG, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 6789 0123</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1982-12-05T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>sarahbrown@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Sarah</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Brown</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>40 Oxford Road, Glasgow, G1 3JH, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>18 King&apos;s Road, Birmingham, B4 7AA, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 7890 1234</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-06-18T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>jamesmiller@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>James</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Miller</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>10 Victoria Street, London, EC2N 5AR, UK</ShopManagementSystem:Shipping_Address>
+        <ShopManagementSystem:name>James</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>12 Liverpool Road, Leeds, LS1 2JH, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 8901 2345</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1975-01-28T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>lisadavis@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Lisa</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Davis</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>15 Cambridge Road, Manchester, M1 9AG, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>35 Oxford Road, Glasgow, G1 7AA, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 9012 3456</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1988-04-12T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>robertgarcia@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Robert</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Garcia</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>20 Victoria Street, Birmingham, B4 3JD, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>8 Manchester Road, Leeds, LS1 1DZ, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 0123 4567</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1979-08-08T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>karenrodriguez@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Karen</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Rodriguez</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>30 Regent Street, Manchester, M4 6FG, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>25 Liverpool Road, London, EC3M 4JN, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 1234 5678</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1984-06-12T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>williamwilson@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>William</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Wilson</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>18 King&apos;s Road, Birmingham, B4 7AA, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>40 Oxford Road, Glasgow, G1 3JH, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 2345 6789</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1986-09-15T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>patriciamartinez@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Patricia</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Martinez</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>12 Liverpool Road, Leeds, LS1 2JH, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>10 Victoria Street, Manchester, M4 6FG, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 3456 7890</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1981-03-25T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>christopherrobinson@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Christopher</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Robinson</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>30 Regent Street, London, W1D 1DZ, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>8 Manchester Road, Birmingham, B4 6JD, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 4567 8901</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1976-12-08T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>lindaclark@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Linda</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Clark</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>45 Park Avenue, Liverpool, L3 9AG, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>12 King&apos;s Road, Liverpool, L3 8JD, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 5678 9012</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1983-05-30T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>michaelrodriguez@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Michael</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Rodriguez</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>20 Oxford Street, Glasgow, G1 7AA, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
         <ShopManagementSystem:Address>Ely rd, Cambridge</ShopManagementSystem:Address>
-        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0724318118</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Contact_number>0724318118</ShopManagementSystem:Contact_number>
         <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">002</ShopManagementSystem:Customer_ID>
         <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-07-21T14:30:00</ShopManagementSystem:DateOfBirth>
         <ShopManagementSystem:Email>chandi@gmail.com</ShopManagementSystem:Email>
@@ -1207,12 +1395,92 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>35 Regent Street, Birmingham, B4 3JD, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 6789 0123</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1977-02-14T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>susanlewis@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Susan</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Lewis</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>8 Manchester Road, Leeds, LS1 1DZ, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>20 Victoria Street, London, EC2N 5AR, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 7890 1234</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1989-07-20T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>matthewlee@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Matthew</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Lee</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>10 Victoria Street, Manchester, M1 5FS, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>15 Cambridge Road, Manchester, M1 9AG, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 8901 2345</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1974-04-18T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>angelawalker@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Angela</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Walker</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>5 High Street, Birmingham, B4 5JD, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>78 High Street, Manchester, M4 1AA, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 9012 3456</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1980-11-22T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>joshuahall@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Joshua</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Hall</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>15 Cambridge Road, Manchester, M1 9AG, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>45 Park Avenue, Liverpool, L3 9AG, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 0123 4567</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1985-08-29T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>emilyallen@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Emily</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Allen</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>25 Liverpool Road, London, EC3M 4JN, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus3 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus3">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
         <ShopManagementSystem:Billing_Address>Manchester,Leeds</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0727978983</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Contact_number>0727978983</ShopManagementSystem:Contact_number>
         <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">003</ShopManagementSystem:Customer_ID>
         <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-02-18T14:30:00</ShopManagementSystem:DateOfBirth>
         <ShopManagementSystem:Email>riya@gmail.com</ShopManagementSystem:Email>
@@ -1228,7 +1496,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus4">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
         <ShopManagementSystem:Address>London rd, Peterborough</ShopManagementSystem:Address>
-        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0766117682</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Contact_number>0766117682</ShopManagementSystem:Contact_number>
         <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">004</ShopManagementSystem:Customer_ID>
         <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-03-28T14:30:00</ShopManagementSystem:DateOfBirth>
         <ShopManagementSystem:Email>ruban@gmail.com</ShopManagementSystem:Email>
@@ -1244,13 +1512,85 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus5">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
         <ShopManagementSystem:Address>Polpithigama, Sri Lanka</ShopManagementSystem:Address>
-        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0724353200</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Billing_Address>45 Park Avenue, London, EC2P 2JY, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 1234 5678</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Contact_number>0724353200</ShopManagementSystem:Contact_number>
         <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">005</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1980-05-25T00:00:00</ShopManagementSystem:DateOfBirth>
         <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-02-18T14:30:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>johndoe@example.com</ShopManagementSystem:Email>
         <ShopManagementSystem:Email>mahinda@gmail.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>John</ShopManagementSystem:First_name>
         <ShopManagementSystem:First_name>mahinda</ShopManagementSystem:First_name>
         <ShopManagementSystem:Gender>Male</ShopManagementSystem:Gender>
         <ShopManagementSystem:Last_Name>Bandara</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Last_Name>Doe</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>78 High Street, Manchester, M4 1AA, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>20 Oxford Street, London, W1D 1DZ, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 2345 6789</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1985-07-15T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>marysmith@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Mary</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Smith</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>35 Regent Street, Birmingham, B4 7AA, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>15 Cambridge Road, Manchester, M1 5FS, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 3456 7890</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1992-11-30T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>michaeljohnson@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Michael</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Johnson</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>12 King&apos;s Road, Liverpool, L3 8JD, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>10 Victoria Street, Birmingham, B4 6JD, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 4567 8901</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1978-03-10T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>jenniferwilliams@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>Jennifer</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Williams</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>25 Liverpool Road, London, EC3M 4JN, UK</ShopManagementSystem:Shipping_Address>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Cus9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Cus9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
+        <ShopManagementSystem:Billing_Address>5 High Street, Liverpool, L3 9AG, UK</ShopManagementSystem:Billing_Address>
+        <ShopManagementSystem:Contact_number>+44 20 5678 9012</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</ShopManagementSystem:Customer_ID>
+        <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1990-09-20T00:00:00</ShopManagementSystem:DateOfBirth>
+        <ShopManagementSystem:Email>davidjones@example.com</ShopManagementSystem:Email>
+        <ShopManagementSystem:First_name>David</ShopManagementSystem:First_name>
+        <ShopManagementSystem:Last_Name>Jones</ShopManagementSystem:Last_Name>
+        <ShopManagementSystem:Shipping_Address>8 Manchester Road, Leeds, LS1 4AH, UK</ShopManagementSystem:Shipping_Address>
     </owl:NamedIndividual>
     
 
@@ -1259,7 +1599,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DiningCh1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs"/>
-        <ShopManagementSystem:Availability>in Stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In Stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Grey</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>A comfortable dining chair with soft fabric upholstery and a sturdy wooden frame, suitable for modern dining spaces.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>22&quot; x 20&quot; x 35&quot;</ShopManagementSystem:Dimensions>
@@ -1267,7 +1607,7 @@
         <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">149.99</ShopManagementSystem:Price>
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</ShopManagementSystem:Weight>
         <ShopManagementSystem:brand>ComfortDine</ShopManagementSystem:brand>
-        <ShopManagementSystem:name>Upholstered Fabric Dining Chair</ShopManagementSystem:name>
+        <ShopManagementSystem:name>Fabric_Dining_Chair</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
 
@@ -1276,7 +1616,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#DiningCh2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dining_Chairs"/>
-        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Brown</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>An elegant dining chair with luxurious leather upholstery and decorative nailhead trim, perfect for formal dining rooms.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>24&quot; x 22&quot; x 38&quot;</ShopManagementSystem:Dimensions>
@@ -1356,7 +1696,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Dress2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Dressers"/>
-        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Walnut</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>A vintage-style dresser with eight spacious drawers and an elegant matching mirror.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>58&quot; x 18&quot; x 40&quot;</ShopManagementSystem:Dimensions>
@@ -1365,6 +1705,14 @@
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">522</ShopManagementSystem:Weight>
         <ShopManagementSystem:brand>Nostalgia Home</ShopManagementSystem:brand>
         <ShopManagementSystem:name>Vintage 8-Drawer Dresser with Mirror</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Ds1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Ds1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Direct_supplyer"/>
     </owl:NamedIndividual>
     
 
@@ -1401,12 +1749,250 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-25T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1001</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1899.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">151.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2051.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-22T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Beds - 999.99, Dressers - 699.99, Nightstands - 299.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1002</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1999.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">159.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2159.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-20T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1003</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1099.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1187.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-18T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1004</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">749.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">809.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-15T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1005</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1999.96</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">159.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2159.95</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-12T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1006</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">899.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">71.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">971.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-10T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1007</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1249.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1349.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1008">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-08T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1008</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1249.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1349.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-05T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Rugs - 399.99, Lamps - 199.99, Vases - 149.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1009</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">749.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">809.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-02T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1010</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1999.96</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">159.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2159.95</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1011">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-25T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1011</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1299.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">103.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1403.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1012">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-22T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Bed - 599.99, Dresser - 399.99, Nightstand - 149.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1012</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1149.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1241.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1013 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1013">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-20T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1013</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">649.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">51.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">701.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1014 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1014">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-18T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1014</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">379.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.39</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">410.36</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1015 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1015">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-15T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1015</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1199.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1295.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1016">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-12T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1016</ShopManagementSystem:Invoice_Number>
+        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">449.97</ShopManagementSystem:Sub_Total>
+        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.99</ShopManagementSystem:Tax_Information>
+        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">485.96</ShopManagementSystem:Total_Amount>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Inv1017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Inv1017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
+        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-10T00:00:00</ShopManagementSystem:Creation_Date>
+        <ShopManagementSystem:Invoice_Description>Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99</ShopManagementSystem:Invoice_Description>
+        <ShopManagementSystem:Invoice_Number>Inv1017</ShopManagementSystem:Invoice_Number>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#Manager1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Manager1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Managers"/>
+        <ShopManagementSystem:hasContactWith rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Ds1"/>
+        <ShopManagementSystem:manage rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#CR1"/>
+        <ShopManagementSystem:manage rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#CR2"/>
         <ShopManagementSystem:Address>100,kingslin rd, kingston</ShopManagementSystem:Address>
-        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0766525892</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Contact_number>0766525892</ShopManagementSystem:Contact_number>
         <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1965-05-12T14:30:00</ShopManagementSystem:DateOfBirth>
         <ShopManagementSystem:Email>sharukh@gmail.com</ShopManagementSystem:Email>
         <ShopManagementSystem:First_name>Sharukh</ShopManagementSystem:First_name>
@@ -1422,15 +2008,28 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Manager2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Managers"/>
+        <ShopManagementSystem:hasContactWith rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#SubSupp1"/>
+        <ShopManagementSystem:manage rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#GL1"/>
+        <ShopManagementSystem:manage rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#GL2"/>
         <ShopManagementSystem:Address>Spicemill,leeds</ShopManagementSystem:Address>
-        <ShopManagementSystem:Contact_number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0114287569</ShopManagementSystem:Contact_number>
+        <ShopManagementSystem:Contact_number>0114287569</ShopManagementSystem:Contact_number>
         <ShopManagementSystem:DateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1978-07-22T14:30:00</ShopManagementSystem:DateOfBirth>
         <ShopManagementSystem:Email>danial@gmail.com</ShopManagementSystem:Email>
         <ShopManagementSystem:First_name>Danial</ShopManagementSystem:First_name>
         <ShopManagementSystem:Gender>Male</ShopManagementSystem:Gender>
         <ShopManagementSystem:Joined_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T14:30:00</ShopManagementSystem:Joined_Date>
         <ShopManagementSystem:Last_Name>Smith</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">006</ShopManagementSystem:Staff_ID>
+        <ShopManagementSystem:Staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">007</ShopManagementSystem:Staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#People1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#People1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#People"/>
+        <ShopManagementSystem:Joined_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-12T14:30:00</ShopManagementSystem:Joined_Date>
+        <ShopManagementSystem:name>Tharani</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
 
@@ -1465,6 +2064,14 @@
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</ShopManagementSystem:Weight>
         <ShopManagementSystem:brand>ClassicRugs</ShopManagementSystem:brand>
         <ShopManagementSystem:name>Traditional Oriental Rug</ShopManagementSystem:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#SubSupp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#SubSupp1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Sub_supplyer"/>
     </owl:NamedIndividual>
     
 
@@ -1570,6 +2177,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#card1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#card1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Card"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#coffee_tb1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#coffee_tb1">
@@ -1604,30 +2219,14 @@
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#invo1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#invo1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-02T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Furniture Purchase</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">001</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1899.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">151.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2051.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#lamp1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#lamp1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Lamps"/>
-        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Silver</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>A versatile floor lamp with an adjustable reading light and a contemporary design, perfect for providing task lighting in modern living rooms.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>60&quot; height</ShopManagementSystem:Dimensions>
-        <ShopManagementSystem:Discounts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</ShopManagementSystem:Discounts>
         <ShopManagementSystem:Material>Metal</ShopManagementSystem:Material>
         <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">129.99</ShopManagementSystem:Price>
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</ShopManagementSystem:Weight>
@@ -1641,7 +2240,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#lamp2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Lamps"/>
-        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Multicolor</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>An elegant table lamp with a stained glass shade and a decorative base, ideal for adding a touch of traditional charm to any room</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>24&quot; height</ShopManagementSystem:Dimensions>
@@ -1658,7 +2257,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#mirror1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Mirrors"/>
-        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Black</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>A sleek, minimalist round wall mirror with a black metal frame, perfect for contemporary interiors.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>36&quot; diameter</ShopManagementSystem:Dimensions>
@@ -1675,7 +2274,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#mirror2">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Mirrors"/>
-        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>In stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>Antique White</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>An elegant oval-shaped vanity mirror with intricate detailing and a distressed finish, perfect for traditional dressing areas.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>24&quot; x 36&quot;</ShopManagementSystem:Dimensions>
@@ -1688,6 +2287,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#order1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#order1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Orders"/>
+        <ShopManagementSystem:billedTo rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Cus1"/>
+        <ShopManagementSystem:shippedTo rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Cus1"/>
+        <ShopManagementSystem:Order_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">001</ShopManagementSystem:Order_ID>
+        <Product:Service_Details>Living room furniture</Product:Service_Details>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/chand/ShopManagementSystem#outTable1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#outTable1">
@@ -1696,7 +2307,6 @@
         <ShopManagementSystem:Available_Colors>Black</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>A sturdy round patio dining table with a weather-resistant finish, perfect for outdoor gatherings and meals with family and friends.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>48&quot; diameter x 30&quot;</ShopManagementSystem:Dimensions>
-        <ShopManagementSystem:Discounts rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</ShopManagementSystem:Discounts>
         <ShopManagementSystem:Material>Metal, Glass</ShopManagementSystem:Material>
         <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">399.99</ShopManagementSystem:Price>
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</ShopManagementSystem:Weight>
@@ -1752,7 +2362,7 @@
         <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1499.99</ShopManagementSystem:Price>
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</ShopManagementSystem:Weight>
         <ShopManagementSystem:brand>RusticHome Furnishings</ShopManagementSystem:brand>
-        <ShopManagementSystem:name>Classic Chesterfield Sofa</ShopManagementSystem:name>
+        <ShopManagementSystem:name>Chesterfield_Sofa</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
 
@@ -1778,15 +2388,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#vass1">
         <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Vases"/>
-        <ShopManagementSystem:Availability rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">in stock</ShopManagementSystem:Availability>
+        <ShopManagementSystem:Availability>in stock</ShopManagementSystem:Availability>
         <ShopManagementSystem:Available_Colors>White, Black, Grey</ShopManagementSystem:Available_Colors>
         <ShopManagementSystem:Description>A set of three sleek, modern ceramic vases in different sizes and complementary colors, perfect for contemporary home decor.</ShopManagementSystem:Description>
         <ShopManagementSystem:Dimensions>Various sizes</ShopManagementSystem:Dimensions>
         <ShopManagementSystem:Material>Ceramic</ShopManagementSystem:Material>
         <ShopManagementSystem:Price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">79.99</ShopManagementSystem:Price>
         <ShopManagementSystem:Weight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</ShopManagementSystem:Weight>
-        <ShopManagementSystem:brand>ModernVases</ShopManagementSystem:brand>
-        <ShopManagementSystem:name>Modern Ceramic Vase Set</ShopManagementSystem:name>
+        <ShopManagementSystem:brand>Rustic Vibes vases</ShopManagementSystem:brand>
+        <ShopManagementSystem:name>ModernVases</ShopManagementSystem:name>
     </owl:NamedIndividual>
     
 
@@ -1842,578 +2452,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>45 Park Avenue, London, EC2P 2JY, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 1234 5678</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>1</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1980-05-25T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>johndoe@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>John</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Doe</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>45 Park Avenue, London, EC2P 2JY, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#10 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#10">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>8 Manchester Road, Leeds, LS1 1DZ, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 0123 4567</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>10</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1979-08-08T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>karenrodriguez@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Karen</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Rodriguez</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>8 Manchester Road, Leeds, LS1 1DZ, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1001 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1001">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-25T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>1</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1001</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>1899.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>151.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>2051.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1002 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1002">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-22T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>2</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Beds - 999.99, Dressers - 699.99, Nightstands - 299.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1002</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>1999.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>159.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>2159.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1003 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1003">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-20T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>3</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1003</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>1099.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>87.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>1187.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1004 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1004">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-18T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>4</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1004</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>749.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>59.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>809.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1005 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1005">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-15T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>5</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1005</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>1999.96</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>159.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>2159.95</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1006 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1006">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-12T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>6</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1006</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>899.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>71.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>971.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1007 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1007">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-10T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>7</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1007</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>1249.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>99.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>1349.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1008 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1008">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-08T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>8</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1008</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>1249.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>99.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>1349.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1009 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1009">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-05T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>9</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Rugs - 399.99, Lamps - 199.99, Vases - 149.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1009</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>749.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>59.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>809.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1010 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1010">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-02T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>10</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1010</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>1999.96</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>159.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>2159.95</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1011 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1011">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-10-25T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>1</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1011</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>1299.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>103.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>1403.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1012 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1012">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-09-22T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>12</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Bed - 599.99, Dresser - 399.99, Nightstand - 149.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1012</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>1149.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>91.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>1241.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1013 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1013">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-08-20T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>3</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1013</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>649.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>51.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>701.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1014 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1014">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-07-18T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>14</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1014</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>379.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>30.39</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>410.36</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1015 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1015">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-06-15T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>15</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1015</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>1199.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>95.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>1295.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1016 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1016">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-05-12T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>16</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1016</ShopManagementSystem:Invoice_Number>
-        <ShopManagementSystem:Sub_Total>449.97</ShopManagementSystem:Sub_Total>
-        <ShopManagementSystem:Tax_Information>35.99</ShopManagementSystem:Tax_Information>
-        <ShopManagementSystem:Total_Amount>485.96</ShopManagementSystem:Total_Amount>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#1017 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#1017">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Invoice"/>
-        <ShopManagementSystem:Creation_Date>2023-04-10T00:00:00</ShopManagementSystem:Creation_Date>
-        <ShopManagementSystem:Customer_ID>17</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:Invoice_Description>Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99</ShopManagementSystem:Invoice_Description>
-        <ShopManagementSystem:Invoice_Number>1017</ShopManagementSystem:Invoice_Number>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#11 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#11">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>25 Liverpool Road, London, EC3M 4JN, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 1234 5678</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>11</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1984-06-12T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>williamwilson@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>William</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Wilson</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>25 Liverpool Road, London, EC3M 4JN, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#12 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#12">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>40 Oxford Road, Glasgow, G1 3JH, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 2345 6789</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>12</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1986-09-15T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>patriciamartinez@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Patricia</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Martinez</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>40 Oxford Road, Glasgow, G1 3JH, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#13 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#13">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>10 Victoria Street, Manchester, M4 6FG, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 3456 7890</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>13</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1981-03-25T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>christopherrobinson@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Christopher</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Robinson</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>10 Victoria Street, Manchester, M4 6FG, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#14 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#14">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>8 Manchester Road, Birmingham, B4 6JD, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 4567 8901</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>14</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1976-12-08T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>lindaclark@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Linda</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Clark</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>8 Manchester Road, Birmingham, B4 6JD, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#15 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#15">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>12 King&apos;s Road, Liverpool, L3 8JD, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 5678 9012</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>15</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1983-05-30T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>michaelrodriguez@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Michael</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Rodriguez</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>12 King&apos;s Road, Liverpool, L3 8JD, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#16 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#16">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>35 Regent Street, Birmingham, B4 3JD, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 6789 0123</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>16</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1977-02-14T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>susanlewis@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Susan</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Lewis</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>35 Regent Street, Birmingham, B4 3JD, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#17 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#17">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>20 Victoria Street, London, EC2N 5AR, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 7890 1234</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>17</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1989-07-20T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>matthewlee@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Matthew</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Lee</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>20 Victoria Street, London, EC2N 5AR, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#18 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#18">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>15 Cambridge Road, Manchester, M1 9AG, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 8901 2345</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>18</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1974-04-18T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>angelawalker@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Angela</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Walker</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>15 Cambridge Road, Manchester, M1 9AG, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#19 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#19">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>78 High Street, Manchester, M4 1AA, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 9012 3456</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>19</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1980-11-22T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>joshuahall@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Joshua</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Hall</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>78 High Street, Manchester, M4 1AA, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>20 Oxford Street, London, W1D 1DZ, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 2345 6789</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>2</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1985-07-15T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>marysmith@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Mary</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Smith</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>20 Oxford Street, London, W1D 1DZ, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#20 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#20">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>45 Park Avenue, Liverpool, L3 9AG, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 0123 4567</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>20</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1985-08-29T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>emilyallen@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Emily</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Allen</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>45 Park Avenue, Liverpool, L3 9AG, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>15 Cambridge Road, Manchester, M1 5FS, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 3456 7890</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>3</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1992-11-30T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>michaeljohnson@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Michael</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Johnson</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>15 Cambridge Road, Manchester, M1 5FS, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>10 Victoria Street, Birmingham, B4 6JD, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 4567 8901</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>4</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1978-03-10T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>jenniferwilliams@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Jennifer</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Williams</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>10 Victoria Street, Birmingham, B4 6JD, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>5 High Street, Liverpool, L3 9AG, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 5678 9012</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>5</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1990-09-20T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>davidjones@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>David</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Jones</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>5 High Street, Liverpool, L3 9AG, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#6 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>30 Regent Street, Manchester, M4 4FG, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 6789 0123</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>6</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1982-12-05T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>sarahbrown@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Sarah</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Brown</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>30 Regent Street, Manchester, M4 4FG, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#7 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#7">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>18 King&apos;s Road, Birmingham, B4 7AA, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 7890 1234</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>7</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1987-06-18T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>jamesmiller@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>James</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Miller</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>18 King&apos;s Road, Birmingham, B4 7AA, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#8 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#8">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>12 Liverpool Road, Leeds, LS1 2JH, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 8901 2345</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>8</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1975-01-28T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>lisadavis@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Lisa</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Davis</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>12 Liverpool Road, Leeds, LS1 2JH, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/chand/ShopManagementSystem#9 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#9">
-        <rdf:type rdf:resource="http://www.semanticweb.org/chand/ShopManagementSystem#Customers"/>
-        <ShopManagementSystem:Billing_Address>35 Oxford Road, Glasgow, G1 7AA, UK</ShopManagementSystem:Billing_Address>
-        <ShopManagementSystem:Contact_number>+44 20 9012 3456</ShopManagementSystem:Contact_number>
-        <ShopManagementSystem:Customer_ID>9</ShopManagementSystem:Customer_ID>
-        <ShopManagementSystem:DateOfBirth>1988-04-12T00:00:00</ShopManagementSystem:DateOfBirth>
-        <ShopManagementSystem:Email>robertgarcia@example.com</ShopManagementSystem:Email>
-        <ShopManagementSystem:First_name>Robert</ShopManagementSystem:First_name>
-        <ShopManagementSystem:Last_Name>Garcia</ShopManagementSystem:Last_Name>
-        <ShopManagementSystem:Shipping_Address>35 Oxford Road, Glasgow, G1 7AA, UK</ShopManagementSystem:Shipping_Address>
-    </owl:NamedIndividual>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2429,14 +2467,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Coffee_Tables"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Sofas"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#TV_Stands"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Direct"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Online"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/chand/ShopManagementSystem#Telephone_call"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

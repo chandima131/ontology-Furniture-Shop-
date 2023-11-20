@@ -1,0 +1,1264 @@
+Date: 2023-11-11 23:51:12
+Ontology source: /D:/Semantic/Assignment/Shop%20Managment%20Ontology.rdf
+Worksheet source: D:\Semantic\Assignment\invoice.xlsx
+Transformation rules: D:\Semantic\Assignment\invoice.json
+
+# Cell range: (Sheet1!A2:A+) Comment: ""
+# Individual: @A*
+# Types: Invoice
+# Facts: 
+#     Sub_Total @F*,
+#     Invoice_Number @A*,
+#     Creation_Date @B*,
+#     Tax_Information @G*,
+#     Invoice_Description @E*,
+#     Total_Amount @H*
+
+Individual: Inv1001  # Generated from value "Inv1001" located at cell 'Sheet1'!A2.
+   Facts: Sub_Total "1899.97"  # Generated from value "1899.97" located at cell 'Sheet1'!F2.,
+         Invoice_Number "Inv1001"  # Generated from value "Inv1001" located at cell 'Sheet1'!A2.,
+         Creation_Date "2023-10-25T00:00:00"  # Generated from value "2023-10-25T00:00:00" located at cell 'Sheet1'!B2.,
+         Tax_Information "151.99"  # Generated from value "151.99" located at cell 'Sheet1'!G2.,
+         Invoice_Description "Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99"  # Generated from value "Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99" located at cell 'Sheet1'!E2.,
+         Total_Amount "2051.96"  # Generated from value "2051.96" located at cell 'Sheet1'!H2.
+   Types: Invoice
+Individual: Inv1002  # Generated from value "Inv1002" located at cell 'Sheet1'!A3.
+   Facts: Sub_Total "1999.97"  # Generated from value "1999.97" located at cell 'Sheet1'!F3.,
+         Invoice_Number "Inv1002"  # Generated from value "Inv1002" located at cell 'Sheet1'!A3.,
+         Creation_Date "2023-10-22T00:00:00"  # Generated from value "2023-10-22T00:00:00" located at cell 'Sheet1'!B3.,
+         Tax_Information "159.99"  # Generated from value "159.99" located at cell 'Sheet1'!G3.,
+         Invoice_Description "Beds - 999.99, Dressers - 699.99, Nightstands - 299.99"  # Generated from value "Beds - 999.99, Dressers - 699.99, Nightstands - 299.99" located at cell 'Sheet1'!E3.,
+         Total_Amount "2159.96"  # Generated from value "2159.96" located at cell 'Sheet1'!H3.
+   Types: Invoice
+Individual: Inv1003  # Generated from value "Inv1003" located at cell 'Sheet1'!A4.
+   Facts: Sub_Total "1099.97"  # Generated from value "1099.97" located at cell 'Sheet1'!F4.,
+         Invoice_Number "Inv1003"  # Generated from value "Inv1003" located at cell 'Sheet1'!A4.,
+         Creation_Date "2023-10-20T00:00:00"  # Generated from value "2023-10-20T00:00:00" located at cell 'Sheet1'!B4.,
+         Tax_Information "87.99"  # Generated from value "87.99" located at cell 'Sheet1'!G4.,
+         Invoice_Description "TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99"  # Generated from value "TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99" located at cell 'Sheet1'!E4.,
+         Total_Amount "1187.96"  # Generated from value "1187.96" located at cell 'Sheet1'!H4.
+   Types: Invoice
+Individual: Inv1004  # Generated from value "Inv1004" located at cell 'Sheet1'!A5.
+   Facts: Sub_Total "749.97"  # Generated from value "749.97" located at cell 'Sheet1'!F5.,
+         Invoice_Number "Inv1004"  # Generated from value "Inv1004" located at cell 'Sheet1'!A5.,
+         Creation_Date "2023-10-18T00:00:00"  # Generated from value "2023-10-18T00:00:00" located at cell 'Sheet1'!B5.,
+         Tax_Information "59.99"  # Generated from value "59.99" located at cell 'Sheet1'!G5.,
+         Invoice_Description "Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99"  # Generated from value "Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99" located at cell 'Sheet1'!E5.,
+         Total_Amount "809.96"  # Generated from value "809.96" located at cell 'Sheet1'!H5.
+   Types: Invoice
+Individual: Inv1005  # Generated from value "Inv1005" located at cell 'Sheet1'!A6.
+   Facts: Sub_Total "1999.96"  # Generated from value "1999.96" located at cell 'Sheet1'!F6.,
+         Invoice_Number "Inv1005"  # Generated from value "Inv1005" located at cell 'Sheet1'!A6.,
+         Creation_Date "2023-10-15T00:00:00"  # Generated from value "2023-10-15T00:00:00" located at cell 'Sheet1'!B6.,
+         Tax_Information "159.99"  # Generated from value "159.99" located at cell 'Sheet1'!G6.,
+         Invoice_Description "Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99"  # Generated from value "Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99" located at cell 'Sheet1'!E6.,
+         Total_Amount "2159.95"  # Generated from value "2159.95" located at cell 'Sheet1'!H6.
+   Types: Invoice
+Individual: Inv1006  # Generated from value "Inv1006" located at cell 'Sheet1'!A7.
+   Facts: Sub_Total "899.97"  # Generated from value "899.97" located at cell 'Sheet1'!F7.,
+         Invoice_Number "Inv1006"  # Generated from value "Inv1006" located at cell 'Sheet1'!A7.,
+         Creation_Date "2023-10-12T00:00:00"  # Generated from value "2023-10-12T00:00:00" located at cell 'Sheet1'!B7.,
+         Tax_Information "71.99"  # Generated from value "71.99" located at cell 'Sheet1'!G7.,
+         Invoice_Description "Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99"  # Generated from value "Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99" located at cell 'Sheet1'!E7.,
+         Total_Amount "971.96"  # Generated from value "971.96" located at cell 'Sheet1'!H7.
+   Types: Invoice
+Individual: Inv1007  # Generated from value "Inv1007" located at cell 'Sheet1'!A8.
+   Facts: Sub_Total "1249.97"  # Generated from value "1249.97" located at cell 'Sheet1'!F8.,
+         Invoice_Number "Inv1007"  # Generated from value "Inv1007" located at cell 'Sheet1'!A8.,
+         Creation_Date "2023-10-10T00:00:00"  # Generated from value "2023-10-10T00:00:00" located at cell 'Sheet1'!B8.,
+         Tax_Information "99.99"  # Generated from value "99.99" located at cell 'Sheet1'!G8.,
+         Invoice_Description "Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99"  # Generated from value "Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99" located at cell 'Sheet1'!E8.,
+         Total_Amount "1349.96"  # Generated from value "1349.96" located at cell 'Sheet1'!H8.
+   Types: Invoice
+Individual: Inv1008  # Generated from value "Inv1008" located at cell 'Sheet1'!A9.
+   Facts: Sub_Total "1249.97"  # Generated from value "1249.97" located at cell 'Sheet1'!F9.,
+         Invoice_Number "Inv1008"  # Generated from value "Inv1008" located at cell 'Sheet1'!A9.,
+         Creation_Date "2023-10-08T00:00:00"  # Generated from value "2023-10-08T00:00:00" located at cell 'Sheet1'!B9.,
+         Tax_Information "99.99"  # Generated from value "99.99" located at cell 'Sheet1'!G9.,
+         Invoice_Description "Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99"  # Generated from value "Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99" located at cell 'Sheet1'!E9.,
+         Total_Amount "1349.96"  # Generated from value "1349.96" located at cell 'Sheet1'!H9.
+   Types: Invoice
+Individual: Inv1009  # Generated from value "Inv1009" located at cell 'Sheet1'!A10.
+   Facts: Sub_Total "749.97"  # Generated from value "749.97" located at cell 'Sheet1'!F10.,
+         Invoice_Number "Inv1009"  # Generated from value "Inv1009" located at cell 'Sheet1'!A10.,
+         Creation_Date "2023-10-05T00:00:00"  # Generated from value "2023-10-05T00:00:00" located at cell 'Sheet1'!B10.,
+         Tax_Information "59.99"  # Generated from value "59.99" located at cell 'Sheet1'!G10.,
+         Invoice_Description "Rugs - 399.99, Lamps - 199.99, Vases - 149.99"  # Generated from value "Rugs - 399.99, Lamps - 199.99, Vases - 149.99" located at cell 'Sheet1'!E10.,
+         Total_Amount "809.96"  # Generated from value "809.96" located at cell 'Sheet1'!H10.
+   Types: Invoice
+Individual: Inv1010  # Generated from value "Inv1010" located at cell 'Sheet1'!A11.
+   Facts: Sub_Total "1999.96"  # Generated from value "1999.96" located at cell 'Sheet1'!F11.,
+         Invoice_Number "Inv1010"  # Generated from value "Inv1010" located at cell 'Sheet1'!A11.,
+         Creation_Date "2023-10-02T00:00:00"  # Generated from value "2023-10-02T00:00:00" located at cell 'Sheet1'!B11.,
+         Tax_Information "159.99"  # Generated from value "159.99" located at cell 'Sheet1'!G11.,
+         Invoice_Description "Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99"  # Generated from value "Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99" located at cell 'Sheet1'!E11.,
+         Total_Amount "2159.95"  # Generated from value "2159.95" located at cell 'Sheet1'!H11.
+   Types: Invoice
+Individual: Inv1011  # Generated from value "Inv1011" located at cell 'Sheet1'!A12.
+   Facts: Sub_Total "1299.97"  # Generated from value "1299.97" located at cell 'Sheet1'!F12.,
+         Invoice_Number "Inv1011"  # Generated from value "Inv1011" located at cell 'Sheet1'!A12.,
+         Creation_Date "2023-10-25T00:00:00"  # Generated from value "2023-10-25T00:00:00" located at cell 'Sheet1'!B12.,
+         Tax_Information "103.99"  # Generated from value "103.99" located at cell 'Sheet1'!G12.,
+         Invoice_Description "Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99"  # Generated from value "Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99" located at cell 'Sheet1'!E12.,
+         Total_Amount "1403.96"  # Generated from value "1403.96" located at cell 'Sheet1'!H12.
+   Types: Invoice
+Individual: Inv1012  # Generated from value "Inv1012" located at cell 'Sheet1'!A13.
+   Facts: Sub_Total "1149.97"  # Generated from value "1149.97" located at cell 'Sheet1'!F13.,
+         Invoice_Number "Inv1012"  # Generated from value "Inv1012" located at cell 'Sheet1'!A13.,
+         Creation_Date "2023-09-22T00:00:00"  # Generated from value "2023-09-22T00:00:00" located at cell 'Sheet1'!B13.,
+         Tax_Information "91.99"  # Generated from value "91.99" located at cell 'Sheet1'!G13.,
+         Invoice_Description "Bed - 599.99, Dresser - 399.99, Nightstand - 149.99"  # Generated from value "Bed - 599.99, Dresser - 399.99, Nightstand - 149.99" located at cell 'Sheet1'!E13.,
+         Total_Amount "1241.96"  # Generated from value "1241.96" located at cell 'Sheet1'!H13.
+   Types: Invoice
+Individual: Inv1013  # Generated from value "Inv1013" located at cell 'Sheet1'!A14.
+   Facts: Sub_Total "649.97"  # Generated from value "649.97" located at cell 'Sheet1'!F14.,
+         Invoice_Number "Inv1013"  # Generated from value "Inv1013" located at cell 'Sheet1'!A14.,
+         Creation_Date "2023-08-20T00:00:00"  # Generated from value "2023-08-20T00:00:00" located at cell 'Sheet1'!B14.,
+         Tax_Information "51.99"  # Generated from value "51.99" located at cell 'Sheet1'!G14.,
+         Invoice_Description "TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99"  # Generated from value "TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99" located at cell 'Sheet1'!E14.,
+         Total_Amount "701.96"  # Generated from value "701.96" located at cell 'Sheet1'!H14.
+   Types: Invoice
+Individual: Inv1014  # Generated from value "Inv1014" located at cell 'Sheet1'!A15.
+   Facts: Sub_Total "379.97"  # Generated from value "379.97" located at cell 'Sheet1'!F15.,
+         Invoice_Number "Inv1014"  # Generated from value "Inv1014" located at cell 'Sheet1'!A15.,
+         Creation_Date "2023-07-18T00:00:00"  # Generated from value "2023-07-18T00:00:00" located at cell 'Sheet1'!B15.,
+         Tax_Information "30.39"  # Generated from value "30.39" located at cell 'Sheet1'!G15.,
+         Invoice_Description "Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99"  # Generated from value "Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99" located at cell 'Sheet1'!E15.,
+         Total_Amount "410.36"  # Generated from value "410.36" located at cell 'Sheet1'!H15.
+   Types: Invoice
+Individual: Inv1015  # Generated from value "Inv1015" located at cell 'Sheet1'!A16.
+   Facts: Sub_Total "1199.97"  # Generated from value "1199.97" located at cell 'Sheet1'!F16.,
+         Invoice_Number "Inv1015"  # Generated from value "Inv1015" located at cell 'Sheet1'!A16.,
+         Creation_Date "2023-06-15T00:00:00"  # Generated from value "2023-06-15T00:00:00" located at cell 'Sheet1'!B16.,
+         Tax_Information "95.99"  # Generated from value "95.99" located at cell 'Sheet1'!G16.,
+         Invoice_Description "Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99"  # Generated from value "Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99" located at cell 'Sheet1'!E16.,
+         Total_Amount "1295.96"  # Generated from value "1295.96" located at cell 'Sheet1'!H16.
+   Types: Invoice
+Individual: Inv1016  # Generated from value "Inv1016" located at cell 'Sheet1'!A17.
+   Facts: Sub_Total "449.97"  # Generated from value "449.97" located at cell 'Sheet1'!F17.,
+         Invoice_Number "Inv1016"  # Generated from value "Inv1016" located at cell 'Sheet1'!A17.,
+         Creation_Date "2023-05-12T00:00:00"  # Generated from value "2023-05-12T00:00:00" located at cell 'Sheet1'!B17.,
+         Tax_Information "35.99"  # Generated from value "35.99" located at cell 'Sheet1'!G17.,
+         Invoice_Description "Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99"  # Generated from value "Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99" located at cell 'Sheet1'!E17.,
+         Total_Amount "485.96"  # Generated from value "485.96" located at cell 'Sheet1'!H17.
+   Types: Invoice
+Individual: Inv1017  # Generated from value "Inv1017" located at cell 'Sheet1'!A18.
+   Facts: Invoice_Number "Inv1017"  # Generated from value "Inv1017" located at cell 'Sheet1'!A18.,
+         Creation_Date "2023-04-10T00:00:00"  # Generated from value "2023-04-10T00:00:00" located at cell 'Sheet1'!B18.,
+         Invoice_Description "Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99"  # Generated from value "Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99" located at cell 'Sheet1'!E18.
+   Types: Invoice
+
+===========================================================================================================
+Date: 2023-11-11 23:59:40
+Ontology source: /D:/Semantic/Assignment/Shop%20Managment%20Ontology.rdf
+Worksheet source: D:\Semantic\Assignment\invoice.xlsx
+Transformation rules: D:\Semantic\Assignment\invoice.json
+
+# Cell range: (Sheet1!A2:A+) Comment: ""
+# Individual: @A*
+# Types: Invoice
+# Facts: 
+#     Sub_Total @F* (xsd:decimal),
+#     Invoice_Number @A*  (xsd:string),
+#     Creation_Date @B*  (xsd:date),
+#     Tax_Information @G* (xsd:decimal) ,
+#     Invoice_Description @E* (xsd:string) ,
+#     Total_Amount @H*  (xsd:decimal)
+
+Individual: Inv1001  # Generated from value "Inv1001" located at cell 'Sheet1'!A2.
+   Facts: Sub_Total 1899.97  # Generated from value "1899.97" located at cell 'Sheet1'!F2.,
+         Invoice_Number "Inv1001"  # Generated from value "Inv1001" located at cell 'Sheet1'!A2.,
+         Creation_Date "2023-10-25T00:00:00"  # Generated from value "2023-10-25T00:00:00" located at cell 'Sheet1'!B2.,
+         Tax_Information 151.99  # Generated from value "151.99" located at cell 'Sheet1'!G2.,
+         Invoice_Description "Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99"  # Generated from value "Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99" located at cell 'Sheet1'!E2.,
+         Total_Amount 2051.96  # Generated from value "2051.96" located at cell 'Sheet1'!H2.
+   Types: Invoice
+Individual: Inv1002  # Generated from value "Inv1002" located at cell 'Sheet1'!A3.
+   Facts: Sub_Total 1999.97  # Generated from value "1999.97" located at cell 'Sheet1'!F3.,
+         Invoice_Number "Inv1002"  # Generated from value "Inv1002" located at cell 'Sheet1'!A3.,
+         Creation_Date "2023-10-22T00:00:00"  # Generated from value "2023-10-22T00:00:00" located at cell 'Sheet1'!B3.,
+         Tax_Information 159.99  # Generated from value "159.99" located at cell 'Sheet1'!G3.,
+         Invoice_Description "Beds - 999.99, Dressers - 699.99, Nightstands - 299.99"  # Generated from value "Beds - 999.99, Dressers - 699.99, Nightstands - 299.99" located at cell 'Sheet1'!E3.,
+         Total_Amount 2159.96  # Generated from value "2159.96" located at cell 'Sheet1'!H3.
+   Types: Invoice
+Individual: Inv1003  # Generated from value "Inv1003" located at cell 'Sheet1'!A4.
+   Facts: Sub_Total 1099.97  # Generated from value "1099.97" located at cell 'Sheet1'!F4.,
+         Invoice_Number "Inv1003"  # Generated from value "Inv1003" located at cell 'Sheet1'!A4.,
+         Creation_Date "2023-10-20T00:00:00"  # Generated from value "2023-10-20T00:00:00" located at cell 'Sheet1'!B4.,
+         Tax_Information 87.99  # Generated from value "87.99" located at cell 'Sheet1'!G4.,
+         Invoice_Description "TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99"  # Generated from value "TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99" located at cell 'Sheet1'!E4.,
+         Total_Amount 1187.96  # Generated from value "1187.96" located at cell 'Sheet1'!H4.
+   Types: Invoice
+Individual: Inv1004  # Generated from value "Inv1004" located at cell 'Sheet1'!A5.
+   Facts: Sub_Total 749.97  # Generated from value "749.97" located at cell 'Sheet1'!F5.,
+         Invoice_Number "Inv1004"  # Generated from value "Inv1004" located at cell 'Sheet1'!A5.,
+         Creation_Date "2023-10-18T00:00:00"  # Generated from value "2023-10-18T00:00:00" located at cell 'Sheet1'!B5.,
+         Tax_Information 59.99  # Generated from value "59.99" located at cell 'Sheet1'!G5.,
+         Invoice_Description "Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99"  # Generated from value "Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99" located at cell 'Sheet1'!E5.,
+         Total_Amount 809.96  # Generated from value "809.96" located at cell 'Sheet1'!H5.
+   Types: Invoice
+Individual: Inv1005  # Generated from value "Inv1005" located at cell 'Sheet1'!A6.
+   Facts: Sub_Total 1999.96  # Generated from value "1999.96" located at cell 'Sheet1'!F6.,
+         Invoice_Number "Inv1005"  # Generated from value "Inv1005" located at cell 'Sheet1'!A6.,
+         Creation_Date "2023-10-15T00:00:00"  # Generated from value "2023-10-15T00:00:00" located at cell 'Sheet1'!B6.,
+         Tax_Information 159.99  # Generated from value "159.99" located at cell 'Sheet1'!G6.,
+         Invoice_Description "Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99"  # Generated from value "Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99" located at cell 'Sheet1'!E6.,
+         Total_Amount 2159.95  # Generated from value "2159.95" located at cell 'Sheet1'!H6.
+   Types: Invoice
+Individual: Inv1006  # Generated from value "Inv1006" located at cell 'Sheet1'!A7.
+   Facts: Sub_Total 899.97  # Generated from value "899.97" located at cell 'Sheet1'!F7.,
+         Invoice_Number "Inv1006"  # Generated from value "Inv1006" located at cell 'Sheet1'!A7.,
+         Creation_Date "2023-10-12T00:00:00"  # Generated from value "2023-10-12T00:00:00" located at cell 'Sheet1'!B7.,
+         Tax_Information 71.99  # Generated from value "71.99" located at cell 'Sheet1'!G7.,
+         Invoice_Description "Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99"  # Generated from value "Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99" located at cell 'Sheet1'!E7.,
+         Total_Amount 971.96  # Generated from value "971.96" located at cell 'Sheet1'!H7.
+   Types: Invoice
+Individual: Inv1007  # Generated from value "Inv1007" located at cell 'Sheet1'!A8.
+   Facts: Sub_Total 1249.97  # Generated from value "1249.97" located at cell 'Sheet1'!F8.,
+         Invoice_Number "Inv1007"  # Generated from value "Inv1007" located at cell 'Sheet1'!A8.,
+         Creation_Date "2023-10-10T00:00:00"  # Generated from value "2023-10-10T00:00:00" located at cell 'Sheet1'!B8.,
+         Tax_Information 99.99  # Generated from value "99.99" located at cell 'Sheet1'!G8.,
+         Invoice_Description "Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99"  # Generated from value "Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99" located at cell 'Sheet1'!E8.,
+         Total_Amount 1349.96  # Generated from value "1349.96" located at cell 'Sheet1'!H8.
+   Types: Invoice
+Individual: Inv1008  # Generated from value "Inv1008" located at cell 'Sheet1'!A9.
+   Facts: Sub_Total 1249.97  # Generated from value "1249.97" located at cell 'Sheet1'!F9.,
+         Invoice_Number "Inv1008"  # Generated from value "Inv1008" located at cell 'Sheet1'!A9.,
+         Creation_Date "2023-10-08T00:00:00"  # Generated from value "2023-10-08T00:00:00" located at cell 'Sheet1'!B9.,
+         Tax_Information 99.99  # Generated from value "99.99" located at cell 'Sheet1'!G9.,
+         Invoice_Description "Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99"  # Generated from value "Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99" located at cell 'Sheet1'!E9.,
+         Total_Amount 1349.96  # Generated from value "1349.96" located at cell 'Sheet1'!H9.
+   Types: Invoice
+Individual: Inv1009  # Generated from value "Inv1009" located at cell 'Sheet1'!A10.
+   Facts: Sub_Total 749.97  # Generated from value "749.97" located at cell 'Sheet1'!F10.,
+         Invoice_Number "Inv1009"  # Generated from value "Inv1009" located at cell 'Sheet1'!A10.,
+         Creation_Date "2023-10-05T00:00:00"  # Generated from value "2023-10-05T00:00:00" located at cell 'Sheet1'!B10.,
+         Tax_Information 59.99  # Generated from value "59.99" located at cell 'Sheet1'!G10.,
+         Invoice_Description "Rugs - 399.99, Lamps - 199.99, Vases - 149.99"  # Generated from value "Rugs - 399.99, Lamps - 199.99, Vases - 149.99" located at cell 'Sheet1'!E10.,
+         Total_Amount 809.96  # Generated from value "809.96" located at cell 'Sheet1'!H10.
+   Types: Invoice
+Individual: Inv1010  # Generated from value "Inv1010" located at cell 'Sheet1'!A11.
+   Facts: Sub_Total 1999.96  # Generated from value "1999.96" located at cell 'Sheet1'!F11.,
+         Invoice_Number "Inv1010"  # Generated from value "Inv1010" located at cell 'Sheet1'!A11.,
+         Creation_Date "2023-10-02T00:00:00"  # Generated from value "2023-10-02T00:00:00" located at cell 'Sheet1'!B11.,
+         Tax_Information 159.99  # Generated from value "159.99" located at cell 'Sheet1'!G11.,
+         Invoice_Description "Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99"  # Generated from value "Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99" located at cell 'Sheet1'!E11.,
+         Total_Amount 2159.95  # Generated from value "2159.95" located at cell 'Sheet1'!H11.
+   Types: Invoice
+Individual: Inv1011  # Generated from value "Inv1011" located at cell 'Sheet1'!A12.
+   Facts: Sub_Total 1299.97  # Generated from value "1299.97" located at cell 'Sheet1'!F12.,
+         Invoice_Number "Inv1011"  # Generated from value "Inv1011" located at cell 'Sheet1'!A12.,
+         Creation_Date "2023-10-25T00:00:00"  # Generated from value "2023-10-25T00:00:00" located at cell 'Sheet1'!B12.,
+         Tax_Information 103.99  # Generated from value "103.99" located at cell 'Sheet1'!G12.,
+         Invoice_Description "Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99"  # Generated from value "Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99" located at cell 'Sheet1'!E12.,
+         Total_Amount 1403.96  # Generated from value "1403.96" located at cell 'Sheet1'!H12.
+   Types: Invoice
+Individual: Inv1012  # Generated from value "Inv1012" located at cell 'Sheet1'!A13.
+   Facts: Sub_Total 1149.97  # Generated from value "1149.97" located at cell 'Sheet1'!F13.,
+         Invoice_Number "Inv1012"  # Generated from value "Inv1012" located at cell 'Sheet1'!A13.,
+         Creation_Date "2023-09-22T00:00:00"  # Generated from value "2023-09-22T00:00:00" located at cell 'Sheet1'!B13.,
+         Tax_Information 91.99  # Generated from value "91.99" located at cell 'Sheet1'!G13.,
+         Invoice_Description "Bed - 599.99, Dresser - 399.99, Nightstand - 149.99"  # Generated from value "Bed - 599.99, Dresser - 399.99, Nightstand - 149.99" located at cell 'Sheet1'!E13.,
+         Total_Amount 1241.96  # Generated from value "1241.96" located at cell 'Sheet1'!H13.
+   Types: Invoice
+Individual: Inv1013  # Generated from value "Inv1013" located at cell 'Sheet1'!A14.
+   Facts: Sub_Total 649.97  # Generated from value "649.97" located at cell 'Sheet1'!F14.,
+         Invoice_Number "Inv1013"  # Generated from value "Inv1013" located at cell 'Sheet1'!A14.,
+         Creation_Date "2023-08-20T00:00:00"  # Generated from value "2023-08-20T00:00:00" located at cell 'Sheet1'!B14.,
+         Tax_Information 51.99  # Generated from value "51.99" located at cell 'Sheet1'!G14.,
+         Invoice_Description "TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99"  # Generated from value "TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99" located at cell 'Sheet1'!E14.,
+         Total_Amount 701.96  # Generated from value "701.96" located at cell 'Sheet1'!H14.
+   Types: Invoice
+Individual: Inv1014  # Generated from value "Inv1014" located at cell 'Sheet1'!A15.
+   Facts: Sub_Total 379.97  # Generated from value "379.97" located at cell 'Sheet1'!F15.,
+         Invoice_Number "Inv1014"  # Generated from value "Inv1014" located at cell 'Sheet1'!A15.,
+         Creation_Date "2023-07-18T00:00:00"  # Generated from value "2023-07-18T00:00:00" located at cell 'Sheet1'!B15.,
+         Tax_Information 30.39  # Generated from value "30.39" located at cell 'Sheet1'!G15.,
+         Invoice_Description "Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99"  # Generated from value "Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99" located at cell 'Sheet1'!E15.,
+         Total_Amount 410.36  # Generated from value "410.36" located at cell 'Sheet1'!H15.
+   Types: Invoice
+Individual: Inv1015  # Generated from value "Inv1015" located at cell 'Sheet1'!A16.
+   Facts: Sub_Total 1199.97  # Generated from value "1199.97" located at cell 'Sheet1'!F16.,
+         Invoice_Number "Inv1015"  # Generated from value "Inv1015" located at cell 'Sheet1'!A16.,
+         Creation_Date "2023-06-15T00:00:00"  # Generated from value "2023-06-15T00:00:00" located at cell 'Sheet1'!B16.,
+         Tax_Information 95.99  # Generated from value "95.99" located at cell 'Sheet1'!G16.,
+         Invoice_Description "Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99"  # Generated from value "Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99" located at cell 'Sheet1'!E16.,
+         Total_Amount 1295.96  # Generated from value "1295.96" located at cell 'Sheet1'!H16.
+   Types: Invoice
+Individual: Inv1016  # Generated from value "Inv1016" located at cell 'Sheet1'!A17.
+   Facts: Sub_Total 449.97  # Generated from value "449.97" located at cell 'Sheet1'!F17.,
+         Invoice_Number "Inv1016"  # Generated from value "Inv1016" located at cell 'Sheet1'!A17.,
+         Creation_Date "2023-05-12T00:00:00"  # Generated from value "2023-05-12T00:00:00" located at cell 'Sheet1'!B17.,
+         Tax_Information 35.99  # Generated from value "35.99" located at cell 'Sheet1'!G17.,
+         Invoice_Description "Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99"  # Generated from value "Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99" located at cell 'Sheet1'!E17.,
+         Total_Amount 485.96  # Generated from value "485.96" located at cell 'Sheet1'!H17.
+   Types: Invoice
+Individual: Inv1017  # Generated from value "Inv1017" located at cell 'Sheet1'!A18.
+   Facts: Invoice_Number "Inv1017"  # Generated from value "Inv1017" located at cell 'Sheet1'!A18.,
+         Creation_Date "2023-04-10T00:00:00"  # Generated from value "2023-04-10T00:00:00" located at cell 'Sheet1'!B18.,
+         Invoice_Description "Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99"  # Generated from value "Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99" located at cell 'Sheet1'!E18.
+   Types: Invoice
+
+===========================================================================================================
+Date: 2023-11-12 00:00:56
+Ontology source: /D:/Semantic/Assignment/Shop%20Managment%20Ontology.rdf
+Worksheet source: D:\Semantic\Assignment\invoice.xlsx
+Transformation rules: D:\Semantic\Assignment\invoice.json
+
+# Cell range: (Sheet1!A2:A+) Comment: ""
+# Individual: @A*
+# Types: Invoice
+# Facts: 
+#     Sub_Total @F* (xsd:decimal),
+#     Invoice_Number @A*  (xsd:string),
+#     Creation_Date @B*  (xsd:dateTime),
+#     Tax_Information @G* (xsd:decimal) ,
+#     Invoice_Description @E* (xsd:string) ,
+#     Total_Amount @H*  (xsd:decimal)
+
+Individual: Inv1001  # Generated from value "Inv1001" located at cell 'Sheet1'!A2.
+   Facts: Sub_Total 1899.97  # Generated from value "1899.97" located at cell 'Sheet1'!F2.,
+         Invoice_Number "Inv1001"  # Generated from value "Inv1001" located at cell 'Sheet1'!A2.,
+         Creation_Date "2023-10-25T00:00:00"  # Generated from value "2023-10-25T00:00:00" located at cell 'Sheet1'!B2.,
+         Tax_Information 151.99  # Generated from value "151.99" located at cell 'Sheet1'!G2.,
+         Invoice_Description "Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99"  # Generated from value "Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99" located at cell 'Sheet1'!E2.,
+         Total_Amount 2051.96  # Generated from value "2051.96" located at cell 'Sheet1'!H2.
+   Types: Invoice
+Individual: Inv1002  # Generated from value "Inv1002" located at cell 'Sheet1'!A3.
+   Facts: Sub_Total 1999.97  # Generated from value "1999.97" located at cell 'Sheet1'!F3.,
+         Invoice_Number "Inv1002"  # Generated from value "Inv1002" located at cell 'Sheet1'!A3.,
+         Creation_Date "2023-10-22T00:00:00"  # Generated from value "2023-10-22T00:00:00" located at cell 'Sheet1'!B3.,
+         Tax_Information 159.99  # Generated from value "159.99" located at cell 'Sheet1'!G3.,
+         Invoice_Description "Beds - 999.99, Dressers - 699.99, Nightstands - 299.99"  # Generated from value "Beds - 999.99, Dressers - 699.99, Nightstands - 299.99" located at cell 'Sheet1'!E3.,
+         Total_Amount 2159.96  # Generated from value "2159.96" located at cell 'Sheet1'!H3.
+   Types: Invoice
+Individual: Inv1003  # Generated from value "Inv1003" located at cell 'Sheet1'!A4.
+   Facts: Sub_Total 1099.97  # Generated from value "1099.97" located at cell 'Sheet1'!F4.,
+         Invoice_Number "Inv1003"  # Generated from value "Inv1003" located at cell 'Sheet1'!A4.,
+         Creation_Date "2023-10-20T00:00:00"  # Generated from value "2023-10-20T00:00:00" located at cell 'Sheet1'!B4.,
+         Tax_Information 87.99  # Generated from value "87.99" located at cell 'Sheet1'!G4.,
+         Invoice_Description "TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99"  # Generated from value "TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99" located at cell 'Sheet1'!E4.,
+         Total_Amount 1187.96  # Generated from value "1187.96" located at cell 'Sheet1'!H4.
+   Types: Invoice
+Individual: Inv1004  # Generated from value "Inv1004" located at cell 'Sheet1'!A5.
+   Facts: Sub_Total 749.97  # Generated from value "749.97" located at cell 'Sheet1'!F5.,
+         Invoice_Number "Inv1004"  # Generated from value "Inv1004" located at cell 'Sheet1'!A5.,
+         Creation_Date "2023-10-18T00:00:00"  # Generated from value "2023-10-18T00:00:00" located at cell 'Sheet1'!B5.,
+         Tax_Information 59.99  # Generated from value "59.99" located at cell 'Sheet1'!G5.,
+         Invoice_Description "Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99"  # Generated from value "Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99" located at cell 'Sheet1'!E5.,
+         Total_Amount 809.96  # Generated from value "809.96" located at cell 'Sheet1'!H5.
+   Types: Invoice
+Individual: Inv1005  # Generated from value "Inv1005" located at cell 'Sheet1'!A6.
+   Facts: Sub_Total 1999.96  # Generated from value "1999.96" located at cell 'Sheet1'!F6.,
+         Invoice_Number "Inv1005"  # Generated from value "Inv1005" located at cell 'Sheet1'!A6.,
+         Creation_Date "2023-10-15T00:00:00"  # Generated from value "2023-10-15T00:00:00" located at cell 'Sheet1'!B6.,
+         Tax_Information 159.99  # Generated from value "159.99" located at cell 'Sheet1'!G6.,
+         Invoice_Description "Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99"  # Generated from value "Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99" located at cell 'Sheet1'!E6.,
+         Total_Amount 2159.95  # Generated from value "2159.95" located at cell 'Sheet1'!H6.
+   Types: Invoice
+Individual: Inv1006  # Generated from value "Inv1006" located at cell 'Sheet1'!A7.
+   Facts: Sub_Total 899.97  # Generated from value "899.97" located at cell 'Sheet1'!F7.,
+         Invoice_Number "Inv1006"  # Generated from value "Inv1006" located at cell 'Sheet1'!A7.,
+         Creation_Date "2023-10-12T00:00:00"  # Generated from value "2023-10-12T00:00:00" located at cell 'Sheet1'!B7.,
+         Tax_Information 71.99  # Generated from value "71.99" located at cell 'Sheet1'!G7.,
+         Invoice_Description "Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99"  # Generated from value "Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99" located at cell 'Sheet1'!E7.,
+         Total_Amount 971.96  # Generated from value "971.96" located at cell 'Sheet1'!H7.
+   Types: Invoice
+Individual: Inv1007  # Generated from value "Inv1007" located at cell 'Sheet1'!A8.
+   Facts: Sub_Total 1249.97  # Generated from value "1249.97" located at cell 'Sheet1'!F8.,
+         Invoice_Number "Inv1007"  # Generated from value "Inv1007" located at cell 'Sheet1'!A8.,
+         Creation_Date "2023-10-10T00:00:00"  # Generated from value "2023-10-10T00:00:00" located at cell 'Sheet1'!B8.,
+         Tax_Information 99.99  # Generated from value "99.99" located at cell 'Sheet1'!G8.,
+         Invoice_Description "Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99"  # Generated from value "Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99" located at cell 'Sheet1'!E8.,
+         Total_Amount 1349.96  # Generated from value "1349.96" located at cell 'Sheet1'!H8.
+   Types: Invoice
+Individual: Inv1008  # Generated from value "Inv1008" located at cell 'Sheet1'!A9.
+   Facts: Sub_Total 1249.97  # Generated from value "1249.97" located at cell 'Sheet1'!F9.,
+         Invoice_Number "Inv1008"  # Generated from value "Inv1008" located at cell 'Sheet1'!A9.,
+         Creation_Date "2023-10-08T00:00:00"  # Generated from value "2023-10-08T00:00:00" located at cell 'Sheet1'!B9.,
+         Tax_Information 99.99  # Generated from value "99.99" located at cell 'Sheet1'!G9.,
+         Invoice_Description "Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99"  # Generated from value "Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99" located at cell 'Sheet1'!E9.,
+         Total_Amount 1349.96  # Generated from value "1349.96" located at cell 'Sheet1'!H9.
+   Types: Invoice
+Individual: Inv1009  # Generated from value "Inv1009" located at cell 'Sheet1'!A10.
+   Facts: Sub_Total 749.97  # Generated from value "749.97" located at cell 'Sheet1'!F10.,
+         Invoice_Number "Inv1009"  # Generated from value "Inv1009" located at cell 'Sheet1'!A10.,
+         Creation_Date "2023-10-05T00:00:00"  # Generated from value "2023-10-05T00:00:00" located at cell 'Sheet1'!B10.,
+         Tax_Information 59.99  # Generated from value "59.99" located at cell 'Sheet1'!G10.,
+         Invoice_Description "Rugs - 399.99, Lamps - 199.99, Vases - 149.99"  # Generated from value "Rugs - 399.99, Lamps - 199.99, Vases - 149.99" located at cell 'Sheet1'!E10.,
+         Total_Amount 809.96  # Generated from value "809.96" located at cell 'Sheet1'!H10.
+   Types: Invoice
+Individual: Inv1010  # Generated from value "Inv1010" located at cell 'Sheet1'!A11.
+   Facts: Sub_Total 1999.96  # Generated from value "1999.96" located at cell 'Sheet1'!F11.,
+         Invoice_Number "Inv1010"  # Generated from value "Inv1010" located at cell 'Sheet1'!A11.,
+         Creation_Date "2023-10-02T00:00:00"  # Generated from value "2023-10-02T00:00:00" located at cell 'Sheet1'!B11.,
+         Tax_Information 159.99  # Generated from value "159.99" located at cell 'Sheet1'!G11.,
+         Invoice_Description "Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99"  # Generated from value "Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99" located at cell 'Sheet1'!E11.,
+         Total_Amount 2159.95  # Generated from value "2159.95" located at cell 'Sheet1'!H11.
+   Types: Invoice
+Individual: Inv1011  # Generated from value "Inv1011" located at cell 'Sheet1'!A12.
+   Facts: Sub_Total 1299.97  # Generated from value "1299.97" located at cell 'Sheet1'!F12.,
+         Invoice_Number "Inv1011"  # Generated from value "Inv1011" located at cell 'Sheet1'!A12.,
+         Creation_Date "2023-10-25T00:00:00"  # Generated from value "2023-10-25T00:00:00" located at cell 'Sheet1'!B12.,
+         Tax_Information 103.99  # Generated from value "103.99" located at cell 'Sheet1'!G12.,
+         Invoice_Description "Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99"  # Generated from value "Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99" located at cell 'Sheet1'!E12.,
+         Total_Amount 1403.96  # Generated from value "1403.96" located at cell 'Sheet1'!H12.
+   Types: Invoice
+Individual: Inv1012  # Generated from value "Inv1012" located at cell 'Sheet1'!A13.
+   Facts: Sub_Total 1149.97  # Generated from value "1149.97" located at cell 'Sheet1'!F13.,
+         Invoice_Number "Inv1012"  # Generated from value "Inv1012" located at cell 'Sheet1'!A13.,
+         Creation_Date "2023-09-22T00:00:00"  # Generated from value "2023-09-22T00:00:00" located at cell 'Sheet1'!B13.,
+         Tax_Information 91.99  # Generated from value "91.99" located at cell 'Sheet1'!G13.,
+         Invoice_Description "Bed - 599.99, Dresser - 399.99, Nightstand - 149.99"  # Generated from value "Bed - 599.99, Dresser - 399.99, Nightstand - 149.99" located at cell 'Sheet1'!E13.,
+         Total_Amount 1241.96  # Generated from value "1241.96" located at cell 'Sheet1'!H13.
+   Types: Invoice
+Individual: Inv1013  # Generated from value "Inv1013" located at cell 'Sheet1'!A14.
+   Facts: Sub_Total 649.97  # Generated from value "649.97" located at cell 'Sheet1'!F14.,
+         Invoice_Number "Inv1013"  # Generated from value "Inv1013" located at cell 'Sheet1'!A14.,
+         Creation_Date "2023-08-20T00:00:00"  # Generated from value "2023-08-20T00:00:00" located at cell 'Sheet1'!B14.,
+         Tax_Information 51.99  # Generated from value "51.99" located at cell 'Sheet1'!G14.,
+         Invoice_Description "TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99"  # Generated from value "TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99" located at cell 'Sheet1'!E14.,
+         Total_Amount 701.96  # Generated from value "701.96" located at cell 'Sheet1'!H14.
+   Types: Invoice
+Individual: Inv1014  # Generated from value "Inv1014" located at cell 'Sheet1'!A15.
+   Facts: Sub_Total 379.97  # Generated from value "379.97" located at cell 'Sheet1'!F15.,
+         Invoice_Number "Inv1014"  # Generated from value "Inv1014" located at cell 'Sheet1'!A15.,
+         Creation_Date "2023-07-18T00:00:00"  # Generated from value "2023-07-18T00:00:00" located at cell 'Sheet1'!B15.,
+         Tax_Information 30.39  # Generated from value "30.39" located at cell 'Sheet1'!G15.,
+         Invoice_Description "Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99"  # Generated from value "Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99" located at cell 'Sheet1'!E15.,
+         Total_Amount 410.36  # Generated from value "410.36" located at cell 'Sheet1'!H15.
+   Types: Invoice
+Individual: Inv1015  # Generated from value "Inv1015" located at cell 'Sheet1'!A16.
+   Facts: Sub_Total 1199.97  # Generated from value "1199.97" located at cell 'Sheet1'!F16.,
+         Invoice_Number "Inv1015"  # Generated from value "Inv1015" located at cell 'Sheet1'!A16.,
+         Creation_Date "2023-06-15T00:00:00"  # Generated from value "2023-06-15T00:00:00" located at cell 'Sheet1'!B16.,
+         Tax_Information 95.99  # Generated from value "95.99" located at cell 'Sheet1'!G16.,
+         Invoice_Description "Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99"  # Generated from value "Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99" located at cell 'Sheet1'!E16.,
+         Total_Amount 1295.96  # Generated from value "1295.96" located at cell 'Sheet1'!H16.
+   Types: Invoice
+Individual: Inv1016  # Generated from value "Inv1016" located at cell 'Sheet1'!A17.
+   Facts: Sub_Total 449.97  # Generated from value "449.97" located at cell 'Sheet1'!F17.,
+         Invoice_Number "Inv1016"  # Generated from value "Inv1016" located at cell 'Sheet1'!A17.,
+         Creation_Date "2023-05-12T00:00:00"  # Generated from value "2023-05-12T00:00:00" located at cell 'Sheet1'!B17.,
+         Tax_Information 35.99  # Generated from value "35.99" located at cell 'Sheet1'!G17.,
+         Invoice_Description "Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99"  # Generated from value "Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99" located at cell 'Sheet1'!E17.,
+         Total_Amount 485.96  # Generated from value "485.96" located at cell 'Sheet1'!H17.
+   Types: Invoice
+Individual: Inv1017  # Generated from value "Inv1017" located at cell 'Sheet1'!A18.
+   Facts: Invoice_Number "Inv1017"  # Generated from value "Inv1017" located at cell 'Sheet1'!A18.,
+         Creation_Date "2023-04-10T00:00:00"  # Generated from value "2023-04-10T00:00:00" located at cell 'Sheet1'!B18.,
+         Invoice_Description "Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99"  # Generated from value "Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99" located at cell 'Sheet1'!E18.
+   Types: Invoice
+
+===========================================================================================================
+Date: 2023-11-12 00:01:36
+Ontology source: /D:/Semantic/Assignment/Shop%20Managment%20Ontology.rdf
+Worksheet source: D:\Semantic\Assignment\invoice.xlsx
+Transformation rules: D:\Semantic\Assignment\invoice.json
+
+# Cell range: (Sheet1!A2:A+) Comment: ""
+# Individual: @A*
+# Types: Invoice
+# Facts: 
+#     Sub_Total @F* (xsd:decimal),
+#     Invoice_Number @A*  (xsd:string),
+#     Creation_Date @B*  (xsd:dateTime),
+#     Tax_Information @G* (xsd:decimal) ,
+#     Invoice_Description @E* (xsd:string) ,
+#     Total_Amount @H*  (xsd:decimal)
+
+Individual: Inv1001  # Generated from value "Inv1001" located at cell 'Sheet1'!A2.
+   Facts: Sub_Total 1899.97  # Generated from value "1899.97" located at cell 'Sheet1'!F2.,
+         Invoice_Number "Inv1001"  # Generated from value "Inv1001" located at cell 'Sheet1'!A2.,
+         Creation_Date "2023-10-25T00:00:00"  # Generated from value "2023-10-25T00:00:00" located at cell 'Sheet1'!B2.,
+         Tax_Information 151.99  # Generated from value "151.99" located at cell 'Sheet1'!G2.,
+         Invoice_Description "Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99"  # Generated from value "Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99" located at cell 'Sheet1'!E2.,
+         Total_Amount 2051.96  # Generated from value "2051.96" located at cell 'Sheet1'!H2.
+   Types: Invoice
+Individual: Inv1002  # Generated from value "Inv1002" located at cell 'Sheet1'!A3.
+   Facts: Sub_Total 1999.97  # Generated from value "1999.97" located at cell 'Sheet1'!F3.,
+         Invoice_Number "Inv1002"  # Generated from value "Inv1002" located at cell 'Sheet1'!A3.,
+         Creation_Date "2023-10-22T00:00:00"  # Generated from value "2023-10-22T00:00:00" located at cell 'Sheet1'!B3.,
+         Tax_Information 159.99  # Generated from value "159.99" located at cell 'Sheet1'!G3.,
+         Invoice_Description "Beds - 999.99, Dressers - 699.99, Nightstands - 299.99"  # Generated from value "Beds - 999.99, Dressers - 699.99, Nightstands - 299.99" located at cell 'Sheet1'!E3.,
+         Total_Amount 2159.96  # Generated from value "2159.96" located at cell 'Sheet1'!H3.
+   Types: Invoice
+Individual: Inv1003  # Generated from value "Inv1003" located at cell 'Sheet1'!A4.
+   Facts: Sub_Total 1099.97  # Generated from value "1099.97" located at cell 'Sheet1'!F4.,
+         Invoice_Number "Inv1003"  # Generated from value "Inv1003" located at cell 'Sheet1'!A4.,
+         Creation_Date "2023-10-20T00:00:00"  # Generated from value "2023-10-20T00:00:00" located at cell 'Sheet1'!B4.,
+         Tax_Information 87.99  # Generated from value "87.99" located at cell 'Sheet1'!G4.,
+         Invoice_Description "TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99"  # Generated from value "TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99" located at cell 'Sheet1'!E4.,
+         Total_Amount 1187.96  # Generated from value "1187.96" located at cell 'Sheet1'!H4.
+   Types: Invoice
+Individual: Inv1004  # Generated from value "Inv1004" located at cell 'Sheet1'!A5.
+   Facts: Sub_Total 749.97  # Generated from value "749.97" located at cell 'Sheet1'!F5.,
+         Invoice_Number "Inv1004"  # Generated from value "Inv1004" located at cell 'Sheet1'!A5.,
+         Creation_Date "2023-10-18T00:00:00"  # Generated from value "2023-10-18T00:00:00" located at cell 'Sheet1'!B5.,
+         Tax_Information 59.99  # Generated from value "59.99" located at cell 'Sheet1'!G5.,
+         Invoice_Description "Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99"  # Generated from value "Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99" located at cell 'Sheet1'!E5.,
+         Total_Amount 809.96  # Generated from value "809.96" located at cell 'Sheet1'!H5.
+   Types: Invoice
+Individual: Inv1005  # Generated from value "Inv1005" located at cell 'Sheet1'!A6.
+   Facts: Sub_Total 1999.96  # Generated from value "1999.96" located at cell 'Sheet1'!F6.,
+         Invoice_Number "Inv1005"  # Generated from value "Inv1005" located at cell 'Sheet1'!A6.,
+         Creation_Date "2023-10-15T00:00:00"  # Generated from value "2023-10-15T00:00:00" located at cell 'Sheet1'!B6.,
+         Tax_Information 159.99  # Generated from value "159.99" located at cell 'Sheet1'!G6.,
+         Invoice_Description "Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99"  # Generated from value "Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99" located at cell 'Sheet1'!E6.,
+         Total_Amount 2159.95  # Generated from value "2159.95" located at cell 'Sheet1'!H6.
+   Types: Invoice
+Individual: Inv1006  # Generated from value "Inv1006" located at cell 'Sheet1'!A7.
+   Facts: Sub_Total 899.97  # Generated from value "899.97" located at cell 'Sheet1'!F7.,
+         Invoice_Number "Inv1006"  # Generated from value "Inv1006" located at cell 'Sheet1'!A7.,
+         Creation_Date "2023-10-12T00:00:00"  # Generated from value "2023-10-12T00:00:00" located at cell 'Sheet1'!B7.,
+         Tax_Information 71.99  # Generated from value "71.99" located at cell 'Sheet1'!G7.,
+         Invoice_Description "Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99"  # Generated from value "Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99" located at cell 'Sheet1'!E7.,
+         Total_Amount 971.96  # Generated from value "971.96" located at cell 'Sheet1'!H7.
+   Types: Invoice
+Individual: Inv1007  # Generated from value "Inv1007" located at cell 'Sheet1'!A8.
+   Facts: Sub_Total 1249.97  # Generated from value "1249.97" located at cell 'Sheet1'!F8.,
+         Invoice_Number "Inv1007"  # Generated from value "Inv1007" located at cell 'Sheet1'!A8.,
+         Creation_Date "2023-10-10T00:00:00"  # Generated from value "2023-10-10T00:00:00" located at cell 'Sheet1'!B8.,
+         Tax_Information 99.99  # Generated from value "99.99" located at cell 'Sheet1'!G8.,
+         Invoice_Description "Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99"  # Generated from value "Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99" located at cell 'Sheet1'!E8.,
+         Total_Amount 1349.96  # Generated from value "1349.96" located at cell 'Sheet1'!H8.
+   Types: Invoice
+Individual: Inv1008  # Generated from value "Inv1008" located at cell 'Sheet1'!A9.
+   Facts: Sub_Total 1249.97  # Generated from value "1249.97" located at cell 'Sheet1'!F9.,
+         Invoice_Number "Inv1008"  # Generated from value "Inv1008" located at cell 'Sheet1'!A9.,
+         Creation_Date "2023-10-08T00:00:00"  # Generated from value "2023-10-08T00:00:00" located at cell 'Sheet1'!B9.,
+         Tax_Information 99.99  # Generated from value "99.99" located at cell 'Sheet1'!G9.,
+         Invoice_Description "Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99"  # Generated from value "Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99" located at cell 'Sheet1'!E9.,
+         Total_Amount 1349.96  # Generated from value "1349.96" located at cell 'Sheet1'!H9.
+   Types: Invoice
+Individual: Inv1009  # Generated from value "Inv1009" located at cell 'Sheet1'!A10.
+   Facts: Sub_Total 749.97  # Generated from value "749.97" located at cell 'Sheet1'!F10.,
+         Invoice_Number "Inv1009"  # Generated from value "Inv1009" located at cell 'Sheet1'!A10.,
+         Creation_Date "2023-10-05T00:00:00"  # Generated from value "2023-10-05T00:00:00" located at cell 'Sheet1'!B10.,
+         Tax_Information 59.99  # Generated from value "59.99" located at cell 'Sheet1'!G10.,
+         Invoice_Description "Rugs - 399.99, Lamps - 199.99, Vases - 149.99"  # Generated from value "Rugs - 399.99, Lamps - 199.99, Vases - 149.99" located at cell 'Sheet1'!E10.,
+         Total_Amount 809.96  # Generated from value "809.96" located at cell 'Sheet1'!H10.
+   Types: Invoice
+Individual: Inv1010  # Generated from value "Inv1010" located at cell 'Sheet1'!A11.
+   Facts: Sub_Total 1999.96  # Generated from value "1999.96" located at cell 'Sheet1'!F11.,
+         Invoice_Number "Inv1010"  # Generated from value "Inv1010" located at cell 'Sheet1'!A11.,
+         Creation_Date "2023-10-02T00:00:00"  # Generated from value "2023-10-02T00:00:00" located at cell 'Sheet1'!B11.,
+         Tax_Information 159.99  # Generated from value "159.99" located at cell 'Sheet1'!G11.,
+         Invoice_Description "Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99"  # Generated from value "Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99" located at cell 'Sheet1'!E11.,
+         Total_Amount 2159.95  # Generated from value "2159.95" located at cell 'Sheet1'!H11.
+   Types: Invoice
+Individual: Inv1011  # Generated from value "Inv1011" located at cell 'Sheet1'!A12.
+   Facts: Sub_Total 1299.97  # Generated from value "1299.97" located at cell 'Sheet1'!F12.,
+         Invoice_Number "Inv1011"  # Generated from value "Inv1011" located at cell 'Sheet1'!A12.,
+         Creation_Date "2023-10-25T00:00:00"  # Generated from value "2023-10-25T00:00:00" located at cell 'Sheet1'!B12.,
+         Tax_Information 103.99  # Generated from value "103.99" located at cell 'Sheet1'!G12.,
+         Invoice_Description "Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99"  # Generated from value "Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99" located at cell 'Sheet1'!E12.,
+         Total_Amount 1403.96  # Generated from value "1403.96" located at cell 'Sheet1'!H12.
+   Types: Invoice
+Individual: Inv1012  # Generated from value "Inv1012" located at cell 'Sheet1'!A13.
+   Facts: Sub_Total 1149.97  # Generated from value "1149.97" located at cell 'Sheet1'!F13.,
+         Invoice_Number "Inv1012"  # Generated from value "Inv1012" located at cell 'Sheet1'!A13.,
+         Creation_Date "2023-09-22T00:00:00"  # Generated from value "2023-09-22T00:00:00" located at cell 'Sheet1'!B13.,
+         Tax_Information 91.99  # Generated from value "91.99" located at cell 'Sheet1'!G13.,
+         Invoice_Description "Bed - 599.99, Dresser - 399.99, Nightstand - 149.99"  # Generated from value "Bed - 599.99, Dresser - 399.99, Nightstand - 149.99" located at cell 'Sheet1'!E13.,
+         Total_Amount 1241.96  # Generated from value "1241.96" located at cell 'Sheet1'!H13.
+   Types: Invoice
+Individual: Inv1013  # Generated from value "Inv1013" located at cell 'Sheet1'!A14.
+   Facts: Sub_Total 649.97  # Generated from value "649.97" located at cell 'Sheet1'!F14.,
+         Invoice_Number "Inv1013"  # Generated from value "Inv1013" located at cell 'Sheet1'!A14.,
+         Creation_Date "2023-08-20T00:00:00"  # Generated from value "2023-08-20T00:00:00" located at cell 'Sheet1'!B14.,
+         Tax_Information 51.99  # Generated from value "51.99" located at cell 'Sheet1'!G14.,
+         Invoice_Description "TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99"  # Generated from value "TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99" located at cell 'Sheet1'!E14.,
+         Total_Amount 701.96  # Generated from value "701.96" located at cell 'Sheet1'!H14.
+   Types: Invoice
+Individual: Inv1014  # Generated from value "Inv1014" located at cell 'Sheet1'!A15.
+   Facts: Sub_Total 379.97  # Generated from value "379.97" located at cell 'Sheet1'!F15.,
+         Invoice_Number "Inv1014"  # Generated from value "Inv1014" located at cell 'Sheet1'!A15.,
+         Creation_Date "2023-07-18T00:00:00"  # Generated from value "2023-07-18T00:00:00" located at cell 'Sheet1'!B15.,
+         Tax_Information 30.39  # Generated from value "30.39" located at cell 'Sheet1'!G15.,
+         Invoice_Description "Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99"  # Generated from value "Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99" located at cell 'Sheet1'!E15.,
+         Total_Amount 410.36  # Generated from value "410.36" located at cell 'Sheet1'!H15.
+   Types: Invoice
+Individual: Inv1015  # Generated from value "Inv1015" located at cell 'Sheet1'!A16.
+   Facts: Sub_Total 1199.97  # Generated from value "1199.97" located at cell 'Sheet1'!F16.,
+         Invoice_Number "Inv1015"  # Generated from value "Inv1015" located at cell 'Sheet1'!A16.,
+         Creation_Date "2023-06-15T00:00:00"  # Generated from value "2023-06-15T00:00:00" located at cell 'Sheet1'!B16.,
+         Tax_Information 95.99  # Generated from value "95.99" located at cell 'Sheet1'!G16.,
+         Invoice_Description "Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99"  # Generated from value "Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99" located at cell 'Sheet1'!E16.,
+         Total_Amount 1295.96  # Generated from value "1295.96" located at cell 'Sheet1'!H16.
+   Types: Invoice
+Individual: Inv1016  # Generated from value "Inv1016" located at cell 'Sheet1'!A17.
+   Facts: Sub_Total 449.97  # Generated from value "449.97" located at cell 'Sheet1'!F17.,
+         Invoice_Number "Inv1016"  # Generated from value "Inv1016" located at cell 'Sheet1'!A17.,
+         Creation_Date "2023-05-12T00:00:00"  # Generated from value "2023-05-12T00:00:00" located at cell 'Sheet1'!B17.,
+         Tax_Information 35.99  # Generated from value "35.99" located at cell 'Sheet1'!G17.,
+         Invoice_Description "Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99"  # Generated from value "Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99" located at cell 'Sheet1'!E17.,
+         Total_Amount 485.96  # Generated from value "485.96" located at cell 'Sheet1'!H17.
+   Types: Invoice
+Individual: Inv1017  # Generated from value "Inv1017" located at cell 'Sheet1'!A18.
+   Facts: Invoice_Number "Inv1017"  # Generated from value "Inv1017" located at cell 'Sheet1'!A18.,
+         Creation_Date "2023-04-10T00:00:00"  # Generated from value "2023-04-10T00:00:00" located at cell 'Sheet1'!B18.,
+         Invoice_Description "Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99"  # Generated from value "Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99" located at cell 'Sheet1'!E18.
+   Types: Invoice
+
+===========================================================================================================
+Date: 2023-11-12 00:11:46
+Ontology source: /D:/Semantic/Assignment/Shop%20Managment%20Ontology.rdf
+Worksheet source: D:\Semantic\Assignment\customerData.xlsx
+Transformation rules: D:\Semantic\Assignment\customers.json
+
+# Cell range: (Sheet1!A2:A+) Comment: ""
+# Individual: @A*
+# Types: Customers
+# Facts:
+#  Customer_ID @A* (xsd:integer),
+#  Last_Name @C*,
+#  First_name @B*,
+#  DateOfBirth @G*,
+#  Contact_number @F*,
+#  Billing_Address @D*,
+#  Shipping_Address @D*,
+#  Email @H*
+
+Individual: 21  # Generated from value "21" located at cell 'Sheet1'!A2.
+   Facts: Customer_ID 21  # Generated from value "21" located at cell 'Sheet1'!A2.,
+         Last_Name "Doe"  # Generated from value "Doe" located at cell 'Sheet1'!C2.,
+         First_name "John"  # Generated from value "John" located at cell 'Sheet1'!B2.,
+         DateOfBirth "1980-05-25T00:00:00"  # Generated from value "1980-05-25T00:00:00" located at cell 'Sheet1'!G2.,
+         Contact_number "+44 20 1234 5678"  # Generated from value "+44 20 1234 5678" located at cell 'Sheet1'!F2.,
+         Billing_Address "45 Park Avenue, London, EC2P 2JY, UK"  # Generated from value "45 Park Avenue, London, EC2P 2JY, UK" located at cell 'Sheet1'!D2.,
+         Shipping_Address "45 Park Avenue, London, EC2P 2JY, UK"  # Generated from value "45 Park Avenue, London, EC2P 2JY, UK" located at cell 'Sheet1'!D2.,
+         Email "johndoe@example.com"  # Generated from value "johndoe@example.com" located at cell 'Sheet1'!H2.
+   Types: Customers
+Individual: 22  # Generated from value "22" located at cell 'Sheet1'!A3.
+   Facts: Customer_ID 22  # Generated from value "22" located at cell 'Sheet1'!A3.,
+         Last_Name "Smith"  # Generated from value "Smith" located at cell 'Sheet1'!C3.,
+         First_name "Mary"  # Generated from value "Mary" located at cell 'Sheet1'!B3.,
+         DateOfBirth "1985-07-15T00:00:00"  # Generated from value "1985-07-15T00:00:00" located at cell 'Sheet1'!G3.,
+         Contact_number "+44 20 2345 6789"  # Generated from value "+44 20 2345 6789" located at cell 'Sheet1'!F3.,
+         Billing_Address "20 Oxford Street, London, W1D 1DZ, UK"  # Generated from value "20 Oxford Street, London, W1D 1DZ, UK" located at cell 'Sheet1'!D3.,
+         Shipping_Address "20 Oxford Street, London, W1D 1DZ, UK"  # Generated from value "20 Oxford Street, London, W1D 1DZ, UK" located at cell 'Sheet1'!D3.,
+         Email "marysmith@example.com"  # Generated from value "marysmith@example.com" located at cell 'Sheet1'!H3.
+   Types: Customers
+Individual: 23  # Generated from value "23" located at cell 'Sheet1'!A4.
+   Facts: Customer_ID 23  # Generated from value "23" located at cell 'Sheet1'!A4.,
+         Last_Name "Johnson"  # Generated from value "Johnson" located at cell 'Sheet1'!C4.,
+         First_name "Michael"  # Generated from value "Michael" located at cell 'Sheet1'!B4.,
+         DateOfBirth "1992-11-30T00:00:00"  # Generated from value "1992-11-30T00:00:00" located at cell 'Sheet1'!G4.,
+         Contact_number "+44 20 3456 7890"  # Generated from value "+44 20 3456 7890" located at cell 'Sheet1'!F4.,
+         Billing_Address "15 Cambridge Road, Manchester, M1 5FS, UK"  # Generated from value "15 Cambridge Road, Manchester, M1 5FS, UK" located at cell 'Sheet1'!D4.,
+         Shipping_Address "15 Cambridge Road, Manchester, M1 5FS, UK"  # Generated from value "15 Cambridge Road, Manchester, M1 5FS, UK" located at cell 'Sheet1'!D4.,
+         Email "michaeljohnson@example.com"  # Generated from value "michaeljohnson@example.com" located at cell 'Sheet1'!H4.
+   Types: Customers
+Individual: 24  # Generated from value "24" located at cell 'Sheet1'!A5.
+   Facts: Customer_ID 24  # Generated from value "24" located at cell 'Sheet1'!A5.,
+         Last_Name "Williams"  # Generated from value "Williams" located at cell 'Sheet1'!C5.,
+         First_name "Jennifer"  # Generated from value "Jennifer" located at cell 'Sheet1'!B5.,
+         DateOfBirth "1978-03-10T00:00:00"  # Generated from value "1978-03-10T00:00:00" located at cell 'Sheet1'!G5.,
+         Contact_number "+44 20 4567 8901"  # Generated from value "+44 20 4567 8901" located at cell 'Sheet1'!F5.,
+         Billing_Address "10 Victoria Street, Birmingham, B4 6JD, UK"  # Generated from value "10 Victoria Street, Birmingham, B4 6JD, UK" located at cell 'Sheet1'!D5.,
+         Shipping_Address "10 Victoria Street, Birmingham, B4 6JD, UK"  # Generated from value "10 Victoria Street, Birmingham, B4 6JD, UK" located at cell 'Sheet1'!D5.,
+         Email "jenniferwilliams@example.com"  # Generated from value "jenniferwilliams@example.com" located at cell 'Sheet1'!H5.
+   Types: Customers
+Individual: 25  # Generated from value "25" located at cell 'Sheet1'!A6.
+   Facts: Customer_ID 25  # Generated from value "25" located at cell 'Sheet1'!A6.,
+         Last_Name "Jones"  # Generated from value "Jones" located at cell 'Sheet1'!C6.,
+         First_name "David"  # Generated from value "David" located at cell 'Sheet1'!B6.,
+         DateOfBirth "1990-09-20T00:00:00"  # Generated from value "1990-09-20T00:00:00" located at cell 'Sheet1'!G6.,
+         Contact_number "+44 20 5678 9012"  # Generated from value "+44 20 5678 9012" located at cell 'Sheet1'!F6.,
+         Billing_Address "5 High Street, Liverpool, L3 9AG, UK"  # Generated from value "5 High Street, Liverpool, L3 9AG, UK" located at cell 'Sheet1'!D6.,
+         Shipping_Address "5 High Street, Liverpool, L3 9AG, UK"  # Generated from value "5 High Street, Liverpool, L3 9AG, UK" located at cell 'Sheet1'!D6.,
+         Email "davidjones@example.com"  # Generated from value "davidjones@example.com" located at cell 'Sheet1'!H6.
+   Types: Customers
+Individual: 6  # Generated from value "6" located at cell 'Sheet1'!A7.
+   Facts: Customer_ID 6  # Generated from value "6" located at cell 'Sheet1'!A7.,
+         Last_Name "Brown"  # Generated from value "Brown" located at cell 'Sheet1'!C7.,
+         First_name "Sarah"  # Generated from value "Sarah" located at cell 'Sheet1'!B7.,
+         DateOfBirth "1982-12-05T00:00:00"  # Generated from value "1982-12-05T00:00:00" located at cell 'Sheet1'!G7.,
+         Contact_number "+44 20 6789 0123"  # Generated from value "+44 20 6789 0123" located at cell 'Sheet1'!F7.,
+         Billing_Address "30 Regent Street, Manchester, M4 4FG, UK"  # Generated from value "30 Regent Street, Manchester, M4 4FG, UK" located at cell 'Sheet1'!D7.,
+         Shipping_Address "30 Regent Street, Manchester, M4 4FG, UK"  # Generated from value "30 Regent Street, Manchester, M4 4FG, UK" located at cell 'Sheet1'!D7.,
+         Email "sarahbrown@example.com"  # Generated from value "sarahbrown@example.com" located at cell 'Sheet1'!H7.
+   Types: Customers
+Individual: 7  # Generated from value "7" located at cell 'Sheet1'!A8.
+   Facts: Customer_ID 7  # Generated from value "7" located at cell 'Sheet1'!A8.,
+         Last_Name "Miller"  # Generated from value "Miller" located at cell 'Sheet1'!C8.,
+         First_name "James"  # Generated from value "James" located at cell 'Sheet1'!B8.,
+         DateOfBirth "1987-06-18T00:00:00"  # Generated from value "1987-06-18T00:00:00" located at cell 'Sheet1'!G8.,
+         Contact_number "+44 20 7890 1234"  # Generated from value "+44 20 7890 1234" located at cell 'Sheet1'!F8.,
+         Billing_Address "18 King's Road, Birmingham, B4 7AA, UK"  # Generated from value "18 King's Road, Birmingham, B4 7AA, UK" located at cell 'Sheet1'!D8.,
+         Shipping_Address "18 King's Road, Birmingham, B4 7AA, UK"  # Generated from value "18 King's Road, Birmingham, B4 7AA, UK" located at cell 'Sheet1'!D8.,
+         Email "jamesmiller@example.com"  # Generated from value "jamesmiller@example.com" located at cell 'Sheet1'!H8.
+   Types: Customers
+Individual: 8  # Generated from value "8" located at cell 'Sheet1'!A9.
+   Facts: Customer_ID 8  # Generated from value "8" located at cell 'Sheet1'!A9.,
+         Last_Name "Davis"  # Generated from value "Davis" located at cell 'Sheet1'!C9.,
+         First_name "Lisa"  # Generated from value "Lisa" located at cell 'Sheet1'!B9.,
+         DateOfBirth "1975-01-28T00:00:00"  # Generated from value "1975-01-28T00:00:00" located at cell 'Sheet1'!G9.,
+         Contact_number "+44 20 8901 2345"  # Generated from value "+44 20 8901 2345" located at cell 'Sheet1'!F9.,
+         Billing_Address "12 Liverpool Road, Leeds, LS1 2JH, UK"  # Generated from value "12 Liverpool Road, Leeds, LS1 2JH, UK" located at cell 'Sheet1'!D9.,
+         Shipping_Address "12 Liverpool Road, Leeds, LS1 2JH, UK"  # Generated from value "12 Liverpool Road, Leeds, LS1 2JH, UK" located at cell 'Sheet1'!D9.,
+         Email "lisadavis@example.com"  # Generated from value "lisadavis@example.com" located at cell 'Sheet1'!H9.
+   Types: Customers
+Individual: 9  # Generated from value "9" located at cell 'Sheet1'!A10.
+   Facts: Customer_ID 9  # Generated from value "9" located at cell 'Sheet1'!A10.,
+         Last_Name "Garcia"  # Generated from value "Garcia" located at cell 'Sheet1'!C10.,
+         First_name "Robert"  # Generated from value "Robert" located at cell 'Sheet1'!B10.,
+         DateOfBirth "1988-04-12T00:00:00"  # Generated from value "1988-04-12T00:00:00" located at cell 'Sheet1'!G10.,
+         Contact_number "+44 20 9012 3456"  # Generated from value "+44 20 9012 3456" located at cell 'Sheet1'!F10.,
+         Billing_Address "35 Oxford Road, Glasgow, G1 7AA, UK"  # Generated from value "35 Oxford Road, Glasgow, G1 7AA, UK" located at cell 'Sheet1'!D10.,
+         Shipping_Address "35 Oxford Road, Glasgow, G1 7AA, UK"  # Generated from value "35 Oxford Road, Glasgow, G1 7AA, UK" located at cell 'Sheet1'!D10.,
+         Email "robertgarcia@example.com"  # Generated from value "robertgarcia@example.com" located at cell 'Sheet1'!H10.
+   Types: Customers
+Individual: 10  # Generated from value "10" located at cell 'Sheet1'!A11.
+   Facts: Customer_ID 10  # Generated from value "10" located at cell 'Sheet1'!A11.,
+         Last_Name "Rodriguez"  # Generated from value "Rodriguez" located at cell 'Sheet1'!C11.,
+         First_name "Karen"  # Generated from value "Karen" located at cell 'Sheet1'!B11.,
+         DateOfBirth "1979-08-08T00:00:00"  # Generated from value "1979-08-08T00:00:00" located at cell 'Sheet1'!G11.,
+         Contact_number "+44 20 0123 4567"  # Generated from value "+44 20 0123 4567" located at cell 'Sheet1'!F11.,
+         Billing_Address "8 Manchester Road, Leeds, LS1 1DZ, UK"  # Generated from value "8 Manchester Road, Leeds, LS1 1DZ, UK" located at cell 'Sheet1'!D11.,
+         Shipping_Address "8 Manchester Road, Leeds, LS1 1DZ, UK"  # Generated from value "8 Manchester Road, Leeds, LS1 1DZ, UK" located at cell 'Sheet1'!D11.,
+         Email "karenrodriguez@example.com"  # Generated from value "karenrodriguez@example.com" located at cell 'Sheet1'!H11.
+   Types: Customers
+Individual: 11  # Generated from value "11" located at cell 'Sheet1'!A12.
+   Facts: Customer_ID 11  # Generated from value "11" located at cell 'Sheet1'!A12.,
+         Last_Name "Wilson"  # Generated from value "Wilson" located at cell 'Sheet1'!C12.,
+         First_name "William"  # Generated from value "William" located at cell 'Sheet1'!B12.,
+         DateOfBirth "1984-06-12T00:00:00"  # Generated from value "1984-06-12T00:00:00" located at cell 'Sheet1'!G12.,
+         Contact_number "+44 20 1234 5678"  # Generated from value "+44 20 1234 5678" located at cell 'Sheet1'!F12.,
+         Billing_Address "25 Liverpool Road, London, EC3M 4JN, UK"  # Generated from value "25 Liverpool Road, London, EC3M 4JN, UK" located at cell 'Sheet1'!D12.,
+         Shipping_Address "25 Liverpool Road, London, EC3M 4JN, UK"  # Generated from value "25 Liverpool Road, London, EC3M 4JN, UK" located at cell 'Sheet1'!D12.,
+         Email "williamwilson@example.com"  # Generated from value "williamwilson@example.com" located at cell 'Sheet1'!H12.
+   Types: Customers
+Individual: 12  # Generated from value "12" located at cell 'Sheet1'!A13.
+   Facts: Customer_ID 12  # Generated from value "12" located at cell 'Sheet1'!A13.,
+         Last_Name "Martinez"  # Generated from value "Martinez" located at cell 'Sheet1'!C13.,
+         First_name "Patricia"  # Generated from value "Patricia" located at cell 'Sheet1'!B13.,
+         DateOfBirth "1986-09-15T00:00:00"  # Generated from value "1986-09-15T00:00:00" located at cell 'Sheet1'!G13.,
+         Contact_number "+44 20 2345 6789"  # Generated from value "+44 20 2345 6789" located at cell 'Sheet1'!F13.,
+         Billing_Address "40 Oxford Road, Glasgow, G1 3JH, UK"  # Generated from value "40 Oxford Road, Glasgow, G1 3JH, UK" located at cell 'Sheet1'!D13.,
+         Shipping_Address "40 Oxford Road, Glasgow, G1 3JH, UK"  # Generated from value "40 Oxford Road, Glasgow, G1 3JH, UK" located at cell 'Sheet1'!D13.,
+         Email "patriciamartinez@example.com"  # Generated from value "patriciamartinez@example.com" located at cell 'Sheet1'!H13.
+   Types: Customers
+Individual: 13  # Generated from value "13" located at cell 'Sheet1'!A14.
+   Facts: Customer_ID 13  # Generated from value "13" located at cell 'Sheet1'!A14.,
+         Last_Name "Robinson"  # Generated from value "Robinson" located at cell 'Sheet1'!C14.,
+         First_name "Christopher"  # Generated from value "Christopher" located at cell 'Sheet1'!B14.,
+         DateOfBirth "1981-03-25T00:00:00"  # Generated from value "1981-03-25T00:00:00" located at cell 'Sheet1'!G14.,
+         Contact_number "+44 20 3456 7890"  # Generated from value "+44 20 3456 7890" located at cell 'Sheet1'!F14.,
+         Billing_Address "10 Victoria Street, Manchester, M4 6FG, UK"  # Generated from value "10 Victoria Street, Manchester, M4 6FG, UK" located at cell 'Sheet1'!D14.,
+         Shipping_Address "10 Victoria Street, Manchester, M4 6FG, UK"  # Generated from value "10 Victoria Street, Manchester, M4 6FG, UK" located at cell 'Sheet1'!D14.,
+         Email "christopherrobinson@example.com"  # Generated from value "christopherrobinson@example.com" located at cell 'Sheet1'!H14.
+   Types: Customers
+Individual: 14  # Generated from value "14" located at cell 'Sheet1'!A15.
+   Facts: Customer_ID 14  # Generated from value "14" located at cell 'Sheet1'!A15.,
+         Last_Name "Clark"  # Generated from value "Clark" located at cell 'Sheet1'!C15.,
+         First_name "Linda"  # Generated from value "Linda" located at cell 'Sheet1'!B15.,
+         DateOfBirth "1976-12-08T00:00:00"  # Generated from value "1976-12-08T00:00:00" located at cell 'Sheet1'!G15.,
+         Contact_number "+44 20 4567 8901"  # Generated from value "+44 20 4567 8901" located at cell 'Sheet1'!F15.,
+         Billing_Address "8 Manchester Road, Birmingham, B4 6JD, UK"  # Generated from value "8 Manchester Road, Birmingham, B4 6JD, UK" located at cell 'Sheet1'!D15.,
+         Shipping_Address "8 Manchester Road, Birmingham, B4 6JD, UK"  # Generated from value "8 Manchester Road, Birmingham, B4 6JD, UK" located at cell 'Sheet1'!D15.,
+         Email "lindaclark@example.com"  # Generated from value "lindaclark@example.com" located at cell 'Sheet1'!H15.
+   Types: Customers
+Individual: 15  # Generated from value "15" located at cell 'Sheet1'!A16.
+   Facts: Customer_ID 15  # Generated from value "15" located at cell 'Sheet1'!A16.,
+         Last_Name "Rodriguez"  # Generated from value "Rodriguez" located at cell 'Sheet1'!C16.,
+         First_name "Michael"  # Generated from value "Michael" located at cell 'Sheet1'!B16.,
+         DateOfBirth "1983-05-30T00:00:00"  # Generated from value "1983-05-30T00:00:00" located at cell 'Sheet1'!G16.,
+         Contact_number "+44 20 5678 9012"  # Generated from value "+44 20 5678 9012" located at cell 'Sheet1'!F16.,
+         Billing_Address "12 King's Road, Liverpool, L3 8JD, UK"  # Generated from value "12 King's Road, Liverpool, L3 8JD, UK" located at cell 'Sheet1'!D16.,
+         Shipping_Address "12 King's Road, Liverpool, L3 8JD, UK"  # Generated from value "12 King's Road, Liverpool, L3 8JD, UK" located at cell 'Sheet1'!D16.,
+         Email "michaelrodriguez@example.com"  # Generated from value "michaelrodriguez@example.com" located at cell 'Sheet1'!H16.
+   Types: Customers
+Individual: 16  # Generated from value "16" located at cell 'Sheet1'!A17.
+   Facts: Customer_ID 16  # Generated from value "16" located at cell 'Sheet1'!A17.,
+         Last_Name "Lewis"  # Generated from value "Lewis" located at cell 'Sheet1'!C17.,
+         First_name "Susan"  # Generated from value "Susan" located at cell 'Sheet1'!B17.,
+         DateOfBirth "1977-02-14T00:00:00"  # Generated from value "1977-02-14T00:00:00" located at cell 'Sheet1'!G17.,
+         Contact_number "+44 20 6789 0123"  # Generated from value "+44 20 6789 0123" located at cell 'Sheet1'!F17.,
+         Billing_Address "35 Regent Street, Birmingham, B4 3JD, UK"  # Generated from value "35 Regent Street, Birmingham, B4 3JD, UK" located at cell 'Sheet1'!D17.,
+         Shipping_Address "35 Regent Street, Birmingham, B4 3JD, UK"  # Generated from value "35 Regent Street, Birmingham, B4 3JD, UK" located at cell 'Sheet1'!D17.,
+         Email "susanlewis@example.com"  # Generated from value "susanlewis@example.com" located at cell 'Sheet1'!H17.
+   Types: Customers
+Individual: 17  # Generated from value "17" located at cell 'Sheet1'!A18.
+   Facts: Customer_ID 17  # Generated from value "17" located at cell 'Sheet1'!A18.,
+         Last_Name "Lee"  # Generated from value "Lee" located at cell 'Sheet1'!C18.,
+         First_name "Matthew"  # Generated from value "Matthew" located at cell 'Sheet1'!B18.,
+         DateOfBirth "1989-07-20T00:00:00"  # Generated from value "1989-07-20T00:00:00" located at cell 'Sheet1'!G18.,
+         Contact_number "+44 20 7890 1234"  # Generated from value "+44 20 7890 1234" located at cell 'Sheet1'!F18.,
+         Billing_Address "20 Victoria Street, London, EC2N 5AR, UK"  # Generated from value "20 Victoria Street, London, EC2N 5AR, UK" located at cell 'Sheet1'!D18.,
+         Shipping_Address "20 Victoria Street, London, EC2N 5AR, UK"  # Generated from value "20 Victoria Street, London, EC2N 5AR, UK" located at cell 'Sheet1'!D18.,
+         Email "matthewlee@example.com"  # Generated from value "matthewlee@example.com" located at cell 'Sheet1'!H18.
+   Types: Customers
+Individual: 18  # Generated from value "18" located at cell 'Sheet1'!A19.
+   Facts: Customer_ID 18  # Generated from value "18" located at cell 'Sheet1'!A19.,
+         Last_Name "Walker"  # Generated from value "Walker" located at cell 'Sheet1'!C19.,
+         First_name "Angela"  # Generated from value "Angela" located at cell 'Sheet1'!B19.,
+         DateOfBirth "1974-04-18T00:00:00"  # Generated from value "1974-04-18T00:00:00" located at cell 'Sheet1'!G19.,
+         Contact_number "+44 20 8901 2345"  # Generated from value "+44 20 8901 2345" located at cell 'Sheet1'!F19.,
+         Billing_Address "15 Cambridge Road, Manchester, M1 9AG, UK"  # Generated from value "15 Cambridge Road, Manchester, M1 9AG, UK" located at cell 'Sheet1'!D19.,
+         Shipping_Address "15 Cambridge Road, Manchester, M1 9AG, UK"  # Generated from value "15 Cambridge Road, Manchester, M1 9AG, UK" located at cell 'Sheet1'!D19.,
+         Email "angelawalker@example.com"  # Generated from value "angelawalker@example.com" located at cell 'Sheet1'!H19.
+   Types: Customers
+Individual: 19  # Generated from value "19" located at cell 'Sheet1'!A20.
+   Facts: Customer_ID 19  # Generated from value "19" located at cell 'Sheet1'!A20.,
+         Last_Name "Hall"  # Generated from value "Hall" located at cell 'Sheet1'!C20.,
+         First_name "Joshua"  # Generated from value "Joshua" located at cell 'Sheet1'!B20.,
+         DateOfBirth "1980-11-22T00:00:00"  # Generated from value "1980-11-22T00:00:00" located at cell 'Sheet1'!G20.,
+         Contact_number "+44 20 9012 3456"  # Generated from value "+44 20 9012 3456" located at cell 'Sheet1'!F20.,
+         Billing_Address "78 High Street, Manchester, M4 1AA, UK"  # Generated from value "78 High Street, Manchester, M4 1AA, UK" located at cell 'Sheet1'!D20.,
+         Shipping_Address "78 High Street, Manchester, M4 1AA, UK"  # Generated from value "78 High Street, Manchester, M4 1AA, UK" located at cell 'Sheet1'!D20.,
+         Email "joshuahall@example.com"  # Generated from value "joshuahall@example.com" located at cell 'Sheet1'!H20.
+   Types: Customers
+Individual: 20  # Generated from value "20" located at cell 'Sheet1'!A21.
+   Facts: Customer_ID 20  # Generated from value "20" located at cell 'Sheet1'!A21.,
+         Last_Name "Allen"  # Generated from value "Allen" located at cell 'Sheet1'!C21.,
+         First_name "Emily"  # Generated from value "Emily" located at cell 'Sheet1'!B21.,
+         DateOfBirth "1985-08-29T00:00:00"  # Generated from value "1985-08-29T00:00:00" located at cell 'Sheet1'!G21.,
+         Contact_number "+44 20 0123 4567"  # Generated from value "+44 20 0123 4567" located at cell 'Sheet1'!F21.,
+         Billing_Address "45 Park Avenue, Liverpool, L3 9AG, UK"  # Generated from value "45 Park Avenue, Liverpool, L3 9AG, UK" located at cell 'Sheet1'!D21.,
+         Shipping_Address "45 Park Avenue, Liverpool, L3 9AG, UK"  # Generated from value "45 Park Avenue, Liverpool, L3 9AG, UK" located at cell 'Sheet1'!D21.,
+         Email "emilyallen@example.com"  # Generated from value "emilyallen@example.com" located at cell 'Sheet1'!H21.
+   Types: Customers
+
+===========================================================================================================
+Date: 2023-11-12 00:18:03
+Ontology source: /D:/Semantic/Assignment/Shop%20Managment%20Ontology.rdf
+Worksheet source: D:\Semantic\Assignment\customerData.xlsx
+Transformation rules: D:\Semantic\Assignment\customers.json
+
+# Cell range: (Sheet1!A2:A+) Comment: ""
+# Individual: @A*
+# Types: Customers
+# Facts:
+#  Customer_ID @B* (xsd:decimal),
+#  Last_Name @C*,
+#  First_name @B*,
+#  DateOfBirth @G* (xsd:dateTime),
+#  Contact_number @F*,
+#  Billing_Address @D*,
+#  Shipping_Address @D*,
+#  Email @H*
+
+Individual: Cus5  # Generated from value "Cus5" located at cell 'Sheet1'!A2.
+   Facts: Customer_ID 5  # Generated from value "5" located at cell 'Sheet1'!B2.,
+         Last_Name "John"  # Generated from value "John" located at cell 'Sheet1'!C2.,
+         First_name "5"  # Generated from value "5" located at cell 'Sheet1'!B2.,
+         DateOfBirth "+44 20 1234 5678"  # Generated from value "+44 20 1234 5678" located at cell 'Sheet1'!G2.,
+         Contact_number "78 High Street, Manchester, M4 1AA, UK"  # Generated from value "78 High Street, Manchester, M4 1AA, UK" located at cell 'Sheet1'!F2.,
+         Billing_Address "Doe"  # Generated from value "Doe" located at cell 'Sheet1'!D2.,
+         Shipping_Address "Doe"  # Generated from value "Doe" located at cell 'Sheet1'!D2.,
+         Email "1980-05-25T00:00:00"  # Generated from value "1980-05-25T00:00:00" located at cell 'Sheet1'!H2.
+   Types: Customers
+Individual: Cus6  # Generated from value "Cus6" located at cell 'Sheet1'!A3.
+   Facts: Customer_ID 6  # Generated from value "6" located at cell 'Sheet1'!B3.,
+         Last_Name "Mary"  # Generated from value "Mary" located at cell 'Sheet1'!C3.,
+         First_name "6"  # Generated from value "6" located at cell 'Sheet1'!B3.,
+         DateOfBirth "+44 20 2345 6789"  # Generated from value "+44 20 2345 6789" located at cell 'Sheet1'!G3.,
+         Contact_number "35 Regent Street, Birmingham, B4 7AA, UK"  # Generated from value "35 Regent Street, Birmingham, B4 7AA, UK" located at cell 'Sheet1'!F3.,
+         Billing_Address "Smith"  # Generated from value "Smith" located at cell 'Sheet1'!D3.,
+         Shipping_Address "Smith"  # Generated from value "Smith" located at cell 'Sheet1'!D3.,
+         Email "1985-07-15T00:00:00"  # Generated from value "1985-07-15T00:00:00" located at cell 'Sheet1'!H3.
+   Types: Customers
+Individual: Cus7  # Generated from value "Cus7" located at cell 'Sheet1'!A4.
+   Facts: Customer_ID 7  # Generated from value "7" located at cell 'Sheet1'!B4.,
+         Last_Name "Michael"  # Generated from value "Michael" located at cell 'Sheet1'!C4.,
+         First_name "7"  # Generated from value "7" located at cell 'Sheet1'!B4.,
+         DateOfBirth "+44 20 3456 7890"  # Generated from value "+44 20 3456 7890" located at cell 'Sheet1'!G4.,
+         Contact_number "12 King's Road, Liverpool, L3 8JD, UK"  # Generated from value "12 King's Road, Liverpool, L3 8JD, UK" located at cell 'Sheet1'!F4.,
+         Billing_Address "Johnson"  # Generated from value "Johnson" located at cell 'Sheet1'!D4.,
+         Shipping_Address "Johnson"  # Generated from value "Johnson" located at cell 'Sheet1'!D4.,
+         Email "1992-11-30T00:00:00"  # Generated from value "1992-11-30T00:00:00" located at cell 'Sheet1'!H4.
+   Types: Customers
+Individual: Cus8  # Generated from value "Cus8" located at cell 'Sheet1'!A5.
+   Facts: Customer_ID 8  # Generated from value "8" located at cell 'Sheet1'!B5.,
+         Last_Name "Jennifer"  # Generated from value "Jennifer" located at cell 'Sheet1'!C5.,
+         First_name "8"  # Generated from value "8" located at cell 'Sheet1'!B5.,
+         DateOfBirth "+44 20 4567 8901"  # Generated from value "+44 20 4567 8901" located at cell 'Sheet1'!G5.,
+         Contact_number "25 Liverpool Road, London, EC3M 4JN, UK"  # Generated from value "25 Liverpool Road, London, EC3M 4JN, UK" located at cell 'Sheet1'!F5.,
+         Billing_Address "Williams"  # Generated from value "Williams" located at cell 'Sheet1'!D5.,
+         Shipping_Address "Williams"  # Generated from value "Williams" located at cell 'Sheet1'!D5.,
+         Email "1978-03-10T00:00:00"  # Generated from value "1978-03-10T00:00:00" located at cell 'Sheet1'!H5.
+   Types: Customers
+Individual: Cus9  # Generated from value "Cus9" located at cell 'Sheet1'!A6.
+   Facts: Customer_ID 9  # Generated from value "9" located at cell 'Sheet1'!B6.,
+         Last_Name "David"  # Generated from value "David" located at cell 'Sheet1'!C6.,
+         First_name "9"  # Generated from value "9" located at cell 'Sheet1'!B6.,
+         DateOfBirth "+44 20 5678 9012"  # Generated from value "+44 20 5678 9012" located at cell 'Sheet1'!G6.,
+         Contact_number "8 Manchester Road, Leeds, LS1 4AH, UK"  # Generated from value "8 Manchester Road, Leeds, LS1 4AH, UK" located at cell 'Sheet1'!F6.,
+         Billing_Address "Jones"  # Generated from value "Jones" located at cell 'Sheet1'!D6.,
+         Shipping_Address "Jones"  # Generated from value "Jones" located at cell 'Sheet1'!D6.,
+         Email "1990-09-20T00:00:00"  # Generated from value "1990-09-20T00:00:00" located at cell 'Sheet1'!H6.
+   Types: Customers
+Individual: Cus10  # Generated from value "Cus10" located at cell 'Sheet1'!A7.
+   Facts: Customer_ID 10  # Generated from value "10" located at cell 'Sheet1'!B7.,
+         Last_Name "Sarah"  # Generated from value "Sarah" located at cell 'Sheet1'!C7.,
+         First_name "10"  # Generated from value "10" located at cell 'Sheet1'!B7.,
+         DateOfBirth "+44 20 6789 0123"  # Generated from value "+44 20 6789 0123" located at cell 'Sheet1'!G7.,
+         Contact_number "40 Oxford Road, Glasgow, G1 3JH, UK"  # Generated from value "40 Oxford Road, Glasgow, G1 3JH, UK" located at cell 'Sheet1'!F7.,
+         Billing_Address "Brown"  # Generated from value "Brown" located at cell 'Sheet1'!D7.,
+         Shipping_Address "Brown"  # Generated from value "Brown" located at cell 'Sheet1'!D7.,
+         Email "1982-12-05T00:00:00"  # Generated from value "1982-12-05T00:00:00" located at cell 'Sheet1'!H7.
+   Types: Customers
+Individual: Cus11  # Generated from value "Cus11" located at cell 'Sheet1'!A8.
+   Facts: Customer_ID 11  # Generated from value "11" located at cell 'Sheet1'!B8.,
+         Last_Name "James"  # Generated from value "James" located at cell 'Sheet1'!C8.,
+         First_name "11"  # Generated from value "11" located at cell 'Sheet1'!B8.,
+         DateOfBirth "+44 20 7890 1234"  # Generated from value "+44 20 7890 1234" located at cell 'Sheet1'!G8.,
+         Contact_number "10 Victoria Street, London, EC2N 5AR, UK"  # Generated from value "10 Victoria Street, London, EC2N 5AR, UK" located at cell 'Sheet1'!F8.,
+         Billing_Address "Miller"  # Generated from value "Miller" located at cell 'Sheet1'!D8.,
+         Shipping_Address "Miller"  # Generated from value "Miller" located at cell 'Sheet1'!D8.,
+         Email "1987-06-18T00:00:00"  # Generated from value "1987-06-18T00:00:00" located at cell 'Sheet1'!H8.
+   Types: Customers
+Individual: Cus12  # Generated from value "Cus12" located at cell 'Sheet1'!A9.
+   Facts: Customer_ID 12  # Generated from value "12" located at cell 'Sheet1'!B9.,
+         Last_Name "Lisa"  # Generated from value "Lisa" located at cell 'Sheet1'!C9.,
+         First_name "12"  # Generated from value "12" located at cell 'Sheet1'!B9.,
+         DateOfBirth "+44 20 8901 2345"  # Generated from value "+44 20 8901 2345" located at cell 'Sheet1'!G9.,
+         Contact_number "15 Cambridge Road, Manchester, M1 9AG, UK"  # Generated from value "15 Cambridge Road, Manchester, M1 9AG, UK" located at cell 'Sheet1'!F9.,
+         Billing_Address "Davis"  # Generated from value "Davis" located at cell 'Sheet1'!D9.,
+         Shipping_Address "Davis"  # Generated from value "Davis" located at cell 'Sheet1'!D9.,
+         Email "1975-01-28T00:00:00"  # Generated from value "1975-01-28T00:00:00" located at cell 'Sheet1'!H9.
+   Types: Customers
+Individual: Cus13  # Generated from value "Cus13" located at cell 'Sheet1'!A10.
+   Facts: Customer_ID 13  # Generated from value "13" located at cell 'Sheet1'!B10.,
+         Last_Name "Robert"  # Generated from value "Robert" located at cell 'Sheet1'!C10.,
+         First_name "13"  # Generated from value "13" located at cell 'Sheet1'!B10.,
+         DateOfBirth "+44 20 9012 3456"  # Generated from value "+44 20 9012 3456" located at cell 'Sheet1'!G10.,
+         Contact_number "20 Victoria Street, Birmingham, B4 3JD, UK"  # Generated from value "20 Victoria Street, Birmingham, B4 3JD, UK" located at cell 'Sheet1'!F10.,
+         Billing_Address "Garcia"  # Generated from value "Garcia" located at cell 'Sheet1'!D10.,
+         Shipping_Address "Garcia"  # Generated from value "Garcia" located at cell 'Sheet1'!D10.,
+         Email "1988-04-12T00:00:00"  # Generated from value "1988-04-12T00:00:00" located at cell 'Sheet1'!H10.
+   Types: Customers
+Individual: Cus14  # Generated from value "Cus14" located at cell 'Sheet1'!A11.
+   Facts: Customer_ID 14  # Generated from value "14" located at cell 'Sheet1'!B11.,
+         Last_Name "Karen"  # Generated from value "Karen" located at cell 'Sheet1'!C11.,
+         First_name "14"  # Generated from value "14" located at cell 'Sheet1'!B11.,
+         DateOfBirth "+44 20 0123 4567"  # Generated from value "+44 20 0123 4567" located at cell 'Sheet1'!G11.,
+         Contact_number "30 Regent Street, Manchester, M4 6FG, UK"  # Generated from value "30 Regent Street, Manchester, M4 6FG, UK" located at cell 'Sheet1'!F11.,
+         Billing_Address "Rodriguez"  # Generated from value "Rodriguez" located at cell 'Sheet1'!D11.,
+         Shipping_Address "Rodriguez"  # Generated from value "Rodriguez" located at cell 'Sheet1'!D11.,
+         Email "1979-08-08T00:00:00"  # Generated from value "1979-08-08T00:00:00" located at cell 'Sheet1'!H11.
+   Types: Customers
+Individual: Cus15  # Generated from value "Cus15" located at cell 'Sheet1'!A12.
+   Facts: Customer_ID 15  # Generated from value "15" located at cell 'Sheet1'!B12.,
+         Last_Name "William"  # Generated from value "William" located at cell 'Sheet1'!C12.,
+         First_name "15"  # Generated from value "15" located at cell 'Sheet1'!B12.,
+         DateOfBirth "+44 20 1234 5678"  # Generated from value "+44 20 1234 5678" located at cell 'Sheet1'!G12.,
+         Contact_number "18 King's Road, Birmingham, B4 7AA, UK"  # Generated from value "18 King's Road, Birmingham, B4 7AA, UK" located at cell 'Sheet1'!F12.,
+         Billing_Address "Wilson"  # Generated from value "Wilson" located at cell 'Sheet1'!D12.,
+         Shipping_Address "Wilson"  # Generated from value "Wilson" located at cell 'Sheet1'!D12.,
+         Email "1984-06-12T00:00:00"  # Generated from value "1984-06-12T00:00:00" located at cell 'Sheet1'!H12.
+   Types: Customers
+Individual: Cus16  # Generated from value "Cus16" located at cell 'Sheet1'!A13.
+   Facts: Customer_ID 16  # Generated from value "16" located at cell 'Sheet1'!B13.,
+         Last_Name "Patricia"  # Generated from value "Patricia" located at cell 'Sheet1'!C13.,
+         First_name "16"  # Generated from value "16" located at cell 'Sheet1'!B13.,
+         DateOfBirth "+44 20 2345 6789"  # Generated from value "+44 20 2345 6789" located at cell 'Sheet1'!G13.,
+         Contact_number "12 Liverpool Road, Leeds, LS1 2JH, UK"  # Generated from value "12 Liverpool Road, Leeds, LS1 2JH, UK" located at cell 'Sheet1'!F13.,
+         Billing_Address "Martinez"  # Generated from value "Martinez" located at cell 'Sheet1'!D13.,
+         Shipping_Address "Martinez"  # Generated from value "Martinez" located at cell 'Sheet1'!D13.,
+         Email "1986-09-15T00:00:00"  # Generated from value "1986-09-15T00:00:00" located at cell 'Sheet1'!H13.
+   Types: Customers
+Individual: Cus17  # Generated from value "Cus17" located at cell 'Sheet1'!A14.
+   Facts: Customer_ID 17  # Generated from value "17" located at cell 'Sheet1'!B14.,
+         Last_Name "Christopher"  # Generated from value "Christopher" located at cell 'Sheet1'!C14.,
+         First_name "17"  # Generated from value "17" located at cell 'Sheet1'!B14.,
+         DateOfBirth "+44 20 3456 7890"  # Generated from value "+44 20 3456 7890" located at cell 'Sheet1'!G14.,
+         Contact_number "30 Regent Street, London, W1D 1DZ, UK"  # Generated from value "30 Regent Street, London, W1D 1DZ, UK" located at cell 'Sheet1'!F14.,
+         Billing_Address "Robinson"  # Generated from value "Robinson" located at cell 'Sheet1'!D14.,
+         Shipping_Address "Robinson"  # Generated from value "Robinson" located at cell 'Sheet1'!D14.,
+         Email "1981-03-25T00:00:00"  # Generated from value "1981-03-25T00:00:00" located at cell 'Sheet1'!H14.
+   Types: Customers
+Individual: Cus18  # Generated from value "Cus18" located at cell 'Sheet1'!A15.
+   Facts: Customer_ID 18  # Generated from value "18" located at cell 'Sheet1'!B15.,
+         Last_Name "Linda"  # Generated from value "Linda" located at cell 'Sheet1'!C15.,
+         First_name "18"  # Generated from value "18" located at cell 'Sheet1'!B15.,
+         DateOfBirth "+44 20 4567 8901"  # Generated from value "+44 20 4567 8901" located at cell 'Sheet1'!G15.,
+         Contact_number "45 Park Avenue, Liverpool, L3 9AG, UK"  # Generated from value "45 Park Avenue, Liverpool, L3 9AG, UK" located at cell 'Sheet1'!F15.,
+         Billing_Address "Clark"  # Generated from value "Clark" located at cell 'Sheet1'!D15.,
+         Shipping_Address "Clark"  # Generated from value "Clark" located at cell 'Sheet1'!D15.,
+         Email "1976-12-08T00:00:00"  # Generated from value "1976-12-08T00:00:00" located at cell 'Sheet1'!H15.
+   Types: Customers
+Individual: Cus19  # Generated from value "Cus19" located at cell 'Sheet1'!A16.
+   Facts: Customer_ID 19  # Generated from value "19" located at cell 'Sheet1'!B16.,
+         Last_Name "Michael"  # Generated from value "Michael" located at cell 'Sheet1'!C16.,
+         First_name "19"  # Generated from value "19" located at cell 'Sheet1'!B16.,
+         DateOfBirth "+44 20 5678 9012"  # Generated from value "+44 20 5678 9012" located at cell 'Sheet1'!G16.,
+         Contact_number "20 Oxford Street, Glasgow, G1 7AA, UK"  # Generated from value "20 Oxford Street, Glasgow, G1 7AA, UK" located at cell 'Sheet1'!F16.,
+         Billing_Address "Rodriguez"  # Generated from value "Rodriguez" located at cell 'Sheet1'!D16.,
+         Shipping_Address "Rodriguez"  # Generated from value "Rodriguez" located at cell 'Sheet1'!D16.,
+         Email "1983-05-30T00:00:00"  # Generated from value "1983-05-30T00:00:00" located at cell 'Sheet1'!H16.
+   Types: Customers
+Individual: Cus20  # Generated from value "Cus20" located at cell 'Sheet1'!A17.
+   Facts: Customer_ID 20  # Generated from value "20" located at cell 'Sheet1'!B17.,
+         Last_Name "Susan"  # Generated from value "Susan" located at cell 'Sheet1'!C17.,
+         First_name "20"  # Generated from value "20" located at cell 'Sheet1'!B17.,
+         DateOfBirth "+44 20 6789 0123"  # Generated from value "+44 20 6789 0123" located at cell 'Sheet1'!G17.,
+         Contact_number "8 Manchester Road, Leeds, LS1 1DZ, UK"  # Generated from value "8 Manchester Road, Leeds, LS1 1DZ, UK" located at cell 'Sheet1'!F17.,
+         Billing_Address "Lewis"  # Generated from value "Lewis" located at cell 'Sheet1'!D17.,
+         Shipping_Address "Lewis"  # Generated from value "Lewis" located at cell 'Sheet1'!D17.,
+         Email "1977-02-14T00:00:00"  # Generated from value "1977-02-14T00:00:00" located at cell 'Sheet1'!H17.
+   Types: Customers
+Individual: Cus21  # Generated from value "Cus21" located at cell 'Sheet1'!A18.
+   Facts: Customer_ID 21  # Generated from value "21" located at cell 'Sheet1'!B18.,
+         Last_Name "Matthew"  # Generated from value "Matthew" located at cell 'Sheet1'!C18.,
+         First_name "21"  # Generated from value "21" located at cell 'Sheet1'!B18.,
+         DateOfBirth "+44 20 7890 1234"  # Generated from value "+44 20 7890 1234" located at cell 'Sheet1'!G18.,
+         Contact_number "10 Victoria Street, Manchester, M1 5FS, UK"  # Generated from value "10 Victoria Street, Manchester, M1 5FS, UK" located at cell 'Sheet1'!F18.,
+         Billing_Address "Lee"  # Generated from value "Lee" located at cell 'Sheet1'!D18.,
+         Shipping_Address "Lee"  # Generated from value "Lee" located at cell 'Sheet1'!D18.,
+         Email "1989-07-20T00:00:00"  # Generated from value "1989-07-20T00:00:00" located at cell 'Sheet1'!H18.
+   Types: Customers
+Individual: Cus22  # Generated from value "Cus22" located at cell 'Sheet1'!A19.
+   Facts: Customer_ID 22  # Generated from value "22" located at cell 'Sheet1'!B19.,
+         Last_Name "Angela"  # Generated from value "Angela" located at cell 'Sheet1'!C19.,
+         First_name "22"  # Generated from value "22" located at cell 'Sheet1'!B19.,
+         DateOfBirth "+44 20 8901 2345"  # Generated from value "+44 20 8901 2345" located at cell 'Sheet1'!G19.,
+         Contact_number "5 High Street, Birmingham, B4 5JD, UK"  # Generated from value "5 High Street, Birmingham, B4 5JD, UK" located at cell 'Sheet1'!F19.,
+         Billing_Address "Walker"  # Generated from value "Walker" located at cell 'Sheet1'!D19.,
+         Shipping_Address "Walker"  # Generated from value "Walker" located at cell 'Sheet1'!D19.,
+         Email "1974-04-18T00:00:00"  # Generated from value "1974-04-18T00:00:00" located at cell 'Sheet1'!H19.
+   Types: Customers
+Individual: Cus23  # Generated from value "Cus23" located at cell 'Sheet1'!A20.
+   Facts: Customer_ID 23  # Generated from value "23" located at cell 'Sheet1'!B20.,
+         Last_Name "Joshua"  # Generated from value "Joshua" located at cell 'Sheet1'!C20.,
+         First_name "23"  # Generated from value "23" located at cell 'Sheet1'!B20.,
+         DateOfBirth "+44 20 9012 3456"  # Generated from value "+44 20 9012 3456" located at cell 'Sheet1'!G20.,
+         Contact_number "15 Cambridge Road, Manchester, M1 9AG, UK"  # Generated from value "15 Cambridge Road, Manchester, M1 9AG, UK" located at cell 'Sheet1'!F20.,
+         Billing_Address "Hall"  # Generated from value "Hall" located at cell 'Sheet1'!D20.,
+         Shipping_Address "Hall"  # Generated from value "Hall" located at cell 'Sheet1'!D20.,
+         Email "1980-11-22T00:00:00"  # Generated from value "1980-11-22T00:00:00" located at cell 'Sheet1'!H20.
+   Types: Customers
+Individual: Cus24  # Generated from value "Cus24" located at cell 'Sheet1'!A21.
+   Facts: Customer_ID 24  # Generated from value "24" located at cell 'Sheet1'!B21.,
+         Last_Name "Emily"  # Generated from value "Emily" located at cell 'Sheet1'!C21.,
+         First_name "24"  # Generated from value "24" located at cell 'Sheet1'!B21.,
+         DateOfBirth "+44 20 0123 4567"  # Generated from value "+44 20 0123 4567" located at cell 'Sheet1'!G21.,
+         Contact_number "25 Liverpool Road, London, EC3M 4JN, UK"  # Generated from value "25 Liverpool Road, London, EC3M 4JN, UK" located at cell 'Sheet1'!F21.,
+         Billing_Address "Allen"  # Generated from value "Allen" located at cell 'Sheet1'!D21.,
+         Shipping_Address "Allen"  # Generated from value "Allen" located at cell 'Sheet1'!D21.,
+         Email "1985-08-29T00:00:00"  # Generated from value "1985-08-29T00:00:00" located at cell 'Sheet1'!H21.
+   Types: Customers
+
+===========================================================================================================
+Date: 2023-11-12 00:20:53
+Ontology source: /D:/Semantic/Assignment/Shop%20Managment%20Ontology.rdf
+Worksheet source: D:\Semantic\Assignment\customerData.xlsx
+Transformation rules: D:\Semantic\Assignment\customers.json
+
+# Cell range: (Sheet1!A2:A+) Comment: ""
+# Individual: @A*
+# Types: Customers
+# Facts:
+#  Customer_ID @B* (xsd:decimal),
+#  Last_Name @D*,
+#  First_name @C*,
+#  DateOfBirth @H* (xsd:dateTime),
+#  Contact_number @G*,
+#  Billing_Address @E*,
+#  Shipping_Address @F*,
+#  Email @I*
+
+Individual: Cus5  # Generated from value "Cus5" located at cell 'Sheet1'!A2.
+   Facts: Customer_ID 5  # Generated from value "5" located at cell 'Sheet1'!B2.,
+         Last_Name "Doe"  # Generated from value "Doe" located at cell 'Sheet1'!D2.,
+         First_name "John"  # Generated from value "John" located at cell 'Sheet1'!C2.,
+         DateOfBirth "1980-05-25T00:00:00"  # Generated from value "1980-05-25T00:00:00" located at cell 'Sheet1'!H2.,
+         Contact_number "+44 20 1234 5678"  # Generated from value "+44 20 1234 5678" located at cell 'Sheet1'!G2.,
+         Billing_Address "45 Park Avenue, London, EC2P 2JY, UK"  # Generated from value "45 Park Avenue, London, EC2P 2JY, UK" located at cell 'Sheet1'!E2.,
+         Shipping_Address "78 High Street, Manchester, M4 1AA, UK"  # Generated from value "78 High Street, Manchester, M4 1AA, UK" located at cell 'Sheet1'!F2.,
+         Email "johndoe@example.com"  # Generated from value "johndoe@example.com" located at cell 'Sheet1'!I2.
+   Types: Customers
+Individual: Cus6  # Generated from value "Cus6" located at cell 'Sheet1'!A3.
+   Facts: Customer_ID 6  # Generated from value "6" located at cell 'Sheet1'!B3.,
+         Last_Name "Smith"  # Generated from value "Smith" located at cell 'Sheet1'!D3.,
+         First_name "Mary"  # Generated from value "Mary" located at cell 'Sheet1'!C3.,
+         DateOfBirth "1985-07-15T00:00:00"  # Generated from value "1985-07-15T00:00:00" located at cell 'Sheet1'!H3.,
+         Contact_number "+44 20 2345 6789"  # Generated from value "+44 20 2345 6789" located at cell 'Sheet1'!G3.,
+         Billing_Address "20 Oxford Street, London, W1D 1DZ, UK"  # Generated from value "20 Oxford Street, London, W1D 1DZ, UK" located at cell 'Sheet1'!E3.,
+         Shipping_Address "35 Regent Street, Birmingham, B4 7AA, UK"  # Generated from value "35 Regent Street, Birmingham, B4 7AA, UK" located at cell 'Sheet1'!F3.,
+         Email "marysmith@example.com"  # Generated from value "marysmith@example.com" located at cell 'Sheet1'!I3.
+   Types: Customers
+Individual: Cus7  # Generated from value "Cus7" located at cell 'Sheet1'!A4.
+   Facts: Customer_ID 7  # Generated from value "7" located at cell 'Sheet1'!B4.,
+         Last_Name "Johnson"  # Generated from value "Johnson" located at cell 'Sheet1'!D4.,
+         First_name "Michael"  # Generated from value "Michael" located at cell 'Sheet1'!C4.,
+         DateOfBirth "1992-11-30T00:00:00"  # Generated from value "1992-11-30T00:00:00" located at cell 'Sheet1'!H4.,
+         Contact_number "+44 20 3456 7890"  # Generated from value "+44 20 3456 7890" located at cell 'Sheet1'!G4.,
+         Billing_Address "15 Cambridge Road, Manchester, M1 5FS, UK"  # Generated from value "15 Cambridge Road, Manchester, M1 5FS, UK" located at cell 'Sheet1'!E4.,
+         Shipping_Address "12 King's Road, Liverpool, L3 8JD, UK"  # Generated from value "12 King's Road, Liverpool, L3 8JD, UK" located at cell 'Sheet1'!F4.,
+         Email "michaeljohnson@example.com"  # Generated from value "michaeljohnson@example.com" located at cell 'Sheet1'!I4.
+   Types: Customers
+Individual: Cus8  # Generated from value "Cus8" located at cell 'Sheet1'!A5.
+   Facts: Customer_ID 8  # Generated from value "8" located at cell 'Sheet1'!B5.,
+         Last_Name "Williams"  # Generated from value "Williams" located at cell 'Sheet1'!D5.,
+         First_name "Jennifer"  # Generated from value "Jennifer" located at cell 'Sheet1'!C5.,
+         DateOfBirth "1978-03-10T00:00:00"  # Generated from value "1978-03-10T00:00:00" located at cell 'Sheet1'!H5.,
+         Contact_number "+44 20 4567 8901"  # Generated from value "+44 20 4567 8901" located at cell 'Sheet1'!G5.,
+         Billing_Address "10 Victoria Street, Birmingham, B4 6JD, UK"  # Generated from value "10 Victoria Street, Birmingham, B4 6JD, UK" located at cell 'Sheet1'!E5.,
+         Shipping_Address "25 Liverpool Road, London, EC3M 4JN, UK"  # Generated from value "25 Liverpool Road, London, EC3M 4JN, UK" located at cell 'Sheet1'!F5.,
+         Email "jenniferwilliams@example.com"  # Generated from value "jenniferwilliams@example.com" located at cell 'Sheet1'!I5.
+   Types: Customers
+Individual: Cus9  # Generated from value "Cus9" located at cell 'Sheet1'!A6.
+   Facts: Customer_ID 9  # Generated from value "9" located at cell 'Sheet1'!B6.,
+         Last_Name "Jones"  # Generated from value "Jones" located at cell 'Sheet1'!D6.,
+         First_name "David"  # Generated from value "David" located at cell 'Sheet1'!C6.,
+         DateOfBirth "1990-09-20T00:00:00"  # Generated from value "1990-09-20T00:00:00" located at cell 'Sheet1'!H6.,
+         Contact_number "+44 20 5678 9012"  # Generated from value "+44 20 5678 9012" located at cell 'Sheet1'!G6.,
+         Billing_Address "5 High Street, Liverpool, L3 9AG, UK"  # Generated from value "5 High Street, Liverpool, L3 9AG, UK" located at cell 'Sheet1'!E6.,
+         Shipping_Address "8 Manchester Road, Leeds, LS1 4AH, UK"  # Generated from value "8 Manchester Road, Leeds, LS1 4AH, UK" located at cell 'Sheet1'!F6.,
+         Email "davidjones@example.com"  # Generated from value "davidjones@example.com" located at cell 'Sheet1'!I6.
+   Types: Customers
+Individual: Cus10  # Generated from value "Cus10" located at cell 'Sheet1'!A7.
+   Facts: Customer_ID 10  # Generated from value "10" located at cell 'Sheet1'!B7.,
+         Last_Name "Brown"  # Generated from value "Brown" located at cell 'Sheet1'!D7.,
+         First_name "Sarah"  # Generated from value "Sarah" located at cell 'Sheet1'!C7.,
+         DateOfBirth "1982-12-05T00:00:00"  # Generated from value "1982-12-05T00:00:00" located at cell 'Sheet1'!H7.,
+         Contact_number "+44 20 6789 0123"  # Generated from value "+44 20 6789 0123" located at cell 'Sheet1'!G7.,
+         Billing_Address "30 Regent Street, Manchester, M4 4FG, UK"  # Generated from value "30 Regent Street, Manchester, M4 4FG, UK" located at cell 'Sheet1'!E7.,
+         Shipping_Address "40 Oxford Road, Glasgow, G1 3JH, UK"  # Generated from value "40 Oxford Road, Glasgow, G1 3JH, UK" located at cell 'Sheet1'!F7.,
+         Email "sarahbrown@example.com"  # Generated from value "sarahbrown@example.com" located at cell 'Sheet1'!I7.
+   Types: Customers
+Individual: Cus11  # Generated from value "Cus11" located at cell 'Sheet1'!A8.
+   Facts: Customer_ID 11  # Generated from value "11" located at cell 'Sheet1'!B8.,
+         Last_Name "Miller"  # Generated from value "Miller" located at cell 'Sheet1'!D8.,
+         First_name "James"  # Generated from value "James" located at cell 'Sheet1'!C8.,
+         DateOfBirth "1987-06-18T00:00:00"  # Generated from value "1987-06-18T00:00:00" located at cell 'Sheet1'!H8.,
+         Contact_number "+44 20 7890 1234"  # Generated from value "+44 20 7890 1234" located at cell 'Sheet1'!G8.,
+         Billing_Address "18 King's Road, Birmingham, B4 7AA, UK"  # Generated from value "18 King's Road, Birmingham, B4 7AA, UK" located at cell 'Sheet1'!E8.,
+         Shipping_Address "10 Victoria Street, London, EC2N 5AR, UK"  # Generated from value "10 Victoria Street, London, EC2N 5AR, UK" located at cell 'Sheet1'!F8.,
+         Email "jamesmiller@example.com"  # Generated from value "jamesmiller@example.com" located at cell 'Sheet1'!I8.
+   Types: Customers
+Individual: Cus12  # Generated from value "Cus12" located at cell 'Sheet1'!A9.
+   Facts: Customer_ID 12  # Generated from value "12" located at cell 'Sheet1'!B9.,
+         Last_Name "Davis"  # Generated from value "Davis" located at cell 'Sheet1'!D9.,
+         First_name "Lisa"  # Generated from value "Lisa" located at cell 'Sheet1'!C9.,
+         DateOfBirth "1975-01-28T00:00:00"  # Generated from value "1975-01-28T00:00:00" located at cell 'Sheet1'!H9.,
+         Contact_number "+44 20 8901 2345"  # Generated from value "+44 20 8901 2345" located at cell 'Sheet1'!G9.,
+         Billing_Address "12 Liverpool Road, Leeds, LS1 2JH, UK"  # Generated from value "12 Liverpool Road, Leeds, LS1 2JH, UK" located at cell 'Sheet1'!E9.,
+         Shipping_Address "15 Cambridge Road, Manchester, M1 9AG, UK"  # Generated from value "15 Cambridge Road, Manchester, M1 9AG, UK" located at cell 'Sheet1'!F9.,
+         Email "lisadavis@example.com"  # Generated from value "lisadavis@example.com" located at cell 'Sheet1'!I9.
+   Types: Customers
+Individual: Cus13  # Generated from value "Cus13" located at cell 'Sheet1'!A10.
+   Facts: Customer_ID 13  # Generated from value "13" located at cell 'Sheet1'!B10.,
+         Last_Name "Garcia"  # Generated from value "Garcia" located at cell 'Sheet1'!D10.,
+         First_name "Robert"  # Generated from value "Robert" located at cell 'Sheet1'!C10.,
+         DateOfBirth "1988-04-12T00:00:00"  # Generated from value "1988-04-12T00:00:00" located at cell 'Sheet1'!H10.,
+         Contact_number "+44 20 9012 3456"  # Generated from value "+44 20 9012 3456" located at cell 'Sheet1'!G10.,
+         Billing_Address "35 Oxford Road, Glasgow, G1 7AA, UK"  # Generated from value "35 Oxford Road, Glasgow, G1 7AA, UK" located at cell 'Sheet1'!E10.,
+         Shipping_Address "20 Victoria Street, Birmingham, B4 3JD, UK"  # Generated from value "20 Victoria Street, Birmingham, B4 3JD, UK" located at cell 'Sheet1'!F10.,
+         Email "robertgarcia@example.com"  # Generated from value "robertgarcia@example.com" located at cell 'Sheet1'!I10.
+   Types: Customers
+Individual: Cus14  # Generated from value "Cus14" located at cell 'Sheet1'!A11.
+   Facts: Customer_ID 14  # Generated from value "14" located at cell 'Sheet1'!B11.,
+         Last_Name "Rodriguez"  # Generated from value "Rodriguez" located at cell 'Sheet1'!D11.,
+         First_name "Karen"  # Generated from value "Karen" located at cell 'Sheet1'!C11.,
+         DateOfBirth "1979-08-08T00:00:00"  # Generated from value "1979-08-08T00:00:00" located at cell 'Sheet1'!H11.,
+         Contact_number "+44 20 0123 4567"  # Generated from value "+44 20 0123 4567" located at cell 'Sheet1'!G11.,
+         Billing_Address "8 Manchester Road, Leeds, LS1 1DZ, UK"  # Generated from value "8 Manchester Road, Leeds, LS1 1DZ, UK" located at cell 'Sheet1'!E11.,
+         Shipping_Address "30 Regent Street, Manchester, M4 6FG, UK"  # Generated from value "30 Regent Street, Manchester, M4 6FG, UK" located at cell 'Sheet1'!F11.,
+         Email "karenrodriguez@example.com"  # Generated from value "karenrodriguez@example.com" located at cell 'Sheet1'!I11.
+   Types: Customers
+Individual: Cus15  # Generated from value "Cus15" located at cell 'Sheet1'!A12.
+   Facts: Customer_ID 15  # Generated from value "15" located at cell 'Sheet1'!B12.,
+         Last_Name "Wilson"  # Generated from value "Wilson" located at cell 'Sheet1'!D12.,
+         First_name "William"  # Generated from value "William" located at cell 'Sheet1'!C12.,
+         DateOfBirth "1984-06-12T00:00:00"  # Generated from value "1984-06-12T00:00:00" located at cell 'Sheet1'!H12.,
+         Contact_number "+44 20 1234 5678"  # Generated from value "+44 20 1234 5678" located at cell 'Sheet1'!G12.,
+         Billing_Address "25 Liverpool Road, London, EC3M 4JN, UK"  # Generated from value "25 Liverpool Road, London, EC3M 4JN, UK" located at cell 'Sheet1'!E12.,
+         Shipping_Address "18 King's Road, Birmingham, B4 7AA, UK"  # Generated from value "18 King's Road, Birmingham, B4 7AA, UK" located at cell 'Sheet1'!F12.,
+         Email "williamwilson@example.com"  # Generated from value "williamwilson@example.com" located at cell 'Sheet1'!I12.
+   Types: Customers
+Individual: Cus16  # Generated from value "Cus16" located at cell 'Sheet1'!A13.
+   Facts: Customer_ID 16  # Generated from value "16" located at cell 'Sheet1'!B13.,
+         Last_Name "Martinez"  # Generated from value "Martinez" located at cell 'Sheet1'!D13.,
+         First_name "Patricia"  # Generated from value "Patricia" located at cell 'Sheet1'!C13.,
+         DateOfBirth "1986-09-15T00:00:00"  # Generated from value "1986-09-15T00:00:00" located at cell 'Sheet1'!H13.,
+         Contact_number "+44 20 2345 6789"  # Generated from value "+44 20 2345 6789" located at cell 'Sheet1'!G13.,
+         Billing_Address "40 Oxford Road, Glasgow, G1 3JH, UK"  # Generated from value "40 Oxford Road, Glasgow, G1 3JH, UK" located at cell 'Sheet1'!E13.,
+         Shipping_Address "12 Liverpool Road, Leeds, LS1 2JH, UK"  # Generated from value "12 Liverpool Road, Leeds, LS1 2JH, UK" located at cell 'Sheet1'!F13.,
+         Email "patriciamartinez@example.com"  # Generated from value "patriciamartinez@example.com" located at cell 'Sheet1'!I13.
+   Types: Customers
+Individual: Cus17  # Generated from value "Cus17" located at cell 'Sheet1'!A14.
+   Facts: Customer_ID 17  # Generated from value "17" located at cell 'Sheet1'!B14.,
+         Last_Name "Robinson"  # Generated from value "Robinson" located at cell 'Sheet1'!D14.,
+         First_name "Christopher"  # Generated from value "Christopher" located at cell 'Sheet1'!C14.,
+         DateOfBirth "1981-03-25T00:00:00"  # Generated from value "1981-03-25T00:00:00" located at cell 'Sheet1'!H14.,
+         Contact_number "+44 20 3456 7890"  # Generated from value "+44 20 3456 7890" located at cell 'Sheet1'!G14.,
+         Billing_Address "10 Victoria Street, Manchester, M4 6FG, UK"  # Generated from value "10 Victoria Street, Manchester, M4 6FG, UK" located at cell 'Sheet1'!E14.,
+         Shipping_Address "30 Regent Street, London, W1D 1DZ, UK"  # Generated from value "30 Regent Street, London, W1D 1DZ, UK" located at cell 'Sheet1'!F14.,
+         Email "christopherrobinson@example.com"  # Generated from value "christopherrobinson@example.com" located at cell 'Sheet1'!I14.
+   Types: Customers
+Individual: Cus18  # Generated from value "Cus18" located at cell 'Sheet1'!A15.
+   Facts: Customer_ID 18  # Generated from value "18" located at cell 'Sheet1'!B15.,
+         Last_Name "Clark"  # Generated from value "Clark" located at cell 'Sheet1'!D15.,
+         First_name "Linda"  # Generated from value "Linda" located at cell 'Sheet1'!C15.,
+         DateOfBirth "1976-12-08T00:00:00"  # Generated from value "1976-12-08T00:00:00" located at cell 'Sheet1'!H15.,
+         Contact_number "+44 20 4567 8901"  # Generated from value "+44 20 4567 8901" located at cell 'Sheet1'!G15.,
+         Billing_Address "8 Manchester Road, Birmingham, B4 6JD, UK"  # Generated from value "8 Manchester Road, Birmingham, B4 6JD, UK" located at cell 'Sheet1'!E15.,
+         Shipping_Address "45 Park Avenue, Liverpool, L3 9AG, UK"  # Generated from value "45 Park Avenue, Liverpool, L3 9AG, UK" located at cell 'Sheet1'!F15.,
+         Email "lindaclark@example.com"  # Generated from value "lindaclark@example.com" located at cell 'Sheet1'!I15.
+   Types: Customers
+Individual: Cus19  # Generated from value "Cus19" located at cell 'Sheet1'!A16.
+   Facts: Customer_ID 19  # Generated from value "19" located at cell 'Sheet1'!B16.,
+         Last_Name "Rodriguez"  # Generated from value "Rodriguez" located at cell 'Sheet1'!D16.,
+         First_name "Michael"  # Generated from value "Michael" located at cell 'Sheet1'!C16.,
+         DateOfBirth "1983-05-30T00:00:00"  # Generated from value "1983-05-30T00:00:00" located at cell 'Sheet1'!H16.,
+         Contact_number "+44 20 5678 9012"  # Generated from value "+44 20 5678 9012" located at cell 'Sheet1'!G16.,
+         Billing_Address "12 King's Road, Liverpool, L3 8JD, UK"  # Generated from value "12 King's Road, Liverpool, L3 8JD, UK" located at cell 'Sheet1'!E16.,
+         Shipping_Address "20 Oxford Street, Glasgow, G1 7AA, UK"  # Generated from value "20 Oxford Street, Glasgow, G1 7AA, UK" located at cell 'Sheet1'!F16.,
+         Email "michaelrodriguez@example.com"  # Generated from value "michaelrodriguez@example.com" located at cell 'Sheet1'!I16.
+   Types: Customers
+Individual: Cus20  # Generated from value "Cus20" located at cell 'Sheet1'!A17.
+   Facts: Customer_ID 20  # Generated from value "20" located at cell 'Sheet1'!B17.,
+         Last_Name "Lewis"  # Generated from value "Lewis" located at cell 'Sheet1'!D17.,
+         First_name "Susan"  # Generated from value "Susan" located at cell 'Sheet1'!C17.,
+         DateOfBirth "1977-02-14T00:00:00"  # Generated from value "1977-02-14T00:00:00" located at cell 'Sheet1'!H17.,
+         Contact_number "+44 20 6789 0123"  # Generated from value "+44 20 6789 0123" located at cell 'Sheet1'!G17.,
+         Billing_Address "35 Regent Street, Birmingham, B4 3JD, UK"  # Generated from value "35 Regent Street, Birmingham, B4 3JD, UK" located at cell 'Sheet1'!E17.,
+         Shipping_Address "8 Manchester Road, Leeds, LS1 1DZ, UK"  # Generated from value "8 Manchester Road, Leeds, LS1 1DZ, UK" located at cell 'Sheet1'!F17.,
+         Email "susanlewis@example.com"  # Generated from value "susanlewis@example.com" located at cell 'Sheet1'!I17.
+   Types: Customers
+Individual: Cus21  # Generated from value "Cus21" located at cell 'Sheet1'!A18.
+   Facts: Customer_ID 21  # Generated from value "21" located at cell 'Sheet1'!B18.,
+         Last_Name "Lee"  # Generated from value "Lee" located at cell 'Sheet1'!D18.,
+         First_name "Matthew"  # Generated from value "Matthew" located at cell 'Sheet1'!C18.,
+         DateOfBirth "1989-07-20T00:00:00"  # Generated from value "1989-07-20T00:00:00" located at cell 'Sheet1'!H18.,
+         Contact_number "+44 20 7890 1234"  # Generated from value "+44 20 7890 1234" located at cell 'Sheet1'!G18.,
+         Billing_Address "20 Victoria Street, London, EC2N 5AR, UK"  # Generated from value "20 Victoria Street, London, EC2N 5AR, UK" located at cell 'Sheet1'!E18.,
+         Shipping_Address "10 Victoria Street, Manchester, M1 5FS, UK"  # Generated from value "10 Victoria Street, Manchester, M1 5FS, UK" located at cell 'Sheet1'!F18.,
+         Email "matthewlee@example.com"  # Generated from value "matthewlee@example.com" located at cell 'Sheet1'!I18.
+   Types: Customers
+Individual: Cus22  # Generated from value "Cus22" located at cell 'Sheet1'!A19.
+   Facts: Customer_ID 22  # Generated from value "22" located at cell 'Sheet1'!B19.,
+         Last_Name "Walker"  # Generated from value "Walker" located at cell 'Sheet1'!D19.,
+         First_name "Angela"  # Generated from value "Angela" located at cell 'Sheet1'!C19.,
+         DateOfBirth "1974-04-18T00:00:00"  # Generated from value "1974-04-18T00:00:00" located at cell 'Sheet1'!H19.,
+         Contact_number "+44 20 8901 2345"  # Generated from value "+44 20 8901 2345" located at cell 'Sheet1'!G19.,
+         Billing_Address "15 Cambridge Road, Manchester, M1 9AG, UK"  # Generated from value "15 Cambridge Road, Manchester, M1 9AG, UK" located at cell 'Sheet1'!E19.,
+         Shipping_Address "5 High Street, Birmingham, B4 5JD, UK"  # Generated from value "5 High Street, Birmingham, B4 5JD, UK" located at cell 'Sheet1'!F19.,
+         Email "angelawalker@example.com"  # Generated from value "angelawalker@example.com" located at cell 'Sheet1'!I19.
+   Types: Customers
+Individual: Cus23  # Generated from value "Cus23" located at cell 'Sheet1'!A20.
+   Facts: Customer_ID 23  # Generated from value "23" located at cell 'Sheet1'!B20.,
+         Last_Name "Hall"  # Generated from value "Hall" located at cell 'Sheet1'!D20.,
+         First_name "Joshua"  # Generated from value "Joshua" located at cell 'Sheet1'!C20.,
+         DateOfBirth "1980-11-22T00:00:00"  # Generated from value "1980-11-22T00:00:00" located at cell 'Sheet1'!H20.,
+         Contact_number "+44 20 9012 3456"  # Generated from value "+44 20 9012 3456" located at cell 'Sheet1'!G20.,
+         Billing_Address "78 High Street, Manchester, M4 1AA, UK"  # Generated from value "78 High Street, Manchester, M4 1AA, UK" located at cell 'Sheet1'!E20.,
+         Shipping_Address "15 Cambridge Road, Manchester, M1 9AG, UK"  # Generated from value "15 Cambridge Road, Manchester, M1 9AG, UK" located at cell 'Sheet1'!F20.,
+         Email "joshuahall@example.com"  # Generated from value "joshuahall@example.com" located at cell 'Sheet1'!I20.
+   Types: Customers
+Individual: Cus24  # Generated from value "Cus24" located at cell 'Sheet1'!A21.
+   Facts: Customer_ID 24  # Generated from value "24" located at cell 'Sheet1'!B21.,
+         Last_Name "Allen"  # Generated from value "Allen" located at cell 'Sheet1'!D21.,
+         First_name "Emily"  # Generated from value "Emily" located at cell 'Sheet1'!C21.,
+         DateOfBirth "1985-08-29T00:00:00"  # Generated from value "1985-08-29T00:00:00" located at cell 'Sheet1'!H21.,
+         Contact_number "+44 20 0123 4567"  # Generated from value "+44 20 0123 4567" located at cell 'Sheet1'!G21.,
+         Billing_Address "45 Park Avenue, Liverpool, L3 9AG, UK"  # Generated from value "45 Park Avenue, Liverpool, L3 9AG, UK" located at cell 'Sheet1'!E21.,
+         Shipping_Address "25 Liverpool Road, London, EC3M 4JN, UK"  # Generated from value "25 Liverpool Road, London, EC3M 4JN, UK" located at cell 'Sheet1'!F21.,
+         Email "emilyallen@example.com"  # Generated from value "emilyallen@example.com" located at cell 'Sheet1'!I21.
+   Types: Customers
+
+===========================================================================================================

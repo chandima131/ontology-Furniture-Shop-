@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chand/FurnitureRetail/"
+     xml:base="http://www.semanticweb.org/chand/FurnitureRetail/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chand/FurnitureRetail"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Available_Color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Available_Color">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Available_Quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Available_Quantity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Brand_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Brand_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Dimensions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Dimensions">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Item_Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Item_Description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Item_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Item_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Material -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Material">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Price">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Weight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Bank_Transfer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Bank_Transfer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Payment_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Bar_Stool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Bar_Stool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Diningroom_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Bed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Bed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Bedroom_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Bedroom_Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Bedroom_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Indoor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Buffets_Sideboards -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Buffets_Sideboards">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Diningroom_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Card -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Card">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Payment_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Cash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Cash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Payment_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Customers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Customers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#People"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Decor_Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Decor_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Indoor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Dining_Chair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Dining_Chair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Diningroom_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Dining_Table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Dining_Table">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Diningroom_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Diningroom_Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Diningroom_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Indoor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Direct_Suppliers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Direct_Suppliers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Supplyer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Sub_Suppliers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Dresser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Dresser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Bedroom_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Garden_Bench -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Garden_Bench">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Hammock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Hammock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Indoor_Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Indoor_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Invoice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Invoice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Lamp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Lamp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Decor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Livingroom_furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Livingroom_furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Indoor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Mirror -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Mirror">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Decor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Order"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Chair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Chair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Table">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Payment_Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Payment_Method"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#People -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#People"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Rug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Rug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Decor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Sub_Suppliers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Sub_Suppliers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Supplyer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Supplyer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Supplyer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Vase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Vase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Decor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Wall_Art -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Wall_Art">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Decor_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chand/FurnitureRetail#Wardrob -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Wardrob">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chand/FurnitureRetail#Bedroom_Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Bank_Transfer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Card"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Cash"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Bar_Stool"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Buffets_Sideboards"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Dining_Chair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Dining_Table"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Bed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Dresser"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Wardrob"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Bedroom_Furniture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Decor_Furniture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Diningroom_Furniture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Livingroom_furniture"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Garden_Bench"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Hammock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Chair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Outdoor_Table"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Invoice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Order"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Payment_Method"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#People"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Product"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Supplyer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Lamp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Mirror"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Rug"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Vase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/chand/FurnitureRetail#Wall_Art"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

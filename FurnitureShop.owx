@@ -1,0 +1,5302 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/chand/ShopManagementSystem"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/chand/ShopManagementSystem">
+    <Prefix name="" IRI="http://www.semanticweb.org/chand/ShopManagementSystem/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ShopManagementSystem" IRI="http://www.semanticweb.org/chand/ShopManagementSystem#"/>
+    <Declaration>
+        <Class IRI="#Armchairs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bar_Stools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bedroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buffets_and_Sideboards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Card"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cash"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coffee_Tables"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer_representative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dining_Chairs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dining_Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dining_Tables"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Direct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Direct_supplyer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dressers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Garden_Benches"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General_labourer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hammocks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Invoice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lamps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Living_Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Managers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mirrors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Online"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outdoor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outdoor_Chairs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outdoor_Tables"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Payment_Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#People"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sofas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sub_supplyer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suppliers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TV_Stands"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Telephone_call"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vases"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wall_Art"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wardrobs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Associated_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Billed_To"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Paid_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Shipped_To"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#choose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContactWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInvoice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#interact_with"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#keepRecords"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#placed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supply"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Availability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Available_Colors"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Barcode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Billing_Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Category_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Contact_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Creation_Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Currency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Customer_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Customer_Information"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DateOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Dilivery_Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Dimensions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Discounts"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#First_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Images"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Invoice_Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Invoice_Number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Items"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Joined_Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Last_Modified_Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Last_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Number_of_products"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Order_Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Order_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Order_Status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Payment_Status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Payment_Terms"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Product_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Quantity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Reviews"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Shipping_Address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Staff_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Sub_Total"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Supplyer_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tax_Information"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Terms_and_Conditions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Total_Amount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Total_Cost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Variants"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Weight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#brand"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Product/Service_Details"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BarS1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BarS2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bed1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bed2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buffets1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buffets2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CR1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CR2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cus1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cus2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cus3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cus4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cus5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DiningCh1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DiningCh2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DiningTB1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DiningTB2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DisplayCabin1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DisplayCabin2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dress1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dress2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GL1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GL2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manager1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manager2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rug1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rug2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TV_St1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TV_St2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WD1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WD2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arm_ch1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arm_ch2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coffee_tb1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coffee_tb2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#invo1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lamp1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lamp2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mirror1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mirror2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#outTable1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#outTable2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sofa1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sofa2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sofa3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vass1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vass2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wallA1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wallA2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1006"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1007"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1009"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1011"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1012"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1014"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1017"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#9"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Armchairs"/>
+        <Class IRI="#Living_Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bar_Stools"/>
+        <Class IRI="#Dining_Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bedroom"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beds"/>
+        <Class IRI="#Bedroom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buffets_and_Sideboards"/>
+        <Class IRI="#Dining_Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Card"/>
+        <Class IRI="#Payment_Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cash"/>
+        <Class IRI="#Payment_Method"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Category"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coffee_Tables"/>
+        <Class IRI="#Living_Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customer_representative"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customers"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decor"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dining_Chairs"/>
+        <Class IRI="#Dining_Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dining_Room"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dining_Tables"/>
+        <Class IRI="#Dining_Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Direct"/>
+        <Class IRI="#Orders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Direct_supplyer"/>
+        <Class IRI="#Suppliers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dressers"/>
+        <Class IRI="#Bedroom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garden_Benches"/>
+        <Class IRI="#Outdoor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#General_labourer"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hammocks"/>
+        <Class IRI="#Outdoor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lamps"/>
+        <Class IRI="#Decor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Living_Room"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Managers"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mirrors"/>
+        <Class IRI="#Decor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Online"/>
+        <Class IRI="#Orders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outdoor"/>
+        <Class IRI="#Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outdoor_Chairs"/>
+        <Class IRI="#Outdoor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outdoor_Tables"/>
+        <Class IRI="#Outdoor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rugs"/>
+        <Class IRI="#Decor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sofas"/>
+        <Class IRI="#Living_Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sub_supplyer"/>
+        <Class IRI="#Suppliers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suppliers"/>
+        <Class IRI="#People"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TV_Stands"/>
+        <Class IRI="#Living_Room"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Telephone_call"/>
+        <Class IRI="#Orders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vases"/>
+        <Class IRI="#Decor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wall_Art"/>
+        <Class IRI="#Decor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wardrobs"/>
+        <Class IRI="#Bedroom"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Armchairs"/>
+        <Class IRI="#Coffee_Tables"/>
+        <Class IRI="#Sofas"/>
+        <Class IRI="#TV_Stands"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Card"/>
+        <Class IRI="#Cash"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Direct"/>
+        <Class IRI="#Online"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Direct"/>
+        <Class IRI="#Online"/>
+        <Class IRI="#Telephone_call"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Direct_supplyer"/>
+        <Class IRI="#Sub_supplyer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Garden_Benches"/>
+        <Class IRI="#Hammocks"/>
+        <Class IRI="#Outdoor_Chairs"/>
+        <Class IRI="#Outdoor_Tables"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Lamps"/>
+        <Class IRI="#Mirrors"/>
+        <Class IRI="#Rugs"/>
+        <Class IRI="#Vases"/>
+        <Class IRI="#Wall_Art"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Bar_Stools"/>
+        <NamedIndividual IRI="#BarS1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bar_Stools"/>
+        <NamedIndividual IRI="#BarS2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beds"/>
+        <NamedIndividual IRI="#Bed1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beds"/>
+        <NamedIndividual IRI="#Bed2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Buffets_and_Sideboards"/>
+        <NamedIndividual IRI="#Buffets1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Buffets_and_Sideboards"/>
+        <NamedIndividual IRI="#Buffets2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer_representative"/>
+        <NamedIndividual IRI="#CR1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customer_representative"/>
+        <NamedIndividual IRI="#CR2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#Cus1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#Cus2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#Cus3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#Cus4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#Cus5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dining_Chairs"/>
+        <NamedIndividual IRI="#DiningCh1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dining_Chairs"/>
+        <NamedIndividual IRI="#DiningCh2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dining_Tables"/>
+        <NamedIndividual IRI="#DiningTB1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dining_Tables"/>
+        <NamedIndividual IRI="#DiningTB2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dressers"/>
+        <NamedIndividual IRI="#Dress1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dressers"/>
+        <NamedIndividual IRI="#Dress2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#General_labourer"/>
+        <NamedIndividual IRI="#GL1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#General_labourer"/>
+        <NamedIndividual IRI="#GL2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Managers"/>
+        <NamedIndividual IRI="#Manager1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Managers"/>
+        <NamedIndividual IRI="#Manager2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rugs"/>
+        <NamedIndividual IRI="#Rug1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rugs"/>
+        <NamedIndividual IRI="#Rug2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TV_Stands"/>
+        <NamedIndividual IRI="#TV_St1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TV_Stands"/>
+        <NamedIndividual IRI="#TV_St2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wardrobs"/>
+        <NamedIndividual IRI="#WD1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wardrobs"/>
+        <NamedIndividual IRI="#WD2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Armchairs"/>
+        <NamedIndividual IRI="#arm_ch1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Armchairs"/>
+        <NamedIndividual IRI="#arm_ch2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coffee_Tables"/>
+        <NamedIndividual IRI="#coffee_tb1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coffee_Tables"/>
+        <NamedIndividual IRI="#coffee_tb2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#invo1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lamps"/>
+        <NamedIndividual IRI="#lamp1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lamps"/>
+        <NamedIndividual IRI="#lamp2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mirrors"/>
+        <NamedIndividual IRI="#mirror1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mirrors"/>
+        <NamedIndividual IRI="#mirror2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Outdoor_Tables"/>
+        <NamedIndividual IRI="#outTable1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Outdoor_Tables"/>
+        <NamedIndividual IRI="#outTable2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sofas"/>
+        <NamedIndividual IRI="#sofa1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sofas"/>
+        <NamedIndividual IRI="#sofa2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sofas"/>
+        <NamedIndividual IRI="#sofa3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vases"/>
+        <NamedIndividual IRI="#vass1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vases"/>
+        <NamedIndividual IRI="#vass2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wall_Art"/>
+        <NamedIndividual IRI="#wallA1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wall_Art"/>
+        <NamedIndividual IRI="#wallA2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1006"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1007"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1008"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1009"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1010"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1011"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1013"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1014"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1016"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Invoice"/>
+        <NamedIndividual IRI="#1017"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Customers"/>
+        <NamedIndividual IRI="#9"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#BarS1"/>
+        <Literal>Out of stocks</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#BarS1"/>
+        <Literal>Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#BarS1"/>
+        <Literal>A modern bar stool with adjustable height and 360-degree swivel, featuring a comfortable padded seat and sleek metal base.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#BarS1"/>
+        <Literal>14&quot; x 14&quot; x 30&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#BarS1"/>
+        <Literal>Metal, Faux Leather</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#BarS1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">129.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#BarS1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#BarS1"/>
+        <Literal>ModernBars</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#BarS1"/>
+        <Literal>Rustic Wooden Bar Stool</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#BarS2"/>
+        <Literal>in Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#BarS2"/>
+        <Literal>Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#BarS2"/>
+        <Literal>A sturdy bar stool with a solid wood construction and a comfortable, contoured seat, perfect for rustic bar areas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#BarS2"/>
+        <Literal>16&quot; x 18&quot; x 35&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#BarS2"/>
+        <Literal>Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#BarS2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">149.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#BarS2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#BarS2"/>
+        <Literal>RusticBars</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#BarS2"/>
+        <Literal>Adjustable Swivel Bar Stool</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#Bed1"/>
+        <Literal>In Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#Bed1"/>
+        <Literal>Beige, Grey</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#Bed1"/>
+        <Literal>A sophisticated upholstered platform bed with a tufted headboard and sturdy wooden slats.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#Bed1"/>
+        <Literal>Queen Size</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#Bed1"/>
+        <Literal>Fabric, Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#Bed1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">899.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#Bed1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#Bed1"/>
+        <Literal>Dream Haven</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Bed1"/>
+        <Literal>Elegant Upholstered Platform Bed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#Bed2"/>
+        <Literal>in Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#Bed2"/>
+        <Literal>Oak</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#Bed2"/>
+        <Literal>A charming wooden canopy bed with intricate carvings and a durable frame.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#Bed2"/>
+        <Literal>King Size</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#Bed2"/>
+        <Literal>Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#Bed2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1299.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#Bed2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#Bed2"/>
+        <Literal>TimberNest</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Bed2"/>
+        <Literal>Rustic Wooden Canopy Bed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#Buffets1"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#Buffets1"/>
+        <Literal>Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#Buffets1"/>
+        <Literal>A sleek buffet with multiple storage compartments and dedicated wine racks, perfect for modern dining spaces.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#Buffets1"/>
+        <Literal>60&quot; x 18&quot; x 36&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#Buffets1"/>
+        <Literal>Wood, Metal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#Buffets1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">999.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#Buffets1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#Buffets1"/>
+        <Literal>ModernBuffets</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Buffets1"/>
+        <Literal>Contemporary Buffet with Wine Storage</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#Buffets2"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#Buffets2"/>
+        <Literal>Oak</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#Buffets2"/>
+        <Literal>A spacious sideboard with multiple drawers and shelves, featuring a distressed finish, ideal for rustic dining rooms.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#Buffets2"/>
+        <Literal>70&quot; x 20&quot; x 40&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Discounts"/>
+        <NamedIndividual IRI="#Buffets2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#Buffets2"/>
+        <Literal>Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#Buffets2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1299.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#Buffets2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#Buffets2"/>
+        <Literal>RusticBuffets</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Buffets2"/>
+        <Literal>Rustic Sideboard with Drawers</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal>Halifax,uk</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0124687968</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1988-02-27T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal>sama@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal>sama</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gender"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Joined_Date"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-02T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal>Rajapaksha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Staff_ID"/>
+        <NamedIndividual IRI="#CR1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal>Cardiff,London</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0789658246</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1999-07-22T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal>tharani@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal>Tharani</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gender"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Joined_Date"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-12T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal>Kulathunga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Staff_ID"/>
+        <NamedIndividual IRI="#CR2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#Cus1"/>
+        <Literal>122,Queenswalk,Peterborough</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#Cus1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">07174797893</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#Cus1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#Cus1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1978-07-22T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#Cus1"/>
+        <Literal>lucky@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#Cus1"/>
+        <Literal>Lucky</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#Cus1"/>
+        <Literal>Meththasena</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#Cus1"/>
+        <Literal>122,Queenswalk,Peterborough</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#Cus2"/>
+        <Literal>Ely rd, Cambridge</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#Cus2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0724318118</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#Cus2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#Cus2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2001-07-21T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#Cus2"/>
+        <Literal>chandi@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#Cus2"/>
+        <Literal>Chandi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gender"/>
+        <NamedIndividual IRI="#Cus2"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#Cus2"/>
+        <Literal>Samarakoon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#Cus3"/>
+        <Literal>Manchester,Leeds</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#Cus3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0727978983</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#Cus3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#Cus3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1998-02-18T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#Cus3"/>
+        <Literal>riya@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#Cus3"/>
+        <Literal>Riya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gender"/>
+        <NamedIndividual IRI="#Cus3"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#Cus3"/>
+        <Literal>Ballah</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#Cus4"/>
+        <Literal>London rd, Peterborough</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#Cus4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0766117682</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#Cus4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#Cus4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1998-03-28T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#Cus4"/>
+        <Literal>ruban@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#Cus4"/>
+        <Literal>Ruban</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gender"/>
+        <NamedIndividual IRI="#Cus4"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#Cus4"/>
+        <Literal>Silva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#Cus5"/>
+        <Literal>Polpithigama, Sri Lanka</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#Cus5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0724353200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#Cus5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#Cus5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1998-02-18T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#Cus5"/>
+        <Literal>mahinda@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#Cus5"/>
+        <Literal>mahinda</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gender"/>
+        <NamedIndividual IRI="#Cus5"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#Cus5"/>
+        <Literal>Bandara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#DiningCh1"/>
+        <Literal>in Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#DiningCh1"/>
+        <Literal>Grey</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#DiningCh1"/>
+        <Literal>A comfortable dining chair with soft fabric upholstery and a sturdy wooden frame, suitable for modern dining spaces.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#DiningCh1"/>
+        <Literal>22&quot; x 20&quot; x 35&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#DiningCh1"/>
+        <Literal>Fabric, Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#DiningCh1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">149.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#DiningCh1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#DiningCh1"/>
+        <Literal>ComfortDine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#DiningCh1"/>
+        <Literal>Upholstered Fabric Dining Chair</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#DiningCh2"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#DiningCh2"/>
+        <Literal>Brown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#DiningCh2"/>
+        <Literal>An elegant dining chair with luxurious leather upholstery and decorative nailhead trim, perfect for formal dining rooms.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#DiningCh2"/>
+        <Literal>24&quot; x 22&quot; x 38&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#DiningCh2"/>
+        <Literal>Leather, Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#DiningCh2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">199.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#DiningCh2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#DiningCh2"/>
+        <Literal>ClassicDine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#DiningCh2"/>
+        <Literal>Classic Leather Dining Chair</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#DiningTB1"/>
+        <Literal>In Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#DiningTB1"/>
+        <Literal>Clear</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#DiningTB1"/>
+        <Literal>A contemporary dining table with a tempered glass top and metal legs, perfect for modern interiors.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#DiningTB1"/>
+        <Literal>72&quot; x 36&quot; x 30&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#DiningTB1"/>
+        <Literal>Glass, Metal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#DiningTB1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">799.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#DiningTB1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#DiningTB1"/>
+        <Literal>RusticHome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#DiningTB1"/>
+        <Literal>Modern Glass Top Dining Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#DiningTB2"/>
+        <Literal>In Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#DiningTB2"/>
+        <Literal>Brown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#DiningTB2"/>
+        <Literal>A sturdy, farmhouse-style wooden dining table with a distressed finish, ideal for rustic-themed dining rooms.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#DiningTB2"/>
+        <Literal>84&quot; x 40&quot; x 30&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#DiningTB2"/>
+        <Literal>Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#DiningTB2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">899.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#DiningTB2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">125</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#DiningTB2"/>
+        <Literal>ComfortDine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#DiningTB2"/>
+        <Literal>Rustic Wooden Dining Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#Dress1"/>
+        <Literal>out of Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#Dress1"/>
+        <Literal>Black, White</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#Dress1"/>
+        <Literal>A sleek and spacious 6-drawer dresser with a glossy finish and metal handles.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#Dress1"/>
+        <Literal>60&quot; x 20&quot; x 32&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#Dress1"/>
+        <Literal>Wood, Metal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#Dress1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">699.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#Dress1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#Dress1"/>
+        <Literal>Urbane Living</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dress1"/>
+        <Literal>Contemporary 6-Drawer Dresser</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#Dress2"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#Dress2"/>
+        <Literal>Walnut</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#Dress2"/>
+        <Literal>A vintage-style dresser with eight spacious drawers and an elegant matching mirror.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#Dress2"/>
+        <Literal>58&quot; x 18&quot; x 40&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#Dress2"/>
+        <Literal>Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#Dress2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">899.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#Dress2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">522</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#Dress2"/>
+        <Literal>Nostalgia Home</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Dress2"/>
+        <Literal>Vintage 8-Drawer Dresser with Mirror</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#GL1"/>
+        <Literal>Huntingdon,Peterborough</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#GL1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1996-08-15T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#GL1"/>
+        <Literal>ananda@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#GL1"/>
+        <Literal>Ananda</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gender"/>
+        <NamedIndividual IRI="#GL1"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Joined_Date"/>
+        <NamedIndividual IRI="#GL1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2011-05-12T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#GL1"/>
+        <Literal>Gunathilake</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Staff_ID"/>
+        <NamedIndividual IRI="#GL1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#GL2"/>
+        <Literal>Hull, Peterborough</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#GL2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2000-07-22T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#GL2"/>
+        <Literal>bandara@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#GL2"/>
+        <Literal>Bandara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gender"/>
+        <NamedIndividual IRI="#GL2"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Joined_Date"/>
+        <NamedIndividual IRI="#GL2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2001-09-22T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#GL2"/>
+        <Literal>Herath</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Staff_ID"/>
+        <NamedIndividual IRI="#GL2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#Manager1"/>
+        <Literal>100,kingslin rd, kingston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#Manager1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0766525892</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#Manager1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1965-05-12T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#Manager1"/>
+        <Literal>sharukh@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#Manager1"/>
+        <Literal>Sharukh</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gender"/>
+        <NamedIndividual IRI="#Manager1"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Joined_Date"/>
+        <NamedIndividual IRI="#Manager1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2015-11-30T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#Manager1"/>
+        <Literal>Khan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Staff_ID"/>
+        <NamedIndividual IRI="#Manager1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Address"/>
+        <NamedIndividual IRI="#Manager2"/>
+        <Literal>Spicemill,leeds</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#Manager2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0114287569</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#Manager2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1978-07-22T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#Manager2"/>
+        <Literal>danial@gmail.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#Manager2"/>
+        <Literal>Danial</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gender"/>
+        <NamedIndividual IRI="#Manager2"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Joined_Date"/>
+        <NamedIndividual IRI="#Manager2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T14:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#Manager2"/>
+        <Literal>Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Staff_ID"/>
+        <NamedIndividual IRI="#Manager2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#Rug1"/>
+        <Literal>In Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#Rug1"/>
+        <Literal>Grey, Blue</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#Rug1"/>
+        <Literal>A contemporary area rug with a geometric design and a soft, durable texture, suitable for modern living spaces.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#Rug1"/>
+        <Literal>8&apos; x 10&apos;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#Rug1"/>
+        <Literal>Synthetic Fiber</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#Rug1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">299.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#Rug1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#Rug1"/>
+        <Literal>ModernRugs</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Rug1"/>
+        <Literal>Geometric Pattern Area Rug</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#Rug2"/>
+        <Literal>Out of Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#Rug2"/>
+        <Literal>Red, Gold</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#Rug2"/>
+        <Literal>A luxurious oriental rug with intricate patterns and rich colors, perfect for adding a touch of elegance to classic interiors.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#Rug2"/>
+        <Literal>9&apos; x 12&apos;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#Rug2"/>
+        <Literal>Wool</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#Rug2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">499.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#Rug2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#Rug2"/>
+        <Literal>ClassicRugs</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Rug2"/>
+        <Literal>Traditional Oriental Rug</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#TV_St1"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#TV_St1"/>
+        <Literal>Brown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#TV_St1"/>
+        <Literal>A sturdy, barn-door style TV console with ample storage space for media devices</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#TV_St1"/>
+        <Literal>65&quot; x 18&quot; x 30&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#TV_St1"/>
+        <Literal>Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#TV_St1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">799.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#TV_St1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#TV_St1"/>
+        <Literal>RusticHome Furnishings</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#TV_St1"/>
+        <Literal>Rustic TV Console</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#TV_St2"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#TV_St2"/>
+        <Literal>black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#TV_St2"/>
+        <Literal>A sleek, wall-mounted TV stand with storage compartments and LED lighting</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#TV_St2"/>
+        <Literal>60&quot; x 15&quot; x 12&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#TV_St2"/>
+        <Literal>Steel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#TV_St2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">499.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#TV_St2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#TV_St2"/>
+        <Literal>PQR Designs</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#TV_St2"/>
+        <Literal>Modern Floating TV Stand</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#WD1"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#WD1"/>
+        <Literal>White, Oak</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#WD1"/>
+        <Literal>A modern wardrobe with sliding doors, multiple shelves, and a hanging rod for clothes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#WD1"/>
+        <Literal>72&quot; x 24&quot; x 80&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#WD1"/>
+        <Literal>Wood, Glass</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#WD1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">999.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#WD1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">250</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#WD1"/>
+        <Literal>MaxStorage Solutions</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#WD1"/>
+        <Literal>Spacious Sliding Door Wardrobe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#WD2"/>
+        <Literal>in Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#WD2"/>
+        <Literal>Cherry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#WD2"/>
+        <Literal>A classic four-door wardrobe with intricate detailing, drawers, and ample storage space.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#WD2"/>
+        <Literal>80&quot; x 28&quot; x 84&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#WD2"/>
+        <Literal>Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#WD2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1499.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#WD2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#WD2"/>
+        <Literal>Classic Furnishings</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#WD2"/>
+        <Literal>Traditional Four-Door Wardrobe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#arm_ch1"/>
+        <Literal>out of stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#arm_ch1"/>
+        <Literal>Brown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#arm_ch1"/>
+        <Literal>An elegant armchair with a high back, padded armrests, and premium leather upholstery.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#arm_ch1"/>
+        <Literal>30&quot; x 32&quot; x 38&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#arm_ch1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">599.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#arm_ch1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#arm_ch1"/>
+        <Literal>Comfort Living</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#arm_ch1"/>
+        <Literal>Leather Accent Armchair</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#arm_ch2"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#arm_ch2"/>
+        <Literal>Grey</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#arm_ch2"/>
+        <Literal>A comfortable, swiveling armchair with a sleek design and plush cushioning.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#arm_ch2"/>
+        <Literal>28&quot; x 30&quot; x 34&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#arm_ch2"/>
+        <Literal>Fabric, Metal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#arm_ch2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">399.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#arm_ch2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#arm_ch2"/>
+        <Literal>Chic Interiors</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#arm_ch2"/>
+        <Literal>Modern Swivel Armchair</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#coffee_tb1"/>
+        <Literal>In stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#coffee_tb1"/>
+        <Literal>Clear, Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#coffee_tb1"/>
+        <Literal>A contemporary coffee table with a tempered glass top and metal legs</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#coffee_tb1"/>
+        <Literal>48&quot; x 24&quot; x 18&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#coffee_tb1"/>
+        <Literal>Glass, Metal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#coffee_tb1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">299.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#coffee_tb1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#coffee_tb1"/>
+        <Literal>Modern Living Accents</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#coffee_tb1"/>
+        <Literal>Glass Top Coffee Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#coffee_tb2"/>
+        <Literal>In stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#coffee_tb2"/>
+        <Literal>Espresso</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#coffee_tb2"/>
+        <Literal>A practical coffee table with a lift-top and hidden storage compartments.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#coffee_tb2"/>
+        <Literal>42&quot; x 24&quot; x 18&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#coffee_tb2"/>
+        <Literal>Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#coffee_tb2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">349.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#coffee_tb2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#coffee_tb2"/>
+        <Literal>Comfort Living</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#coffee_tb2"/>
+        <Literal>Wooden Coffee Table with Storage</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#invo1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-02T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#invo1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#invo1"/>
+        <Literal>Furniture Purchase</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#invo1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#invo1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1899.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#invo1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">151.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#invo1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2051.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal>Silver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal>A versatile floor lamp with an adjustable reading light and a contemporary design, perfect for providing task lighting in modern living rooms.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal>60&quot; height</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Discounts"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal>Metal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">129.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal>ModernLighting</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#lamp1"/>
+        <Literal>Adjustable Floor Lamp with Reading Light</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal>Multicolor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal>An elegant table lamp with a stained glass shade and a decorative base, ideal for adding a touch of traditional charm to any room</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal>24&quot; height</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal>Glass, Metal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">199.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal>TiffanyLamps</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#lamp2"/>
+        <Literal>Tiffany-Style Table Lamp</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#mirror1"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#mirror1"/>
+        <Literal>Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#mirror1"/>
+        <Literal>A sleek, minimalist round wall mirror with a black metal frame, perfect for contemporary interiors.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#mirror1"/>
+        <Literal>36&quot; diameter</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#mirror1"/>
+        <Literal>Metal, Glass</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#mirror1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">149.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#mirror1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#mirror1"/>
+        <Literal>ModernHome Accents</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#mirror1"/>
+        <Literal>Modern Round Wall Mirror</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#mirror2"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#mirror2"/>
+        <Literal>Antique White</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#mirror2"/>
+        <Literal>An elegant oval-shaped vanity mirror with intricate detailing and a distressed finish, perfect for traditional dressing areas.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#mirror2"/>
+        <Literal>24&quot; x 36&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#mirror2"/>
+        <Literal>Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#mirror2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">199.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#mirror2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#mirror2"/>
+        <Literal>VintageReflections</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#mirror2"/>
+        <Literal>Vintage Oval Vanity Mirror</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#outTable1"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#outTable1"/>
+        <Literal>Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#outTable1"/>
+        <Literal>A sturdy round patio dining table with a weather-resistant finish, perfect for outdoor gatherings and meals with family and friends.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#outTable1"/>
+        <Literal>48&quot; diameter x 30&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Discounts"/>
+        <NamedIndividual IRI="#outTable1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#outTable1"/>
+        <Literal>Metal, Glass</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#outTable1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">399.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#outTable1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#outTable1"/>
+        <Literal>OutdoorDining</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#outTable1"/>
+        <Literal>Round Patio Dining Table</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#outTable2"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#outTable2"/>
+        <Literal>Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#outTable2"/>
+        <Literal>A convenient foldable picnic table set with attached benches, perfect for enjoying meals and activities in your backyard or while camping</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#outTable2"/>
+        <Literal>72&quot; x 28&quot; x 30&quot; (Table), 72&quot; x 10&quot; x 18&quot; (Bench)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#outTable2"/>
+        <Literal>Wood, Metal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#outTable2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">249.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#outTable2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#outTable2"/>
+        <Literal>OutdoorEssentials</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#outTable2"/>
+        <Literal>Foldable Picnic Table with Benches</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#sofa1"/>
+        <Literal>In Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#sofa1"/>
+        <Literal>Grey, Blue, Beige</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#sofa1"/>
+        <Literal>A comfortable, modern-style sofa with plush cushions.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#sofa1"/>
+        <Literal>80&quot; x 36&quot; x 32&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#sofa1"/>
+        <Literal>Fabric, Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#sofa1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">599.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#sofa1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#sofa1"/>
+        <Literal>Modern Living Accents</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#sofa1"/>
+        <Literal>Elegant Sofa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#sofa2"/>
+        <Literal>Out of Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#sofa2"/>
+        <Literal>Brown, Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#sofa2"/>
+        <Literal>A luxurious, tufted leather sofa with rolled arms and backrest.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#sofa2"/>
+        <Literal>84&quot; x 36&quot; x 29&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#sofa2"/>
+        <Literal>Leather, Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#sofa2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1499.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#sofa2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#sofa2"/>
+        <Literal>RusticHome Furnishings</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#sofa2"/>
+        <Literal>Classic Chesterfield Sofa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#sofa3"/>
+        <Literal>In Stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#sofa3"/>
+        <Literal>Grey, Beige</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#sofa3"/>
+        <Literal>A spacious, L-shaped sectional sofa with soft microfiber upholstery.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#sofa3"/>
+        <Literal>100&quot; x 80&quot; x 35&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#sofa3"/>
+        <Literal>Microfiber, Wood</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#sofa3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1199.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#sofa3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#sofa3"/>
+        <Literal>PQR Designs</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#sofa3"/>
+        <Literal>Contemporary Sectional Sofa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#vass1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#vass1"/>
+        <Literal>White, Black, Grey</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#vass1"/>
+        <Literal>A set of three sleek, modern ceramic vases in different sizes and complementary colors, perfect for contemporary home decor.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#vass1"/>
+        <Literal>Various sizes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#vass1"/>
+        <Literal>Ceramic</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#vass1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">79.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#vass1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#vass1"/>
+        <Literal>ModernVases</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#vass1"/>
+        <Literal>Modern Ceramic Vase Set</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#vass2"/>
+        <Literal>in stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#vass2"/>
+        <Literal>Bronze</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#vass2"/>
+        <Literal>A charming metal flower vase with a distressed finish and intricate detailing, perfect for rustic and farmhouse-style settings.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#vass2"/>
+        <Literal>12&quot; height</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#vass2"/>
+        <Literal>Metal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#vass2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">49.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#vass2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#vass2"/>
+        <Literal>RusticVibes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#vass2"/>
+        <Literal>Rustic Metal Flower Vase</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#wallA1"/>
+        <Literal>out of stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#wallA1"/>
+        <Literal>Multicolor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#wallA1"/>
+        <Literal>A set of three contemporary abstract canvas paintings with bold colors and striking designs, perfect for adding a modern focal point to any room.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#wallA1"/>
+        <Literal>Various sizes (24&quot; x 36&quot;, 20&quot; x 30&quot;, 16&quot; x 24&quot;)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#wallA1"/>
+        <Literal>Canvas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#wallA1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">299.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#wallA1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#wallA1"/>
+        <Literal>ArtisticExpressions</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#wallA1"/>
+        <Literal>Abstract Canvas Wall Art Set</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Availability"/>
+        <NamedIndividual IRI="#wallA2"/>
+        <Literal>out of stock</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Available_Colors"/>
+        <NamedIndividual IRI="#wallA2"/>
+        <Literal>Earth Tones</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#wallA2"/>
+        <Literal>A breathtaking metal wall art piece depicting a scenic landscape with intricate details, perfect for adding a touch of nature to your home decor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Dimensions"/>
+        <NamedIndividual IRI="#wallA2"/>
+        <Literal>48&quot; x 24&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Material"/>
+        <NamedIndividual IRI="#wallA2"/>
+        <Literal>Metal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Price"/>
+        <NamedIndividual IRI="#wallA2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">399.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Weight"/>
+        <NamedIndividual IRI="#wallA2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#brand"/>
+        <NamedIndividual IRI="#wallA2"/>
+        <Literal>NatureArt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#wallA2"/>
+        <Literal>Scenic Landscape Metal Wall Art</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#1"/>
+        <Literal>45 Park Avenue, London, EC2P 2JY, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#1"/>
+        <Literal>+44 20 1234 5678</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#1"/>
+        <Literal>1980-05-25T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#1"/>
+        <Literal>johndoe@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#1"/>
+        <Literal>John</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#1"/>
+        <Literal>Doe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#1"/>
+        <Literal>45 Park Avenue, London, EC2P 2JY, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#10"/>
+        <Literal>8 Manchester Road, Leeds, LS1 1DZ, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#10"/>
+        <Literal>+44 20 0123 4567</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#10"/>
+        <Literal>10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#10"/>
+        <Literal>1979-08-08T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#10"/>
+        <Literal>karenrodriguez@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#10"/>
+        <Literal>Karen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#10"/>
+        <Literal>Rodriguez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#10"/>
+        <Literal>8 Manchester Road, Leeds, LS1 1DZ, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1001"/>
+        <Literal>2023-10-25T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1001"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1001"/>
+        <Literal>Sofas - 699.99, Coffee Tables - 299.99, Dining Tables - 899.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1001"/>
+        <Literal>1001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1001"/>
+        <Literal>1899.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1001"/>
+        <Literal>151.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1001"/>
+        <Literal>2051.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1002"/>
+        <Literal>2023-10-22T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1002"/>
+        <Literal>2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1002"/>
+        <Literal>Beds - 999.99, Dressers - 699.99, Nightstands - 299.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1002"/>
+        <Literal>1002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1002"/>
+        <Literal>1999.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1002"/>
+        <Literal>159.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1002"/>
+        <Literal>2159.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1003"/>
+        <Literal>2023-10-20T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1003"/>
+        <Literal>3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1003"/>
+        <Literal>TV Stands - 499.99, Coffee Tables - 249.99, Bookcases - 349.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1003"/>
+        <Literal>1003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1003"/>
+        <Literal>1099.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1003"/>
+        <Literal>87.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1003"/>
+        <Literal>1187.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1004"/>
+        <Literal>2023-10-18T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1004"/>
+        <Literal>4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1004"/>
+        <Literal>Armchairs - 399.99, Ottomans - 199.99, Side Tables - 149.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1004"/>
+        <Literal>1004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1004"/>
+        <Literal>749.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1004"/>
+        <Literal>59.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1004"/>
+        <Literal>809.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1005"/>
+        <Literal>2023-10-15T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1005"/>
+        <Literal>5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1005"/>
+        <Literal>Dining Chairs - 799.99, Buffets and Sideboards - 499.99, Bar Stools - 699.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1005"/>
+        <Literal>1005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1005"/>
+        <Literal>1999.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1005"/>
+        <Literal>159.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1005"/>
+        <Literal>2159.95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1006"/>
+        <Literal>2023-10-12T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1006"/>
+        <Literal>6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1006"/>
+        <Literal>Display Cabinets - 299.99, Outdoor Chairs - 199.99, Hammocks - 399.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1006"/>
+        <Literal>1006</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1006"/>
+        <Literal>899.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1006"/>
+        <Literal>71.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1006"/>
+        <Literal>971.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1007"/>
+        <Literal>2023-10-10T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1007"/>
+        <Literal>7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1007"/>
+        <Literal>Outdoor Tables - 199.99, Garden Benches - 899.99, Office Desks - 149.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1007"/>
+        <Literal>1007</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1007"/>
+        <Literal>1249.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1007"/>
+        <Literal>99.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1007"/>
+        <Literal>1349.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1008"/>
+        <Literal>2023-10-08T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1008"/>
+        <Literal>8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1008"/>
+        <Literal>Office Chairs - 599.99, Filing Cabinets - 249.99, Conference Tables - 399.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1008"/>
+        <Literal>1008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1008"/>
+        <Literal>1249.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1008"/>
+        <Literal>99.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1008"/>
+        <Literal>1349.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1009"/>
+        <Literal>2023-10-05T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1009"/>
+        <Literal>9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1009"/>
+        <Literal>Rugs - 399.99, Lamps - 199.99, Vases - 149.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1009"/>
+        <Literal>1009</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1009"/>
+        <Literal>749.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1009"/>
+        <Literal>59.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1009"/>
+        <Literal>809.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1010"/>
+        <Literal>2023-10-02T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1010"/>
+        <Literal>10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1010"/>
+        <Literal>Wall Art - 799.99, Chairs - 499.99, Cabinets - 699.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1010"/>
+        <Literal>1010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1010"/>
+        <Literal>1999.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1010"/>
+        <Literal>159.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1010"/>
+        <Literal>2159.95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1011"/>
+        <Literal>2023-10-25T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1011"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1011"/>
+        <Literal>Sofa - 399.99, Coffee Table - 199.99, Dining Set - 699.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1011"/>
+        <Literal>1011</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1011"/>
+        <Literal>1299.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1011"/>
+        <Literal>103.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1011"/>
+        <Literal>1403.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1012"/>
+        <Literal>2023-09-22T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1012"/>
+        <Literal>12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1012"/>
+        <Literal>Bed - 599.99, Dresser - 399.99, Nightstand - 149.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1012"/>
+        <Literal>1012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1012"/>
+        <Literal>1149.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1012"/>
+        <Literal>91.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1012"/>
+        <Literal>1241.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1013"/>
+        <Literal>2023-08-20T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1013"/>
+        <Literal>3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1013"/>
+        <Literal>TV Stand - 299.99, Coffee Table - 149.99, Bookshelf - 199.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1013"/>
+        <Literal>1013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1013"/>
+        <Literal>649.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1013"/>
+        <Literal>51.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1013"/>
+        <Literal>701.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1014"/>
+        <Literal>2023-07-18T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1014"/>
+        <Literal>14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1014"/>
+        <Literal>Armchair - 199.99, Ottoman - 99.99, Side Table - 79.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1014"/>
+        <Literal>1014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1014"/>
+        <Literal>379.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1014"/>
+        <Literal>30.39</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1014"/>
+        <Literal>410.36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1015"/>
+        <Literal>2023-06-15T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1015"/>
+        <Literal>15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1015"/>
+        <Literal>Dining Table - 499.99, Dining Chairs (Set of 4) - 299.99, Buffet - 399.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1015"/>
+        <Literal>1015</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1015"/>
+        <Literal>1199.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1015"/>
+        <Literal>95.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1015"/>
+        <Literal>1295.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1016"/>
+        <Literal>2023-05-12T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1016"/>
+        <Literal>16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1016"/>
+        <Literal>Outdoor Chairs (Set of 2) - 149.99, Hammock - 99.99, Outdoor Table - 199.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1016"/>
+        <Literal>1016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sub_Total"/>
+        <NamedIndividual IRI="#1016"/>
+        <Literal>449.97</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tax_Information"/>
+        <NamedIndividual IRI="#1016"/>
+        <Literal>35.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Total_Amount"/>
+        <NamedIndividual IRI="#1016"/>
+        <Literal>485.96</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Creation_Date"/>
+        <NamedIndividual IRI="#1017"/>
+        <Literal>2023-04-10T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#1017"/>
+        <Literal>17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Description"/>
+        <NamedIndividual IRI="#1017"/>
+        <Literal>Garden Bench - 99.99, Outdoor Dining Set - 399.99, Umbrella - 69.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Invoice_Number"/>
+        <NamedIndividual IRI="#1017"/>
+        <Literal>1017</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#11"/>
+        <Literal>25 Liverpool Road, London, EC3M 4JN, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#11"/>
+        <Literal>+44 20 1234 5678</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#11"/>
+        <Literal>11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#11"/>
+        <Literal>1984-06-12T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#11"/>
+        <Literal>williamwilson@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#11"/>
+        <Literal>William</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#11"/>
+        <Literal>Wilson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#11"/>
+        <Literal>25 Liverpool Road, London, EC3M 4JN, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#12"/>
+        <Literal>40 Oxford Road, Glasgow, G1 3JH, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#12"/>
+        <Literal>+44 20 2345 6789</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#12"/>
+        <Literal>12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#12"/>
+        <Literal>1986-09-15T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#12"/>
+        <Literal>patriciamartinez@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#12"/>
+        <Literal>Patricia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#12"/>
+        <Literal>Martinez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#12"/>
+        <Literal>40 Oxford Road, Glasgow, G1 3JH, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#13"/>
+        <Literal>10 Victoria Street, Manchester, M4 6FG, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#13"/>
+        <Literal>+44 20 3456 7890</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#13"/>
+        <Literal>13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#13"/>
+        <Literal>1981-03-25T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#13"/>
+        <Literal>christopherrobinson@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#13"/>
+        <Literal>Christopher</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#13"/>
+        <Literal>Robinson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#13"/>
+        <Literal>10 Victoria Street, Manchester, M4 6FG, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#14"/>
+        <Literal>8 Manchester Road, Birmingham, B4 6JD, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#14"/>
+        <Literal>+44 20 4567 8901</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#14"/>
+        <Literal>14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#14"/>
+        <Literal>1976-12-08T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#14"/>
+        <Literal>lindaclark@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#14"/>
+        <Literal>Linda</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#14"/>
+        <Literal>Clark</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#14"/>
+        <Literal>8 Manchester Road, Birmingham, B4 6JD, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#15"/>
+        <Literal>12 King&apos;s Road, Liverpool, L3 8JD, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#15"/>
+        <Literal>+44 20 5678 9012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#15"/>
+        <Literal>15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#15"/>
+        <Literal>1983-05-30T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#15"/>
+        <Literal>michaelrodriguez@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#15"/>
+        <Literal>Michael</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#15"/>
+        <Literal>Rodriguez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#15"/>
+        <Literal>12 King&apos;s Road, Liverpool, L3 8JD, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#16"/>
+        <Literal>35 Regent Street, Birmingham, B4 3JD, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#16"/>
+        <Literal>+44 20 6789 0123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#16"/>
+        <Literal>16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#16"/>
+        <Literal>1977-02-14T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#16"/>
+        <Literal>susanlewis@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#16"/>
+        <Literal>Susan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#16"/>
+        <Literal>Lewis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#16"/>
+        <Literal>35 Regent Street, Birmingham, B4 3JD, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#17"/>
+        <Literal>20 Victoria Street, London, EC2N 5AR, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#17"/>
+        <Literal>+44 20 7890 1234</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#17"/>
+        <Literal>17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#17"/>
+        <Literal>1989-07-20T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#17"/>
+        <Literal>matthewlee@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#17"/>
+        <Literal>Matthew</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#17"/>
+        <Literal>Lee</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#17"/>
+        <Literal>20 Victoria Street, London, EC2N 5AR, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#18"/>
+        <Literal>15 Cambridge Road, Manchester, M1 9AG, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#18"/>
+        <Literal>+44 20 8901 2345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#18"/>
+        <Literal>18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#18"/>
+        <Literal>1974-04-18T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#18"/>
+        <Literal>angelawalker@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#18"/>
+        <Literal>Angela</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#18"/>
+        <Literal>Walker</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#18"/>
+        <Literal>15 Cambridge Road, Manchester, M1 9AG, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#19"/>
+        <Literal>78 High Street, Manchester, M4 1AA, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#19"/>
+        <Literal>+44 20 9012 3456</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#19"/>
+        <Literal>19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#19"/>
+        <Literal>1980-11-22T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#19"/>
+        <Literal>joshuahall@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#19"/>
+        <Literal>Joshua</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#19"/>
+        <Literal>Hall</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#19"/>
+        <Literal>78 High Street, Manchester, M4 1AA, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#2"/>
+        <Literal>20 Oxford Street, London, W1D 1DZ, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#2"/>
+        <Literal>+44 20 2345 6789</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#2"/>
+        <Literal>2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#2"/>
+        <Literal>1985-07-15T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#2"/>
+        <Literal>marysmith@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#2"/>
+        <Literal>Mary</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#2"/>
+        <Literal>Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#2"/>
+        <Literal>20 Oxford Street, London, W1D 1DZ, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#20"/>
+        <Literal>45 Park Avenue, Liverpool, L3 9AG, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#20"/>
+        <Literal>+44 20 0123 4567</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#20"/>
+        <Literal>20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#20"/>
+        <Literal>1985-08-29T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#20"/>
+        <Literal>emilyallen@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#20"/>
+        <Literal>Emily</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#20"/>
+        <Literal>Allen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#20"/>
+        <Literal>45 Park Avenue, Liverpool, L3 9AG, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#3"/>
+        <Literal>15 Cambridge Road, Manchester, M1 5FS, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#3"/>
+        <Literal>+44 20 3456 7890</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#3"/>
+        <Literal>3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#3"/>
+        <Literal>1992-11-30T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#3"/>
+        <Literal>michaeljohnson@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#3"/>
+        <Literal>Michael</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#3"/>
+        <Literal>Johnson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#3"/>
+        <Literal>15 Cambridge Road, Manchester, M1 5FS, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#4"/>
+        <Literal>10 Victoria Street, Birmingham, B4 6JD, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#4"/>
+        <Literal>+44 20 4567 8901</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#4"/>
+        <Literal>4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#4"/>
+        <Literal>1978-03-10T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#4"/>
+        <Literal>jenniferwilliams@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#4"/>
+        <Literal>Jennifer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#4"/>
+        <Literal>Williams</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#4"/>
+        <Literal>10 Victoria Street, Birmingham, B4 6JD, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#5"/>
+        <Literal>5 High Street, Liverpool, L3 9AG, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#5"/>
+        <Literal>+44 20 5678 9012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#5"/>
+        <Literal>5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#5"/>
+        <Literal>1990-09-20T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#5"/>
+        <Literal>davidjones@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#5"/>
+        <Literal>David</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#5"/>
+        <Literal>Jones</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#5"/>
+        <Literal>5 High Street, Liverpool, L3 9AG, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#6"/>
+        <Literal>30 Regent Street, Manchester, M4 4FG, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#6"/>
+        <Literal>+44 20 6789 0123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#6"/>
+        <Literal>6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#6"/>
+        <Literal>1982-12-05T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#6"/>
+        <Literal>sarahbrown@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#6"/>
+        <Literal>Sarah</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#6"/>
+        <Literal>Brown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#6"/>
+        <Literal>30 Regent Street, Manchester, M4 4FG, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#7"/>
+        <Literal>18 King&apos;s Road, Birmingham, B4 7AA, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#7"/>
+        <Literal>+44 20 7890 1234</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#7"/>
+        <Literal>7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#7"/>
+        <Literal>1987-06-18T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#7"/>
+        <Literal>jamesmiller@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#7"/>
+        <Literal>James</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#7"/>
+        <Literal>Miller</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#7"/>
+        <Literal>18 King&apos;s Road, Birmingham, B4 7AA, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#8"/>
+        <Literal>12 Liverpool Road, Leeds, LS1 2JH, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#8"/>
+        <Literal>+44 20 8901 2345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#8"/>
+        <Literal>8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#8"/>
+        <Literal>1975-01-28T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#8"/>
+        <Literal>lisadavis@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#8"/>
+        <Literal>Lisa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#8"/>
+        <Literal>Davis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#8"/>
+        <Literal>12 Liverpool Road, Leeds, LS1 2JH, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Billing_Address"/>
+        <NamedIndividual IRI="#9"/>
+        <Literal>35 Oxford Road, Glasgow, G1 7AA, UK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contact_number"/>
+        <NamedIndividual IRI="#9"/>
+        <Literal>+44 20 9012 3456</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Customer_ID"/>
+        <NamedIndividual IRI="#9"/>
+        <Literal>9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DateOfBirth"/>
+        <NamedIndividual IRI="#9"/>
+        <Literal>1988-04-12T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Email"/>
+        <NamedIndividual IRI="#9"/>
+        <Literal>robertgarcia@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#First_name"/>
+        <NamedIndividual IRI="#9"/>
+        <Literal>Robert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Last_Name"/>
+        <NamedIndividual IRI="#9"/>
+        <Literal>Garcia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Shipping_Address"/>
+        <NamedIndividual IRI="#9"/>
+        <Literal>35 Oxford Road, Glasgow, G1 7AA, UK</Literal>
+    </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#Associated_with"/>
+        <ObjectProperty IRI="#hasInvoice"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Billed_To"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Paid_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Shipped_To"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#manage"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Associated_with"/>
+        <Class IRI="#Orders"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Paid_by"/>
+        <Class IRI="#Orders"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Shipped_To"/>
+        <Class IRI="#Orders"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#choose"/>
+        <Class IRI="#Customers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Invoice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasContactWith"/>
+        <Class IRI="#Managers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInvoice"/>
+        <Class IRI="#Orders"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Orders"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#interact_with"/>
+        <Class IRI="#Customer_representative"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#keepRecords"/>
+        <Class IRI="#Customer_representative"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manage"/>
+        <Class IRI="#Managers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#placed"/>
+        <Class IRI="#Customers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supply"/>
+        <Class IRI="#Suppliers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Orders"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Associated_with"/>
+        <Class IRI="#Invoice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Paid_by"/>
+        <Class IRI="#Card"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Paid_by"/>
+        <Class IRI="#Cash"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Shipped_To"/>
+        <Class IRI="#Customers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#choose"/>
+        <Class IRI="#Payment_Method"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Customers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Payment_Method"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasContactWith"/>
+        <Class IRI="#Suppliers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInvoice"/>
+        <Class IRI="#Invoice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#interact_with"/>
+        <Class IRI="#Customers"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#keepRecords"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manage"/>
+        <Class IRI="#Customer_representative"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manage"/>
+        <Class IRI="#General_labourer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#placed"/>
+        <Class IRI="#Orders"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supply"/>
+        <Class IRI="#Product"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Customers"/>
+    </ObjectPropertyRange>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#Total_Amount"/>
+        <DataProperty IRI="#Total_Cost"/>
+    </EquivalentDataProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Availability"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Barcode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Billing_Address"/>
+        <DataProperty IRI="#Address"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Contact_number"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Creation_Date"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Currency"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Customer_Information"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Description"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Dilivery_Date"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Dimensions"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Discounts"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Images"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Invoice_Number"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Joined_Date"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Last_Modified_Date"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Material"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Order_Date"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Payment_Status"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Payment_Terms"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Price"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Reviews"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Shipping_Address"/>
+        <DataProperty IRI="#Address"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Tax_Information"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Terms_and_Conditions"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Total_Amount"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Variants"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Weight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#brand"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Product/Service_Details"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Address"/>
+        <Class IRI="#People"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Availability"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Available_Colors"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Barcode"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Billing_Address"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Billing_Address"/>
+        <Class IRI="#Orders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Billing_Address"/>
+        <Class IRI="#Suppliers"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Category_ID"/>
+        <Class IRI="#Category"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Contact_number"/>
+        <Class IRI="#People"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Creation_Date"/>
+        <Class IRI="#Category"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Creation_Date"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Currency"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Customer_ID"/>
+        <Class IRI="#Customers"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Customer_Information"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Customer_Information"/>
+        <Class IRI="#Orders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DateOfBirth"/>
+        <Class IRI="#People"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Category"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Dilivery_Date"/>
+        <Class IRI="#Orders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Dimensions"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Discounts"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Email"/>
+        <Class IRI="#People"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#First_name"/>
+        <Class IRI="#People"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Gender"/>
+        <Class IRI="#People"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Images"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Invoice_Description"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Invoice_Number"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Items"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Joined_Date"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Last_Modified_Date"/>
+        <Class IRI="#Category"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Last_Name"/>
+        <Class IRI="#People"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Material"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Number_of_products"/>
+        <Class IRI="#Category"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Order_Date"/>
+        <Class IRI="#Orders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Order_ID"/>
+        <Class IRI="#Orders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Order_Status"/>
+        <Class IRI="#Orders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Payment_Status"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Payment_Terms"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Price"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Product_ID"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Quantity"/>
+        <Class IRI="#Orders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Reviews"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Shipping_Address"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Shipping_Address"/>
+        <Class IRI="#Orders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Staff_ID"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Sub_Total"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Supplyer_ID"/>
+        <Class IRI="#Suppliers"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Tax_Information"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Terms_and_Conditions"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Total_Amount"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Total_Amount"/>
+        <Class IRI="#Orders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Total_Cost"/>
+        <Class IRI="#Orders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Variants"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Weight"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#brand"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Product"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Product/Service_Details"/>
+        <Class IRI="#Invoice"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Address"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Availability"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Available_Colors"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Barcode"/>
+        <Datatype abbreviatedIRI="xsd:token"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Billing_Address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Category_ID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Contact_number"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Creation_Date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Currency"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Customer_ID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Customer_Information"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DateOfBirth"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Dilivery_Date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Dimensions"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Discounts"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#First_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Gender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Images"/>
+        <Datatype abbreviatedIRI="xsd:token"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Invoice_Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Invoice_Number"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Items"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Joined_Date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Last_Modified_Date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Last_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Material"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Number_of_products"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Order_Date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Order_ID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Order_Status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Payment_Status"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Payment_Terms"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Price"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Product_ID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Quantity"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Reviews"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Shipping_Address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Staff_ID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Sub_Total"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Supplyer_ID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Tax_Information"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Terms_and_Conditions"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Total_Amount"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Total_Cost"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Variants"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Weight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#brand"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Product/Service_Details"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
